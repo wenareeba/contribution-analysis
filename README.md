@@ -23,7 +23,8 @@ A good contribution claim says two things. The intervention contributed, and her
 
 | If you want to... | Go to |
 |---|---|
-| Learn CA from the ground up | [`course/lessons/0001-read-the-question-first.html`](course/lessons/0001-read-the-question-first.html) |
+| See the whole repository at a glance | [The repository map](https://wenareeba.github.io/contribution-analysis/) |
+| Learn CA from the ground up | [Lesson 1 on the course website](https://wenareeba.github.io/contribution-analysis/course/lessons/0001-read-the-question-first.html) |
 | Design a CA for an evaluation | [`templates/ca-evaluation-design-template.md`](templates/ca-evaluation-design-template.md) |
 | Check a CA design or report | [`red-team/ca-red-team-protocol.md`](red-team/ca-red-team-protocol.md) |
 | Find the right reading | [`bibliography/annotated-bibliography.md`](bibliography/annotated-bibliography.md) |
@@ -52,22 +53,24 @@ A good contribution claim says two things. The intervention contributed, and her
 - **Checked.** Content is checked for fidelity to sources, citation accuracy and completeness of the method before it is added.
 - **Corrections are public.** Errors found in other reference lists go in the errata, with the evidence for each correction.
 
-## Course status
+## Read the lessons as web pages
 
-| Lesson | Topic | Status |
+The lessons are interactive pages: figures you can switch on and off, quizzes that mark your answers, and writing tasks with model answers. GitHub shows HTML files as code, so open them as web pages instead.
+
+**[Open the course website](https://wenareeba.github.io/contribution-analysis/)** to start with a map of the repository and six routes through it, or go straight to a lesson:
+
+| Lesson | Web page | Reference card |
 |---|---|---|
-| 1 | [Read the question first](course/lessons/0001-read-the-question-first.html): contributory cause, two-part claims, question scope | Done |
-| 2 | [Theories of change that can carry a claim](course/lessons/0002-theories-of-change-that-carry-a-claim.html) | Done |
-| 3 | [Building the causal case](course/lessons/0003-building-the-causal-case.html): Mayne's evidence tools and process tracing tests | Done |
-| 4 | [Other factors and alternative explanations](course/lessons/0004-other-factors-and-alternative-explanations.html) | Done |
-| 5 | [Size and relative importance](course/lessons/0005-size-and-relative-importance.html) | Done |
-| 6 | [Running a CA in practice](course/lessons/0006-running-a-ca-in-practice.html) | Done |
-| 7 | [Critiques and responses](course/lessons/0007-critiques-and-responses.html) | Done |
-| 8 | [CA among theory-based approaches](course/lessons/0008-ca-among-theory-based-approaches.html) | Done |
+| 1 | [Read the question first](https://wenareeba.github.io/contribution-analysis/course/lessons/0001-read-the-question-first.html) | [CA core card](https://wenareeba.github.io/contribution-analysis/course/reference/0001-ca-core.html) |
+| 2 | [Theories of change that can carry a claim](https://wenareeba.github.io/contribution-analysis/course/lessons/0002-theories-of-change-that-carry-a-claim.html) | [ToC card](https://wenareeba.github.io/contribution-analysis/course/reference/0002-toc-card.html) |
+| 3 | [Building the causal case](https://wenareeba.github.io/contribution-analysis/course/lessons/0003-building-the-causal-case.html) | [Evidence card](https://wenareeba.github.io/contribution-analysis/course/reference/0003-evidence-card.html) |
+| 4 | [Other factors and alternative explanations](https://wenareeba.github.io/contribution-analysis/course/lessons/0004-other-factors-and-alternative-explanations.html) | [Other factors card](https://wenareeba.github.io/contribution-analysis/course/reference/0004-other-factors-card.html) |
+| 5 | [Size and relative importance](https://wenareeba.github.io/contribution-analysis/course/lessons/0005-size-and-relative-importance.html) | [Importance card](https://wenareeba.github.io/contribution-analysis/course/reference/0005-importance-card.html) |
+| 6 | [Running a CA in practice](https://wenareeba.github.io/contribution-analysis/course/lessons/0006-running-a-ca-in-practice.html) | [Practice card](https://wenareeba.github.io/contribution-analysis/course/reference/0006-practice-card.html) |
+| 7 | [Critiques and responses](https://wenareeba.github.io/contribution-analysis/course/lessons/0007-critiques-and-responses.html) | [Critiques card](https://wenareeba.github.io/contribution-analysis/course/reference/0007-critiques-card.html) |
+| 8 | [CA among theory-based approaches](https://wenareeba.github.io/contribution-analysis/course/lessons/0008-ca-among-theory-based-approaches.html) | [Approaches card](https://wenareeba.github.io/contribution-analysis/course/reference/0008-approaches-card.html) |
 
-## Viewing the lessons
-
-The lessons are HTML pages. GitHub shows their source code, not the page. To see them as intended, download or clone the repository and open the `.html` files in a browser, keeping the `course/` folder structure so the shared stylesheet and quiz load.
+To use the course offline, choose **Code, then Download ZIP**, unzip the folder, and open `index.html` or any file in `course/lessons/` in your browser. Keep the folder structure as it is, so each page finds its stylesheet and scripts.
 
 ## Contributing
 
