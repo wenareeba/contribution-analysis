@@ -206,7 +206,8 @@
   /* evidence sorter: .sort-item[data-answer][data-why] with buttons [data-k] */
   $$("[data-sorter]").forEach(function (so) {
     var items = $$(".sort-item", so), score = $(".sort-score", so), done = 0, right = 0;
-    function upd() { if (score) score.textContent = done < items.length ? done + " of " + items.length + " sorted" : right + " of " + items.length + " sorted correctly"; }
+    var word = so.dataset.word || "sorted";
+    function upd() { if (score) score.textContent = done < items.length ? done + " of " + items.length + " " + word : right + " of " + items.length + " " + word + " correctly"; }
     items.forEach(function (it) {
       var bs = $$("button[data-k]", it), fb = $(".sort-fb", it);
       bs.forEach(function (b) {

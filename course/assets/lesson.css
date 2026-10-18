@@ -254,6 +254,20 @@ tr.key td:last-child { color: var(--accent); font-weight: 600; }
 .cycle .pw-panel .tool { font-size: .82rem; color: var(--ink-2); margin: .8rem 0 0; }
 .cycle .pw-panel .tool a { font-weight: 500; }
 
+/* stacked answer options and critique lists */
+.sort-opts.stack { flex-direction: column; align-items: stretch; }
+.sort-opts.stack button { text-align: left; padding: .6rem .85rem; line-height: 1.4; }
+.critiques { font-family: var(--sans); }
+.critiques .seg { margin: .4rem 0 1rem; }
+.crit { list-style: none; margin: 0; padding: 0; display: grid; gap: .9rem; }
+.crit li { padding: 0 0 .9rem; border-bottom: 1px solid var(--rule); font-family: var(--sans); font-size: .9rem; line-height: 1.5; }
+.crit li:last-child { border-bottom: 0; padding-bottom: 0; }
+.crit .what { font-family: var(--serif); font-size: 1.05rem; font-weight: 600; display: block; }
+.crit .who { color: var(--muted); font-size: .8rem; display: block; margin: .1rem 0 .35rem; }
+.crit .reply { color: var(--ink-2); display: block; }
+.crit .reply b { color: var(--accent); font-weight: 600; }
+@media (max-width: 760px) { .critiques .seg { grid-auto-flow: row; grid-template-columns: 1fr 1fr; } .critiques .seg button { border-bottom: 1px solid var(--rule-strong); } }
+
 /* likelihood reasoning */
 .lr .q-line { font-family: var(--sans); font-size: .9rem; color: var(--ink-2); margin: .2rem 0 0; }
 .lr .seg { margin-bottom: .6rem; }
