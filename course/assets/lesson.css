@@ -268,6 +268,19 @@ tr.key td:last-child { color: var(--accent); font-weight: 600; }
 .crit .reply b { color: var(--accent); font-weight: 600; }
 @media (max-width: 760px) { .critiques .seg { grid-auto-flow: row; grid-template-columns: 1fr 1fr; } .critiques .seg button { border-bottom: 1px solid var(--rule-strong); } }
 
+/* design chooser */
+.chooser { font-family: var(--sans); }
+.chooser .opts { display: grid; gap: .5rem; margin: .6rem 0 1rem; }
+.chooser .opts label { display: flex; gap: .7rem; align-items: flex-start; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: .7rem .85rem; cursor: pointer; font-size: .9rem; line-height: 1.4; transition: border-color .15s; }
+.chooser .opts label:hover { border-color: var(--accent); }
+.chooser .opts input { margin-top: .15rem; accent-color: var(--accent); width: 1rem; height: 1rem; flex: none; }
+.chooser .opts label:has(input:checked) { border-color: var(--accent); }
+.chooser-out { background: var(--surface); border-radius: 8px; border: 1px solid var(--rule); padding: 1rem 1.2rem; font-size: .9rem; line-height: 1.5; }
+.chooser-out ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .45rem; }
+.chooser-out p { margin: .7rem 0 0; color: var(--muted); }
+.chooser-out p:first-child { margin: 0; }
+.chooser-out b { color: var(--accent); }
+
 /* likelihood reasoning */
 .lr .q-line { font-family: var(--sans); font-size: .9rem; color: var(--ink-2); margin: .2rem 0 0; }
 .lr .seg { margin-bottom: .6rem; }

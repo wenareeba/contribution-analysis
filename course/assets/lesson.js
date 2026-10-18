@@ -12,7 +12,8 @@
    - Evidence sorter: <div data-sorter> with .sort-item[data-answer][data-why] and buttons [data-k].
    - Likelihood reasoning: <div data-lr> with two .seg[data-q=t|f] groups of buttons [data-v=hi|lo].
    - Factor placer: <div data-placer> with a question .seg[data-q] and .place-item[data-answer] items.
-   - Tabs: <div data-tabs> with buttons [data-panel] and .tab-panel elements. */
+   - Tabs: <div data-tabs> with buttons [data-panel] and .tab-panel elements.
+   - Design chooser: <div data-chooser> with checkboxes [data-rec] and a .chooser-out element. */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -282,5 +283,16 @@
     function pick(b) { bs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); }); ps.forEach(function (p) { p.hidden = p.id !== b.dataset.panel; }); }
     bs.forEach(function (b) { b.addEventListener("click", function () { pick(b); }); });
     pick(bs.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0] || bs[0]);
+  });
+  /* design chooser: checkboxes [data-rec] build a list in .chooser-out */
+  $$("[data-chooser]").forEach(function (ch) {
+    var boxes = $$("input[type=checkbox][data-rec]", ch), out = $(".chooser-out", ch);
+    function draw() {
+      var on = boxes.filter(function (b) { return b.checked; });
+      out.innerHTML = on.length
+        ? "<ol>" + on.map(function (b) { return "<li>" + b.dataset.rec + "</li>"; }).join("") + "</ol>" + (on.length > 1 ? "<p>Build every part on one shared theory of the programme, so the parts answer one question together.</p>" : "")
+        : "<p>Tick at least one question to see a design.</p>";
+    }
+    boxes.forEach(function (b) { b.addEventListener("change", draw); }); draw();
   });
 })();
