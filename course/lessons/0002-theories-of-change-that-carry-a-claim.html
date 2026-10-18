@@ -1,177 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
 <title>Theories of Change That Carry a Claim</title>
+<meta name="description" content="Contribution analysis, Lesson 2: causal link assumptions, partly met assumptions, COM-B and nested theories of change.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">
-<link rel="stylesheet" href="../assets/course.css">
-<style>
-  .cb-step { fill: var(--accent-soft); stroke: var(--accent); }
-  .cb-ass { fill: var(--paper); stroke: var(--rule); stroke-dasharray: 4 3; }
-  .cb-ext { fill: var(--flag-soft); stroke: var(--flag); }
-  .cb-t { fill: var(--ink); font-family: var(--ui); font-size: 13px; font-weight: 600; }
-  .cb-s { fill: var(--muted); font-family: var(--ui); font-size: 11.5px; }
-  .cb-line { stroke: var(--ink); stroke-width: 1.5; }
-  .cb-head { fill: var(--ink); }
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<main class="page">
-  <p class="eyebrow">Contribution analysis · Lesson 2 of 8</p>
-  <h1>Theories of change that can carry a claim</h1>
-  <p class="lede col">By the end of this page you can look at a theory of change and say whether a contribution claim could stand on it, and you can write the causal link assumptions it is missing.</p>
+<div class="lesson">
+  <aside class="rail" aria-label="On this page">
+    <nav><p class="rail-h">Lesson 2 of 8</p><ol></ol></nav>
+  </aside>
 
-  <h2>First, recall Lesson 1</h2>
-  <p class="col">Answer from memory. Spacing the practice like this is what makes it stick.</p>
-  <div class="quiz col" data-quiz="recall"></div>
-  <script type="application/json" id="recall">[
-    {"stem":"For a contribution question, Mayne (2019) says outside factors should be examined:",
-     "options":["always, before any claim can be made","never, because they are always irrelevant here","only when causally linked to the package","whenever stakeholders mention them in their interviews"],
-     "answer":2,
-     "feedback":["That was his 2011 position, which he withdrew in 2019 (p. 175).","Too strong. Linked factors, and causes-of-outcome questions, do need them.","Correct reading of pp. 175 to 176.","Stakeholder salience does not set the scope. The question does."]},
-    {"stem":"A contribution claim, in Mayne's (2019, p. 182) terms, has two parts:",
-     "options":["a size estimate and a ranking","a verdict and a causal narrative","a counterfactual and a comparison group","stakeholder agreement and a theory diagram"],
-     "answer":1,
-     "feedback":["CA does not estimate size or rank on its own (p. 181).","Right: it contributed, and here is how.","That is counterfactual design, not CA's generative logic.","Agreement is opinion, which cannot ground the claim (p. 175)."]},
-    {"stem":"Which Table 1 test is strong evidence that the intervention was a causal factor?",
-     "options":["plausible time sequence observed","reasonable effort was expended","expected secondary effects seen","a unique effect observed"],
-     "answer":3,
-     "feedback":["A hoop test: keeps the claim alive, does not confirm it.","A hoop test about plausibility.","A hoop test: absence hurts, presence does not confirm.","Right: the smoking gun (p. 186)."]}
-  ]</script>
+  <main class="main">
+    <p class="kicker"><b>Contribution analysis</b>, lesson 2 of 8</p>
+    <h1>Theories of change that can carry a claim</h1>
+    <p class="lede">A contribution claim can never be stronger than the theory of change under it. This lesson is about building one that evidence can actually test. Five short sections, two figures to try, five questions and one set of assumptions to write.</p>
 
-  <h2>1. Why the theory of change decides everything</h2>
-  <div class="with-note">
-    <div>
-      <p>In CA the theory of change (ToC) is the outline of the contribution story (Mayne 2019, p. 173). The evidence confirms or fails to confirm it, link by link. So the claim can never be stronger than the ToC underneath it.</p>
-      <p>Mayne is blunt about this. Using a weak ToC can only lead to weak CA findings (p. 176). And if the ToC has insufficient causal link assumptions, a credible contribution claim is not possible; work built on it is not CA as he describes it (p. 176).</p>
+    <details class="contents-strip"><summary>On this page</summary><ol></ol></details>
+
+    <div class="goal">
+      <span class="label">By the end of this lesson</span>
+      <p>You can look at a theory of change and say whether a contribution claim could stand on it, and write the causal link assumptions it is missing.</p>
     </div>
-    <aside class="note">Many programme ToCs were drawn to win funding or to communicate, not to be tested. Mayne notes the evaluator usually has to build or guide a more evaluable version (p. 178).</aside>
-  </div>
 
-  <h2>2. Four terms, used precisely</h2>
-  <p class="col">Mayne (2019, p. 172) defines them this way, and notes that others use them differently, so define your terms in each evaluation:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
-      <tbody>
-        <tr><td>Impact pathway</td><td>The sequence of steps linking activities to impact</td></tr>
-        <tr><td>Theory of change</td><td>The impact pathway plus the causal assumptions behind each link: what has to happen for the link to work</td></tr>
-        <tr><td>Causal link assumption</td><td>An event or condition necessary, or likely necessary, for a particular link to be realised</td></tr>
-        <tr><td>Results</td><td>The outputs, outcomes and impacts of the intervention</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="col">The difference between a pathway and a ToC is the assumptions. Boxes and arrows alone are a pathway. They tell you what should happen, not what has to be true for it to happen, so there is nothing for evidence to test at each link.</p>
+    <h2 id="recall" data-short="Recall Lesson 1"><span class="n">Recall</span>First, three questions from Lesson 1</h2>
+    <p>Answer from memory. Spacing practice like this is what makes it stick.</p>
+    <div class="quiz" data-quiz="recall" data-title="Recall"></div>
+    <script type="application/json" id="recall">[
+      {"stem":"For a contribution question, Mayne (2019) says outside factors should be examined:",
+       "options":["always, before any claim can be made","never, because they are always irrelevant here","only when causally linked to the package","whenever stakeholders mention them in their interviews"],
+       "answer":2,
+       "feedback":["That was his 2011 position, which he withdrew in 2019 (p. 175).","Too strong. Linked factors, and causes-of-outcome questions, do need them.","The reading of pp. 175 to 176.","Stakeholder salience does not set the scope. The question does."]},
+      {"stem":"A contribution claim, in Mayne's (2019, p. 182) terms, has two parts:",
+       "options":["a size estimate and a ranking","a verdict and a causal narrative","a counterfactual and a comparison group","stakeholder agreement and a theory diagram"],
+       "answer":1,
+       "feedback":["CA does not estimate size or rank on its own (p. 181).","It contributed, and here is how.","That is counterfactual design, not CA's generative logic.","Agreement is opinion, which cannot ground the claim (p. 175)."]},
+      {"stem":"Which Table 1 test is strong evidence that the intervention was a causal factor?",
+       "options":["plausible time sequence observed","reasonable effort was expended","expected secondary effects seen","a unique effect observed"],
+       "answer":3,
+       "feedback":["A hoop test: keeps the claim alive, does not confirm it.","A hoop test about plausibility.","A hoop test: absence hurts, presence does not confirm.","The smoking gun (p. 186)."]}
+    ]</script>
 
-  <h2>3. Assumptions are rarely all-or-nothing</h2>
-  <div class="with-note">
-    <div>
-      <p>Mayne's example (2019, p. 177): a programme teaches mothers about nutritious diets. One result is "mothers adopt new feeding practices". One assumption is "supportive husbands and mother-in-law".</p>
-      <p>If the in-laws are only somewhat supportive, you get less of the result (some practices adopted), but the assumption is still necessary for that result. If the assumption is not realised at all, there is no result. The fix is to define the result precisely, for example "fully adopting new practices", so it lines up with the assumptions.</p>
+    <h2 id="why" data-short="Why the ToC decides"><span class="n">1</span>A weak theory of change can only give weak findings</h2>
+    <p>In CA the theory of change (ToC) is the outline of the contribution story <span class="pg">(Mayne 2019, p. 173)</span>. Evidence confirms it, or fails to, link by link. So the claim can never be stronger than the ToC underneath it.</p>
+    <p>Mayne is blunt about this. A weak ToC can only lead to weak CA findings. And if the ToC has insufficient causal link assumptions, a credible contribution claim is not possible: the work is not CA as he describes it <span class="pg">(p. 176)</span>.<label for="sn-1" class="sn-ref" aria-label="Side note 1"></label><input type="checkbox" id="sn-1" class="sn-toggle"><span class="sidenote">Many programme ToCs were drawn to win funding or to communicate, not to be tested. The evaluator usually has to build or guide a more evaluable version (Mayne 2019, p. 178).</span></p>
+
+    <h2 id="terms" data-short="Four terms"><span class="n">2</span>The assumptions are what turn a pathway into a theory</h2>
+    <p>Mayne defines four terms, and notes that others use them differently, so define yours in each evaluation <span class="pg">(2019, p. 172)</span>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Term</th><th scope="col">Meaning</th></tr></thead>
+        <tbody>
+          <tr><td>Impact pathway</td><td>The sequence of steps linking activities to impact</td></tr>
+          <tr class="key"><td>Theory of change</td><td>The impact pathway plus the causal assumptions behind each link: what has to happen for the link to work</td></tr>
+          <tr><td>Causal link assumption</td><td>An event or condition necessary, or likely necessary, for a particular link to be realised</td></tr>
+          <tr><td>Results</td><td>The outputs, outcomes and impacts of the intervention</td></tr>
+        </tbody>
+      </table>
     </div>
-    <aside class="note">Mayne later found a missed assumption in the same example: mothers controlling food distribution in the household. The higher-level version is that the person with power over household food must be reached, who may not be the mother (p. 186).</aside>
-  </div>
+    <p>Boxes and arrows alone are a pathway. They say what should happen, not what has to be true for it to happen, so there is nothing for evidence to test at each link.</p>
 
-  <h2>4. A model for behaviour change: COM-B</h2>
-  <p class="col">Most interventions try to change what some group of people does. Mayne built a generic ToC for this on the COM-B model of Michie, Atkins and West (2014): behaviour changes through the interaction of three necessary elements, <strong>capabilities</strong>, <strong>opportunities</strong> and <strong>motivation</strong> (Mayne 2019, pp. 178 to 179). Because COM-B summarises research on behaviour change, it names the mechanisms at work, which is what a causal narrative needs.</p>
+    <h2 id="degree" data-short="Partly met assumptions"><span class="n">3</span>Assumptions are rarely all or nothing</h2>
+    <p>Mayne's example: a programme teaches mothers about nutritious diets. One result is "mothers adopt new feeding practices". One assumption at that link is "supportive husbands and mother-in-law" <span class="pg">(2019, p. 177)</span>. Try the three levels of support.</p>
+    <div class="degree" data-degree>
+      <span class="label">Support from husband and mother-in-law</span>
+      <div class="seg" role="group" aria-label="Level of support">
+        <button type="button" data-level="none" data-out="&lt;b&gt;No result&lt;/b&gt;The assumption is not realised, so the link does not work: mothers do not adopt the new practices.">Not supportive</button>
+        <button type="button" data-level="some" data-out="&lt;b&gt;Less of the result&lt;/b&gt;Mothers adopt some of the practices. The assumption is still necessary; it was only partly met.">Somewhat supportive</button>
+        <button type="button" data-level="full" aria-pressed="true" data-out="&lt;b&gt;The full result&lt;/b&gt;The assumption holds, and mothers fully adopt the new feeding practices.">Fully supportive</button>
+      </div>
+      <p class="degree-out" aria-live="polite"></p>
+    </div>
+    <p>The fix Mayne proposes is to define the result precisely, for example "fully adopting new practices", so that it lines up with the assumptions <span class="pg">(p. 177)</span>.<label for="sn-2" class="sn-ref" aria-label="Side note 2"></label><input type="checkbox" id="sn-2" class="sn-toggle"><span class="sidenote">Mayne later found an assumption he had missed in the same example: mothers controlling food distribution in the household. The higher-level version is that whoever holds power over household food must be reached, and that may not be the mother (2019, p. 186).</span></p>
 
-  <figure>
-    <svg viewBox="0 0 360 560" role="img" aria-labelledby="cb-title" style="max-width:24rem">
-      <title id="cb-title">The COM-B theory of change pathway: activities and outputs, reach and reaction, capacity change, behaviour change, direct benefits, improved wellbeing, each link with assumptions, and external influences alongside</title>
-      <g>
-        <rect class="cb-step" x="10" y="10" width="200" height="44" rx="4"/><text class="cb-t" x="22" y="37">Activities and outputs</text>
-        <rect class="cb-step" x="10" y="104" width="200" height="44" rx="4"/><text class="cb-t" x="22" y="131">Reach and reaction</text>
-        <rect class="cb-step" x="10" y="198" width="200" height="58" rx="4"/><text class="cb-t" x="22" y="222">Capacity change</text><text class="cb-s" x="22" y="243">Capability, Opportunity, Motivation</text>
-        <rect class="cb-step" x="10" y="306" width="200" height="44" rx="4"/><text class="cb-t" x="22" y="333">Behaviour change</text>
-        <rect class="cb-step" x="10" y="400" width="200" height="44" rx="4"/><text class="cb-t" x="22" y="427">Direct benefits</text>
-        <rect class="cb-step" x="10" y="494" width="200" height="44" rx="4"/><text class="cb-t" x="22" y="521">Improved wellbeing</text>
-      </g>
-      <g>
-        <line class="cb-line" x1="110" y1="54" x2="110" y2="96"/><polygon class="cb-head" points="104,94 110,104 116,94"/>
-        <line class="cb-line" x1="110" y1="148" x2="110" y2="190"/><polygon class="cb-head" points="104,188 110,198 116,188"/>
-        <line class="cb-line" x1="110" y1="256" x2="110" y2="298"/><polygon class="cb-head" points="104,296 110,306 116,296"/>
-        <line class="cb-line" x1="110" y1="350" x2="110" y2="392"/><polygon class="cb-head" points="104,390 110,400 116,390"/>
-        <line class="cb-line" x1="110" y1="444" x2="110" y2="486"/><polygon class="cb-head" points="104,484 110,494 116,484"/>
-      </g>
-      <g>
-        <rect class="cb-ass" x="122" y="62" width="110" height="28" rx="3"/><text class="cb-s" x="130" y="80">Reach assumptions</text>
-        <rect class="cb-ass" x="122" y="156" width="110" height="28" rx="3"/><text class="cb-s" x="130" y="174">Capacity assumptions</text>
-        <rect class="cb-ass" x="122" y="264" width="110" height="28" rx="3"/><text class="cb-s" x="130" y="282">Behaviour assumptions</text>
-        <rect class="cb-ass" x="122" y="358" width="110" height="28" rx="3"/><text class="cb-s" x="130" y="376">Benefit assumptions</text>
-        <rect class="cb-ass" x="122" y="452" width="110" height="28" rx="3"/><text class="cb-s" x="130" y="470">Wellbeing assumptions</text>
-      </g>
-      <rect class="cb-ext" x="244" y="198" width="106" height="106" rx="4"/>
-      <text class="cb-t" x="254" y="226">External</text><text class="cb-t" x="254" y="244">influences</text>
-      <text class="cb-s" x="254" y="268">act on every</text><text class="cb-s" x="254" y="284">step</text>
-    </svg>
-    <figcaption>Drawn for this course; the stages follow Mayne's generic COM-B ToC (2019, Figure 1, p. 179). Each arrow carries its own assumptions; external influences sit alongside.</figcaption>
-  </figure>
+    <h2 id="comb" data-short="COM-B"><span class="n">4</span>Behaviour change needs capability, opportunity and motivation</h2>
+    <p>Most interventions try to change what some group of people does. Mayne built a generic ToC for this on the COM-B model of Michie, Atkins and West (2014): behaviour changes through the interaction of three necessary elements, <strong>capabilities</strong>, <strong>opportunities</strong> and <strong>motivation</strong> <span class="pg">(Mayne 2019, pp. 178 to 179)</span>. Because COM-B summarises research on behaviour change, it names the mechanisms at work, which is what a causal narrative needs.</p>
 
-  <h2>5. Three levels of ToC</h2>
-  <p class="col">There is no single right drawing of a ToC. Mayne (2019, p. 178) uses three, for different jobs:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Level</th><th>What it shows</th><th>Use</th></tr></thead>
-      <tbody>
-        <tr><td>Narrative ToC</td><td>A brief account of how the intervention is meant to work</td><td>Communication</td></tr>
-        <tr><td>Overview ToC</td><td>The pathways to impact, some steps on each, and the rationale, usually without causal link assumptions</td><td>Orientation</td></tr>
-        <tr><td>Nested ToCs</td><td>One per pathway, place or actor group, with explicit causal link assumptions</td><td>The level CA actually tests</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="col">Where there are many pathways, a simplified ToC (activities, behaviour change, direct benefits, impact) can cut the data burden. Mayne's advice is to build the detailed nested version first, so you know what the simplified one is suppressing (pp. 180 to 181).</p>
+    <div class="pathway" data-pathway>
+      <span class="label">COM-B theory of change. Select a link to see what has to be true for it.</span>
+      <div class="pw-grid">
+        <ol class="pw-steps" aria-label="Pathway stages">
+          <li class="pw-stage">Activities and outputs<small>Sessions on nutritious diets</small></li>
+          <li><button type="button" class="pw-link" data-panel="a1" aria-pressed="true">Reach assumptions</button></li>
+          <li class="pw-stage">Reach and reaction<small>Mothers attend and take part</small></li>
+          <li><button type="button" class="pw-link" data-panel="a2">Capacity assumptions</button></li>
+          <li class="pw-stage">Capacity change<small>Capability, opportunity, motivation</small></li>
+          <li><button type="button" class="pw-link" data-panel="a3">Behaviour assumptions</button></li>
+          <li class="pw-stage">Behaviour change<small>New feeding practices</small></li>
+          <li><button type="button" class="pw-link" data-panel="a4">Benefit assumptions</button></li>
+          <li class="pw-stage">Direct benefits<small>Children eat better</small></li>
+          <li><button type="button" class="pw-link" data-panel="a5">Wellbeing assumptions</button></li>
+          <li class="pw-stage">Improved wellbeing<small>Better child nutrition</small></li>
+        </ol>
+        <div>
+          <div class="pw-panel" id="a1" hidden><h3>From activities to reach</h3><ul><li>Sessions are held where and when mothers can come.</li><li>Mothers hear about the sessions and see them as relevant.</li></ul></div>
+          <div class="pw-panel" id="a2" hidden><h3>From reach to capacity change</h3><ul><li>The advice is understood and remembered.</li><li>The foods recommended are available and affordable.</li></ul></div>
+          <div class="pw-panel" id="a3" hidden><h3>From capacity to behaviour</h3><ul><li>Husbands and mothers-in-law are supportive.<span class="src">Mayne, p. 177</span></li><li>Whoever controls food in the household is reached.<span class="src">Mayne, p. 186</span></li></ul></div>
+          <div class="pw-panel" id="a4" hidden><h3>From behaviour to direct benefits</h3><ul><li>Practices are kept up, not tried once.</li><li>Children eat the meals prepared for them.</li></ul></div>
+          <div class="pw-panel" id="a5" hidden><h3>From benefits to wellbeing</h3><ul><li>Better diets are not offset by illness, such as repeated diarrhoea.</li><li>Change lasts long enough to show in nutrition status.</li></ul></div>
+          <p class="fig-caption">The stages follow Mayne's generic COM-B ToC (2019, Figure 1, p. 179). The two assumptions marked Mayne are his; the others are examples written for this course. External influences act alongside every step.</p>
+        </div>
+      </div>
+    </div>
 
-  <h2>Practice: retrieve it</h2>
-  <div class="quiz col" data-quiz="q2"></div>
-  <script type="application/json" id="q2">[
-    {"stem":"Mayne (2019, p. 172) defines a causal link assumption as:",
-     "options":["an event or condition needed for the link","the result the programme hopes to reach eventually","a risk the programme manager cannot fully control","an activity listed in the programme's work plan"],
-     "answer":0,
-     "feedback":["Right: necessary or likely necessary for the link to be realised.","That is a result, not an assumption.","Risks overlap with assumptions, but the definition is about what the link needs.","Activities are the start of the pathway, not assumptions."]},
-    {"stem":"A contribution claim rests on a ToC with no causal link assumptions. Mayne (2019, p. 176) says:",
-     "options":["It is credible if data cover outcomes","It needs a larger survey sample size","It is not a credible CA claim","It quietly turns into a causes-of-outcome claim"],
-     "answer":2,
-     "feedback":["Outcome data alone cannot show how the links worked.","Sample size does not fix a missing theory.","Right: a credible claim is not possible, and the work is not CA as he describes it.","Question type is set by the evaluation question, not by the ToC."]},
-    {"stem":"In-laws are only somewhat supportive, so mothers adopt some new practices. Mayne (2019, p. 177) says to:",
-     "options":["treat the assumption as irrelevant because it was met","expect less of the result; the assumption stays necessary","remove the link because the assumption did not hold","replace the assumption with a matched comparison group design"],
-     "answer":1,
-     "feedback":["Partly met still matters: it limits the result.","Right. And define the result precisely so it lines up with the assumption.","The assumption did hold, partly, so the link still worked to a degree.","That is counterfactual design, a different logic."]},
-    {"stem":"In the COM-B model, behaviour changes through the interaction of:",
-     "options":["inputs, outputs and outcomes","context, mechanism and outcome","reach, reaction and results","capabilities, opportunities and motivation"],
-     "answer":3,
-     "feedback":["That is a results chain, not a behaviour model.","That is realist evaluation's configuration.","Reach and reaction is one step in the pathway.","Right (Mayne 2019, pp. 178 to 179)."]},
-    {"stem":"Why build nested ToCs for a complex intervention?",
-     "options":["to unpack pathways, places or actor groups clearly","to make the funding proposal look more convincing","to avoid having to collect any new data","to replace causal link assumptions with simple arrows"],
-     "answer":0,
-     "feedback":["Right (p. 178). They carry the explicit assumptions CA tests.","Mayne contrasts evaluable ToCs with ones made for funding (p. 178).","Nested ToCs usually need more data, not less.","It is the reverse: nested ToCs make assumptions explicit."]}
-  ]</script>
+    <h2 id="levels" data-short="Three levels"><span class="n">5</span>Only nested theories of change carry the assumptions CA tests</h2>
+    <p>There is no single right drawing of a ToC. Mayne uses three, for different jobs <span class="pg">(2019, p. 178)</span>:</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Level</th><th scope="col">What it shows</th><th scope="col">Use</th></tr></thead>
+        <tbody>
+          <tr><td>Narrative ToC</td><td>A brief account of how the intervention is meant to work</td><td class="quiet">Communication</td></tr>
+          <tr><td>Overview ToC</td><td>The pathways to impact, some steps on each, and the rationale, usually without causal link assumptions</td><td class="quiet">Orientation</td></tr>
+          <tr class="key"><td>Nested ToCs</td><td>One per pathway, place or actor group, with explicit causal link assumptions</td><td>The level CA tests</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Where there are many pathways, a simplified ToC (activities, behaviour change, direct benefits, impact) can cut the data burden. Build the detailed nested version first, so you know what the simplified one is suppressing <span class="pg">(pp. 180 to 181)</span>.</p>
 
-  <h2>Practice: write the missing assumptions</h2>
-  <p class="col">Case (invented for practice). A school WASH programme in Arua builds handwashing stations next to latrines and trains a school health club. The programme's ToC has one arrow: "Handwashing stations built → pupils wash hands with soap after using the latrine." Write the causal link assumptions this arrow needs. Use COM-B to make sure you have covered all three elements.</p>
-  <label for="ass" class="eyebrow">Your assumptions</label>
-  <textarea id="ass" class="col" placeholder="Capability: ...&#10;Opportunity: ...&#10;Motivation: ..."></textarea>
-  <p><button type="button" class="btn" id="reveal">Show a model answer</button></p>
-  <div id="model" class="col" hidden>
-    <blockquote class="def"><p><strong>Capability.</strong> Pupils know when and how to wash hands with soap (taught by the health club).<br><strong>Opportunity.</strong> Water and soap are at the stations every school day; stations are unlocked, close to the latrines, and usable by small children; there is time between lessons.<br><strong>Motivation.</strong> Teachers and club members prompt and model handwashing, and it becomes what pupils expect of each other.</p></blockquote>
-    <p>Check yours:</p>
-    <ul class="checks">
-      <li><label><input type="checkbox" id="k1"> Each assumption is a condition, not an activity or a result</label></li>
-      <li><label><input type="checkbox" id="k2"> Each could be checked with evidence (a spot check, a register, an observation)</label></li>
-      <li><label><input type="checkbox" id="k3"> You covered capability, opportunity and motivation</label></li>
-      <li><label><input type="checkbox" id="k4"> You included the boring ones: water, soap, access</label></li>
-    </ul>
-  </div>
+    <h2 id="practice" data-short="Practice: apply it"><span class="n">Practice</span>Apply it to new cases</h2>
+    <p>Five questions that ask you to use the ideas on cases you have not seen. Each answer explains itself, and you can retry the ones you miss.</p>
+    <div class="quiz" data-quiz="q2" data-title="Check yourself"></div>
+    <script type="application/json" id="q2">[
+ {
+  "stem": "A programme's diagram reads: training delivered, farmers adopt drought-tolerant seed, yields rise. It shows no assumptions. In Mayne's terms, the first critique is that it is:",
+  "options": [
+   "too short to support any evaluation",
+   "written without any measurable indicator targets",
+   "a pathway, not a full ToC",
+   "missing a counterfactual comparison group design"
+  ],
+  "answer": 2,
+  "feedback": [
+   "Length is not the issue; what is missing is what has to be true at each link.",
+   "Indicators measure results; they do not say why one link leads to the next.",
+   "A theory of change is the impact pathway plus the causal link assumptions behind each link (Mayne 2019, p. 172).",
+   "CA does not need a comparison group; it needs testable assumptions."
+  ]
+ },
+ {
+  "stem": "Certified seed is stocked in only half the markets, and adoption reaches half the target. The most defensible reading is that:",
+  "options": [
+   "the assumption partly held, limiting the result",
+   "the link failed and should be dropped",
+   "the programme had no effect on adoption",
+   "stocking is an external factor to ignore"
+  ],
+  "answer": 0,
+  "feedback": [
+   "Partly met assumptions give less of the result but stay necessary; define the result precisely so it lines up (p. 177).",
+   "The assumption held in part, so the link worked in part.",
+   "Half the target adopted where seed was available; that is a limited effect, not none.",
+   "Seed availability is what the adoption link needs: a causal link assumption, not an outside factor."
+  ]
+ },
+ {
+  "stem": "Farmers know how to plant the new seed and want to, but credit is not available at planting time. In COM-B terms, which element fails, and where?",
+  "options": [
+   "none, credit is an external influence",
+   "capability, failing at the reach link",
+   "motivation, failing at the benefit link",
+   "opportunity, failing at the behaviour link"
+  ],
+  "answer": 3,
+  "feedback": [
+   "Credit is something the adoption step depends on, so it belongs among that link's assumptions.",
+   "They have the know-how, so capability is in place.",
+   "They want to plant it; motivation is present, and the failure comes before benefits.",
+   "Credit at planting time is an opportunity condition the behaviour change needs (Mayne 2019, pp. 178 to 179)."
+  ]
+ },
+ {
+  "stem": "Mayne's revision of his own nutrition example (2019, p. 186) teaches what about writing assumptions?",
+  "options": [
+   "list as many as possible to be safe",
+   "name who actually holds power over the behaviour",
+   "drop any that cannot easily be measured directly",
+   "replace them with a rating of each risk"
+  ],
+  "answer": 1,
+  "feedback": [
+   "Length is not the lesson; the missed assumption was about who decides.",
+   "The person with power over household food must be reached, and that may not be the mother (p. 186).",
+   "Hard-to-measure assumptions can matter most; dropping them weakens the ToC.",
+   "Risk ratings do not state the condition the link needs."
+  ]
+ },
+ {
+  "stem": "A programme has twelve pathways and a small evaluation budget, so the team wants a simplified theory of change. Mayne's advice (2019, pp. 180 to 181) is to:",
+  "options": [
+   "evaluate only the narrative theory of change",
+   "leave out assumptions on the minor pathways",
+   "build the nested version first, then simplify",
+   "test the overview ToC as it stands"
+  ],
+  "answer": 2,
+  "feedback": [
+   "The narrative ToC is for communication, not testing (p. 178).",
+   "Without assumptions there is nothing for evidence to confirm at those links.",
+   "Knowing the detailed version first shows what the simplified one is suppressing.",
+   "The overview usually has no causal link assumptions, so there is little to test (p. 178)."
+  ]
+ }
+]</script>
 
-  <h2>Read this next</h2>
-  <p class="col">Mayne (2019), pp. 176 to 181: the section on useful theories of change. Then, for the full criteria for a ToC that can carry a claim: Mayne, J. (2017). <a href="https://ces.journals.uvic.ca/index.php/cjpe/article/view/408" target="_blank" rel="noopener">Theory of change analysis: Building robust theories of change</a>. <em>Canadian Journal of Program Evaluation</em>, 32(2), 155 to 173 (open access).</p>
-  <p class="col">Quick reference: <a href="../reference/0002-toc-card.html">ToC card</a>. Previous lesson: <a href="0001-read-the-question-first.html">Read the question first</a>. Next lesson: <a href="0003-building-the-causal-case.html">Building the causal case</a>.</p>
+    <h2 id="write" data-short="Practice: write it"><span class="n">Practice</span>Write the missing assumptions</h2>
+    <div class="task">
+      <div class="case">
+        <span class="label">Case, invented for practice</span>
+        A school WASH programme in Arua builds handwashing stations next to latrines and trains a school health club. Its ToC has one arrow: "Handwashing stations built, so pupils wash hands with soap after using the latrine." Write the causal link assumptions this arrow needs. Use COM-B to check you have covered all three elements.
+      </div>
+      <label for="ass" class="label" style="margin-top:1.25rem">Your assumptions</label>
+      <textarea id="ass" data-save="l2-assumptions" placeholder="Capability: ...&#10;Opportunity: ...&#10;Motivation: ..."></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" data-reveal="model" data-show="Compare with a model answer" data-hide="Hide the model answer">Compare with a model answer</button>
+        <span class="saved" id="ass-saved"></span>
+      </div>
+      <div class="model" id="model" hidden>
+        <div class="definition">
+          <p><strong>Capability.</strong> Pupils know when and how to wash hands with soap, taught by the health club.<br><strong>Opportunity.</strong> Water and soap are at the stations every school day; stations are unlocked, close to the latrines and usable by small children; there is time between lessons.<br><strong>Motivation.</strong> Teachers and club members prompt and model handwashing, and it becomes what pupils expect of each other.</p>
+        </div>
+        <span class="label">Check yours</span>
+        <ul class="checks" data-tally="tally">
+          <li><label><input type="checkbox" id="k1"> Each assumption is a condition, not an activity or a result</label></li>
+          <li><label><input type="checkbox" id="k2"> Each could be checked with evidence: a spot check, a register, an observation</label></li>
+          <li><label><input type="checkbox" id="k3"> You covered capability, opportunity and motivation</label></li>
+          <li><label><input type="checkbox" id="k4"> You included the plain ones: water, soap, access</label></li>
+        </ul>
+        <p class="tally" id="tally"></p>
+      </div>
+    </div>
 
-  <footer>
-    Test the criteria on a ToC from your own work. Lesson 3 covers how evidence is used to infer causality inside CA, and opens with recall questions from this page.
-  </footer>
-</main>
-<script src="../assets/quiz.js"></script>
-<script>
-  document.getElementById("reveal").addEventListener("click", function () {
-    var m = document.getElementById("model");
-    m.hidden = !m.hidden;
-    this.textContent = m.hidden ? "Show a model answer" : "Hide the model answer";
-  });
-</script>
+    <h2 id="next" data-short="Read next"><span class="n">Next</span>Read Mayne on useful theories of change</h2>
+    <div class="source">
+      <span class="label">Primary sources, open access</span>
+      <p class="ref">Mayne (2019), pp. 176 to 181, the section on useful theories of change. Then Mayne, J. (2017). <a href="https://ces.journals.uvic.ca/index.php/cjpe/article/view/408" target="_blank" rel="noopener">Theory of change analysis: Building robust theories of change</a>. <em>Canadian Journal of Program Evaluation</em>, 32(2), 155 to 173.</p>
+      <p style="margin:0">Keep the <a href="../reference/0002-toc-card.html">ToC card</a> open as you read.</p>
+    </div>
+
+    <ol class="map" aria-label="Course map">
+      <li><span class="no">Lesson 1</span><a href="0001-read-the-question-first.html">Read the question first</a></li>
+      <li class="here"><span class="no">Lesson 2, you are here</span><a href="0002-theories-of-change-that-carry-a-claim.html" aria-current="page">Theories of change that can carry a claim</a></li>
+      <li><span class="no">Lesson 3</span><a href="0003-building-the-causal-case.html">Building the causal case</a></li>
+      <li><span class="no">Lesson 4</span><a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a></li>
+      <li><span class="no">Lesson 5</span><a href="0005-size-and-relative-importance.html">Size and relative importance</a></li>
+      <li><span class="no">Lesson 6</span><a href="0006-running-a-ca-in-practice.html">Running a CA in practice</a></li>
+      <li><span class="no">Lesson 7</span><a href="0007-critiques-and-responses.html">Critiques and responses</a></li>
+      <li><span class="no">Lesson 8</span><a href="0008-ca-among-theory-based-approaches.html">CA among theory-based approaches</a></li>
+    </ol>
+
+    <p class="endnote">Test the criteria on a theory of change from your own work. Lesson 3 covers how evidence is used to infer causality inside CA, and opens with recall questions from this page.</p>
+  </main>
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>
