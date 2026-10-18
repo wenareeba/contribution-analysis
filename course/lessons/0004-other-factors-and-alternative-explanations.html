@@ -1,190 +1,249 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
 <title>Other Factors</title>
+<meta name="description" content="Contribution analysis, Lesson 4: how far an evaluation must examine other factors, Mayne's change of position, the wider debate, and where each factor sits relative to the causal package.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">
-<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<main class="page">
-  <p class="eyebrow">Contribution analysis · Lesson 4 of 8</p>
-  <h1>Other factors and alternative explanations</h1>
-  <p class="lede col">By the end of this page you can say how far a given evaluation must examine other factors, classify each one you find, and judge how well it was examined.</p>
+<div class="lesson">
+  <aside class="rail" aria-label="On this page">
+    <nav><p class="rail-h">Lesson 4 of 8</p><ol></ol></nav>
+  </aside>
 
-  <h2>First, recall Lesson 3</h2>
-  <p class="col">Answer from memory before reading on.</p>
-  <div class="quiz col" data-quiz="recall"></div>
-  <script type="application/json" id="recall">[
+  <main class="main">
+    <p class="kicker"><b>Contribution analysis</b>, lesson 4 of 8</p>
+    <h1>Other factors and alternative explanations</h1>
+    <p class="lede">Almost every intervention works alongside other things: other programmes, prices, policies, the weather. How far an evaluator has to examine them is the most debated question in CA. Five short sections, one exercise to try, five questions and one case to work through.</p>
+
+    <details class="contents-strip"><summary>On this page</summary><ol></ol></details>
+
+    <div class="goal">
+      <span class="label">By the end of this lesson</span>
+      <p>You can say how far a given evaluation must examine other factors, place each one you find relative to the causal package, and judge how well it was examined.</p>
+    </div>
+
+    <h2 id="recall" data-short="Recall Lesson 3"><span class="n">Recall</span>First, two questions from Lesson 3</h2>
+    <p>Answer from memory before reading on.</p>
+    <div class="quiz" data-quiz="recall" data-title="Recall"></div>
+    <script type="application/json" id="recall">[
+      {"stem":"Under Mayne's Table 1, passing a hoop test:",
+       "options":["confirms the causal link beyond doubt","keeps the link plausible without confirming","eliminates every rival explanation at once","measures the size of the contribution"],
+       "answer":1,
+       "feedback":["Hoops never confirm (p. 183).","Passing keeps the link alive; other causal factors may still be at work (p. 183).","Only doubly decisive evidence eliminates rivals (Collier 2011, p. 825).","No test in Table 1 measures size."]},
+      {"stem":"Which part of the claim does a causal narrative of the package support?",
+       "options":["part 2: how it contributed","part 1: that it contributed","neither part of the claim","only claims about effect size"],
+       "answer":0,
+       "feedback":["Sufficiency explains how (p. 182).","Part 1 rests on necessity.","It is central to the claim.","CA does not size contributions on its own."]}
+    ]</script>
+
+    <h2 id="change" data-short="Mayne's change"><span class="n">1</span>Mayne changed his position, and said so</h2>
+    <p>Much of the confusion about other factors in CA comes from reading older guidance as current. Mayne set out the change himself <span class="pg">(2019, p. 175)</span>.</p>
+    <ol class="map" aria-label="Mayne's position over time">
+      <li><span class="no">2011, as Mayne reports it</span>A contribution claim could be made once external factors were shown not to have contributed significantly.</li>
+      <li><span class="no">2012, as Mayne reports it</span>Rival explanations need to be explored.</li>
+      <li class="here"><span class="no">2019</span><strong>Both statements were incorrect.</strong> External factors are usually not rivals but other causal factors at work, and the "alternative" and "rival" labels are inappropriate in complex causality.</li>
+    </ol>
+    <p style="margin-top:1.5rem">His 2019 rule: whether and how the intervention contributed can be explored without examining factors outside the causal package, unless they are causally linked to it. How far to go depends on the question. For "what brought about the impact?", explore the other factors. For "did the intervention contribute, and how?", they need not play a major role <span class="pg">(pp. 175 to 176)</span>.</p>
+
+    <h2 id="debate" data-short="The wider debate"><span class="n">2</span>Other authors give alternative explanations a bigger role</h2>
+    <p><strong>Lemire, Nielsen and Dybdal (2012)</strong> built the Relevant Explanation Finder to identify and weigh influencing factors and alternative explanations. Budhwani and McDavid summarise its criteria: a description of the factor, its type, its level, identifiers that would prove or disprove it, its degree of influence and its implication, with sub-criteria including certainty, robustness, range, prevalence and theoretical grounding <span class="pg">(2017, Table 1, p. 12)</span>.</p>
+    <p><strong>Budhwani and McDavid (2017)</strong> describe alternative explanations as standing in for counterfactuals when testing a theory of change <span class="pg">(p. 4)</span>, and recommend searching for them systematically before collecting data <span class="pg">(p. 12)</span>.</p>
+    <p><strong>Mayne</strong> disagreed with both on this point. He notes that Lemire and colleagues concede in a footnote that alternatives are needed only when comparing the relative contribution of the intervention <span class="pg">(2019, p. 176)</span>.<label for="sn-1" class="sn-ref" aria-label="Side note 1"></label><input type="checkbox" id="sn-1" class="sn-toggle"><span class="sidenote">Ton and colleagues add a practical limit: no evaluation can test every alternative explanation, or spend equal effort on each (2019, p. 6).</span></p>
+
+    <h2 id="where" data-short="Where a factor sits"><span class="n">3</span>Where a factor sits decides what you do about it</h2>
+    <p>Start from Mayne's own distinction between factors inside the causal package and factors outside it <span class="pg">(2019, pp. 174 to 175)</span>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Where it sits</th><th scope="col">What it is</th><th scope="col">What to do</th></tr></thead>
+        <tbody>
+          <tr><td>Inside the package</td><td>A support factor: a condition captured by a causal link assumption, which had to hold for the intervention to work</td><td>Verify it as part of the theory of change and the causal narrative</td></tr>
+          <tr class="key"><td>Outside, linked</td><td>An external factor that acts on the package itself</td><td>Examine it, whatever the question</td></tr>
+          <tr><td>Outside, not linked</td><td>Another causal factor at work on the outcome</td><td>Examine it if the question asks what caused the outcome; otherwise it need not play a major role</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="place" data-short="Place the factors"><span class="n">4</span>Place each factor, then change the question</h2>
+    <p>Case, invented for practice. A school feeding programme in Kotido aims to raise attendance. Place each factor, then switch the evaluation question and watch what you have to do change.</p>
+    <div class="sorter placer" data-placer
+         data-do-inside="Verify it as a causal link assumption in the theory of change."
+         data-do-linked="Examine it whatever the question, because it acts on the package itself."
+         data-do-unlinked-contribution="For this contribution question it need not play a major role."
+         data-do-unlinked-causes="Explore it as part of the answer, because the question asks what caused the outcome.">
+      <span class="label">The evaluation question</span>
+      <div class="q-row">
+        <div class="seg" data-q role="group" aria-label="Evaluation question">
+          <button type="button" data-v="contribution" aria-pressed="true" data-label="Did the feeding programme contribute to higher attendance, and how?">Contribution</button>
+          <button type="button" data-v="causes" data-label="What explains the rise in attendance?">Causes of outcome</button>
+        </div>
+      </div>
+      <p class="place-q">Did the feeding programme contribute to higher attendance, and how?</p>
+      <div class="sort-item place-item" data-answer="inside" data-why="Meals only reach pupils if food arrives. It is a condition the programme's own pathway needs: a support factor.">
+        <p class="ev">The district delivers food to schools on time each term.</p>
+        <div class="sort-opts"><button type="button" data-k="inside">Inside the package</button><button type="button" data-k="linked">Outside, linked</button><button type="button" data-k="unlinked">Outside, not linked</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+        <p class="place-do" aria-live="polite"></p>
+      </div>
+      <div class="sort-item place-item" data-answer="linked" data-why="The strike is not part of the programme, but it stops the programme working: no school, no meals. It acts on the package itself.">
+        <p class="ev">A teachers' strike closes schools for a month, so no meals are served.</p>
+        <div class="sort-opts"><button type="button" data-k="inside">Inside the package</button><button type="button" data-k="linked">Outside, linked</button><button type="button" data-k="unlinked">Outside, not linked</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+        <p class="place-do" aria-live="polite"></p>
+      </div>
+      <div class="sort-item place-item" data-answer="unlinked" data-why="A shorter walk can raise attendance on its own, without touching the feeding pathway: another causal factor at work.">
+        <p class="ev">A new road shortens the walk to school for many pupils.</p>
+        <div class="sort-opts"><button type="button" data-k="inside">Inside the package</button><button type="button" data-k="linked">Outside, linked</button><button type="button" data-k="unlinked">Outside, not linked</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+        <p class="place-do" aria-live="polite"></p>
+      </div>
+      <div class="sort-foot"><span>Place all three, then switch the question.</span><button type="button" class="btn ghost sort-reset">Place again</button></div>
+    </div>
+
+    <h2 id="judge" data-short="Judge the evidence"><span class="n">5</span>Say plainly how strong the evidence on each factor is</h2>
+    <p>The process tracing logic from Lesson 3 applies here too. Under Collier's scheme, a passed smoking gun substantially weakens rival hypotheses, and only doubly decisive evidence eliminates them <span class="pg">(2011, p. 825)</span>. Most evidence on other factors is weaker than that. Report what you examined, how, and how strong the evidence was, so a reader can judge for themselves.</p>
+
+    <h2 id="practice" data-short="Practice: apply it"><span class="n">Practice</span>Apply it to new cases</h2>
+    <p>Five questions that ask you to apply the rule to cases you have not seen. Each answer explains itself, and you can retry the ones you miss.</p>
+    <div class="quiz" data-quiz="q4" data-title="Check yourself"></div>
+    <script type="application/json" id="q4">[
  {
-  "stem": "Under Mayne's Table 1, passing a hoop test:",
+  "stem": "A 2013 evaluation says it \"ruled out all rival explanations before making a contribution claim\", citing Mayne. Read against Mayne (2019), this follows:",
   "options": [
-   "measures the size of the contribution",
-   "confirms the causal link beyond doubt",
-   "keeps the link plausible without confirming",
-   "eliminates every rival explanation at once"
+   "Lemire and colleagues' later footnote concession",
+   "Collier's rule for doubly decisive tests",
+   "a position Mayne later called incorrect",
+   "Mayne's current and fully settled position"
   ],
   "answer": 2,
   "feedback": [
-   "No test in Table 1 measures size.",
-   "Hoops never confirm (p. 183).",
-   "Right.",
-   "Only doubly decisive evidence eliminates rivals (Collier 2011, p. 825)."
+   "That footnote concedes alternatives matter only for relative contribution (Mayne 2019, p. 176).",
+   "Collier describes what a test can do; he does not set a rule for when CA must rule out rivals.",
+   "In 2019 Mayne called his 2011 and 2012 statements on external factors and rivals incorrect (p. 175).",
+   "His 2019 position is that external factors are usually other causal factors, not rivals (p. 175)."
   ]
  },
  {
-  "stem": "Which part of the claim does a causal narrative of the package support?",
+  "stem": "The question is: did a vaccination outreach programme contribute to higher coverage, and how? A fuel shortage grounded its outreach vehicles for two months. The fuel shortage is:",
   "options": [
-   "only claims about effect size",
-   "part 2: how it contributed",
-   "part 1: that it contributed",
-   "neither part of the claim"
-  ],
-  "answer": 1,
-  "feedback": [
-   "CA does not size contributions on its own.",
-   "Right: sufficiency explains how (p. 182).",
-   "Part 1 rests on necessity.",
-   "It is central to the claim."
-  ]
- }
-]</script>
-
-  <h2>1. Why this is the most debated part of CA</h2>
-  <p class="col">Almost every intervention works alongside other things: other programmes, prices, policies, the weather. How far an evaluator has to examine them is where much of the published debate on CA sits. This lesson sets out what the main authors say, in their own terms.</p>
-
-  <h2>2. Mayne's position changed</h2>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>When</th><th>Position</th><th>Source</th></tr></thead>
-      <tbody>
-        <tr><td>2011</td><td>A contribution claim could be made once external factors were shown not to have contributed significantly</td><td>As Mayne reports it (2019, p. 175)</td></tr>
-        <tr><td>2012</td><td>Rival explanations need to be explored</td><td>As Mayne reports it (2019, p. 175)</td></tr>
-        <tr><td>2019</td><td>Both statements were incorrect. External factors are usually not rivals but other causal factors at work; the rival label is inappropriate in complex causality</td><td>Mayne 2019, p. 175</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="col">His 2019 rule: whether and how the intervention contributed can be explored without examining factors outside the causal package, unless they are causally linked to it. How far to go depends on the question. For "what brought about the impact?", explore the other factors. For "did the intervention contribute, and how?", they need not play a major role (pp. 175 to 176).</p>
-
-  <h2>3. Other authors see a bigger role</h2>
-  <div class="with-note">
-    <div>
-      <p><strong>Lemire, Nielsen and Dybdal (2012)</strong> built the Relevant Explanation Finder (REF) to identify and weigh influencing factors and alternative explanations. Budhwani and McDavid (2017, Table 1, p. 12) summarise its criteria: a description of the factor, its type, its level, identifiers that would prove or disprove it, its degree of influence, and its implication, with sub-criteria including certainty, robustness, range, prevalence and theoretical grounding.</p>
-      <p><strong>Budhwani and McDavid (2017)</strong> describe alternative explanations as standing in for counterfactuals when testing a ToC (p. 4), and recommend searching for them systematically before collecting data (p. 12).</p>
-      <p><strong>Mayne (2019, p. 176)</strong> disagreed with both on this point, and notes that Lemire and colleagues themselves concede in a footnote that alternatives are needed only when comparing the relative contribution of the intervention.</p>
-    </div>
-    <aside class="note">Ton et al. (2019, p. 6) add a practical limit: no evaluation can test every alternative explanation, or spend equal effort on each.</aside>
-  </div>
-
-  <h2>4. Inside or outside the package</h2>
-  <p class="col">Mayne's own distinction is the one to start from (2019, pp. 174 to 175):</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Where the factor sits</th><th>What it is</th><th>What to do</th></tr></thead>
-      <tbody>
-        <tr><td>Inside the causal package</td><td>A support factor: a condition captured by a causal link assumption, which had to hold for the intervention to work</td><td>Verify it as part of the theory of change and the causal narrative</td></tr>
-        <tr><td>Outside the package, causally linked</td><td>An external factor that affects the package itself</td><td>Examine it, whatever the question</td></tr>
-        <tr><td>Outside the package, not linked</td><td>Another causal factor at work on the outcome</td><td>Examine it if the question asks what caused the outcome; otherwise it need not play a major role</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>5. Judging the evidence on a factor</h2>
-  <p class="col">The process tracing logic from Lesson 3 applies. Under Collier's scheme (2011, p. 825), a passed smoking gun substantially weakens rival hypotheses, and only doubly decisive evidence eliminates them. Most evidence on other factors is weaker than that, so say plainly how strong it is.</p>
-
-  <h2>Practice: retrieve it</h2>
-  <div class="quiz col" data-quiz="q4"></div>
-  <script type="application/json" id="q4">[
- {
-  "stem": "In 2019, Mayne said external factors are usually:",
-  "options": [
-   "irrelevant to any real evaluation",
-   "proof that the programme failed",
-   "rivals to rule out first",
-   "other causal factors at work"
+   "a support factor to drop from analysis",
+   "an unlinked factor that need not matter",
+   "a rival explanation to rule out first",
+   "outside the package but linked: examine it"
   ],
   "answer": 3,
   "feedback": [
-   "They matter for causes-of-outcome questions and when linked.",
-   "Other factors working does not mean the programme failed.",
-   "That was closer to his 2012 position.",
-   "Right (p. 175)."
+   "Support factors are verified, never dropped; and this one sits outside the programme's own design.",
+   "It is linked: the outreach depended on fuel.",
+   "It does not explain coverage without the programme; it limits the programme.",
+   "It acts on the package itself, by stopping delivery, so it must be examined whatever the question (Mayne 2019, pp. 175 to 176)."
   ]
  },
  {
-  "stem": "Budhwani and McDavid (2017, p. 4) describe alternative explanations as:",
+  "stem": "The same evaluation is re-commissioned with the question \"What explains the rise in coverage?\" What changes for an unlinked factor such as a national media campaign?",
   "options": [
-   "substitutes for counterfactuals in testing",
-   "irrelevant in theory-based evaluation work",
-   "a substitute for the ToC",
-   "evidence that stakeholders disagree strongly"
+   "it becomes a support factor in the package",
+   "it must now be explored in the explanation",
+   "nothing, since unlinked factors never matter in CA",
+   "it must be ruled out as a rival"
+  ],
+  "answer": 1,
+  "feedback": [
+   "Where a factor sits does not change with the question; what you must do about it does.",
+   "A causes-of-outcome question needs the other factors explored as part of the answer (Mayne 2019, p. 176).",
+   "Unlinked factors matter when the question asks what caused the outcome.",
+   "Exploring is not ruling out; the campaign may be a co-cause."
+  ]
+ },
+ {
+  "stem": "Budhwani and McDavid (2017) and Mayne (2019) disagree mainly about:",
+  "options": [
+   "whether alternatives must be examined to show contribution",
+   "whether theories of change need causal link assumptions",
+   "whether contribution analysis can estimate the effect sizes",
+   "whether process tracing tests belong inside contribution analysis"
   ],
   "answer": 0,
   "feedback": [
-   "Right.",
-   "They give them a central role.",
-   "They test the ToC; they do not replace it.",
-   "Disagreement is a separate matter."
+   "Budhwani and McDavid treat alternatives as standing in for counterfactuals (p. 4); Mayne says how far to examine them depends on the question (2019, p. 176).",
+   "Both treat assumptions as central.",
+   "Both agree CA alone does not size contributions.",
+   "Budhwani and McDavid recommend process tracing (p. 13), and Mayne uses its tests."
   ]
  },
  {
-  "stem": "A parallel seed programme made beans available, and the counselling taught mothers to feed beans to children. The seed programme is best treated as:",
+  "stem": "A small evaluation can examine only two of eight other factors in depth. Which choice best follows the guidance in this lesson?",
   "options": [
-   "outside the scope of the evaluation",
-   "a support factor inside the package",
-   "an unlinked factor outside the package",
-   "proof that the counselling programme failed"
+   "the two factors easiest to rule out quickly",
+   "the two factors with the largest budgets attached",
+   "the linked factors, then those the question needs",
+   "the two factors that stakeholders mention most often"
   ],
-  "answer": 1,
+  "answer": 2,
   "feedback": [
-   "It is causally linked, so it is in scope.",
-   "Right: bean availability was a condition the counselling needed.",
-   "It is linked: the counselling relied on beans being available.",
-   "Needing a support factor is compatible with contribution."
-  ]
- },
- {
-  "stem": "According to Collier (2011, p. 825), which test result eliminates rival hypotheses?",
-  "options": [
-   "failing a smoking gun test",
-   "passing a weak straw-in-the-wind test",
-   "passing a hoop test alone",
-   "passing a doubly decisive test"
-  ],
-  "answer": 3,
-  "feedback": [
-   "A failed smoking gun somewhat strengthens rivals.",
-   "It only slightly weakens rivals.",
-   "It somewhat weakens rivals.",
-   "Right."
+   "Ease is not a reason; choosing easy targets biases the analysis.",
+   "Budget size says little about causal role.",
+   "No evaluation can test every alternative, so focus on the most critical (Ton et al. 2019, p. 6); linked factors must be examined, and the question decides the rest (Mayne 2019, pp. 175 to 176).",
+   "Salience in interviews does not set the scope; the question and the causal links do."
   ]
  }
 ]</script>
 
-  <h2>Practice: build an other factors register</h2>
-  <p class="col">Case (invented). A girls' education programme in Arua offers mentoring clubs. Attendance rose. In the same period, the government abolished a school fee, a new road made the school easier to reach, and a radio campaign promoted girls' schooling. The evaluation asks whether the clubs contributed to higher attendance, and how. For each factor, say what role it could play and whether this question requires examining it.</p>
-  <label for="ans" class="eyebrow">Your answer</label>
-  <textarea id="ans" class="col" placeholder="Fee abolition: ...
-New road: ...
-Radio campaign: ..."></textarea>
-  <p><button type="button" class="btn" id="reveal">Show a model answer</button></p>
-  <div id="model" class="col" hidden>
-    <blockquote class="def"><p><strong>Fee abolition.</strong> Plausibly inside the package as a support factor: families need to afford school for mentoring to matter. Verify it as an assumption of the clubs' pathway.<br><strong>New road.</strong> Likely outside the package and not linked: another causal factor at work. For this contribution question it need not play a major role, unless club attendance itself depended on the road.<br><strong>Radio campaign.</strong> Acts on the same attitudes the clubs target, so it is causally linked to the clubs' pathway at the attitude link. Examine it there, for example by asking girls where they heard the messages.</p></blockquote>
-    <ul class="checks">
-      <li><label><input type="checkbox" id="k1"> You placed each factor inside or outside the package</label></li>
-      <li><label><input type="checkbox" id="k2"> Your decisions follow from the question asked</label></li>
-      <li><label><input type="checkbox" id="k3"> You said where in the pathway each factor acts</label></li>
-    </ul>
-  </div>
+    <h2 id="write" data-short="Practice: work a case"><span class="n">Practice</span>Work through three factors</h2>
+    <div class="task">
+      <div class="case">
+        <span class="label">Case, invented for practice</span>
+        A girls' education programme in Arua offers mentoring clubs. Attendance rose. In the same period the government abolished a school fee, a new road made the school easier to reach, and a radio campaign promoted girls' schooling. The evaluation asks whether the clubs contributed to higher attendance, and how. For each factor, say where it sits, where in the pathway it acts, and whether this question requires examining it.
+      </div>
+      <label for="factors" class="label" style="margin-top:1.25rem">Your answer</label>
+      <textarea id="factors" data-save="l4-factors" placeholder="Fee abolition: ...&#10;New road: ...&#10;Radio campaign: ..."></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" data-reveal="model" data-show="Compare with a model answer" data-hide="Hide the model answer">Compare with a model answer</button>
+        <span class="saved" id="factors-saved"></span>
+      </div>
+      <div class="model" id="model" hidden>
+        <div class="definition">
+          <p><strong>Fee abolition.</strong> Plausibly inside the package as a support factor: families need to afford school for mentoring to matter. Verify it as an assumption of the clubs' pathway.<br><strong>New road.</strong> Likely outside the package and not linked: another causal factor at work. For this contribution question it need not play a major role, unless club attendance itself depended on the road.<br><strong>Radio campaign.</strong> It acts on the same attitudes the clubs target, so it is linked at the attitude link. Examine it there, for example by asking girls where they heard the messages.</p>
+        </div>
+        <span class="label">Check yours</span>
+        <ul class="checks" data-tally="tally">
+          <li><label><input type="checkbox" id="k1"> You placed each factor inside or outside the package</label></li>
+          <li><label><input type="checkbox" id="k2"> Your decisions follow from the question asked</label></li>
+          <li><label><input type="checkbox" id="k3"> You said where in the pathway each factor acts</label></li>
+        </ul>
+        <p class="tally" id="tally"></p>
+      </div>
+    </div>
 
-  <h2>Read this next</h2>
-  <p class="col">Mayne (2019), pp. 175 to 176. Then Budhwani, S. and McDavid, J. C. (2017). Contribution analysis: Theoretical and practical challenges and prospects for evaluators. <em>Canadian Journal of Program Evaluation</em>, 32(1), 1 to 24 (open access), especially pp. 4, 7 and 12.</p>
-  <p class="col">Quick reference: <a href="../reference/0004-other-factors-card.html">Other factors card</a>. Previous lesson: <a href="0003-building-the-causal-case.html">Building the causal case</a>. Next lesson: <a href="0005-size-and-relative-importance.html">Size and relative importance</a>.</p>
+    <h2 id="next" data-short="Read next"><span class="n">Next</span>Read both sides of the debate</h2>
+    <div class="source">
+      <span class="label">Primary sources, open access</span>
+      <p class="ref">Mayne (2019), pp. 175 to 176. Then Budhwani, S. and McDavid, J. C. (2017). <a href="https://doi.org/10.3138/cjpe.31121" target="_blank" rel="noopener">Contribution analysis: Theoretical and practical challenges and prospects for evaluators</a>. <em>Canadian Journal of Program Evaluation</em>, 32(1), 1 to 24, especially pp. 4, 7 and 12.</p>
+      <p style="margin:0">Keep the <a href="../reference/0004-other-factors-card.html">other factors card</a> open, and record what you find in the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/other-factors-register.csv" target="_blank" rel="noopener">other factors register</a>.</p>
+    </div>
 
-  <footer>Run the other factors register on your own evaluation. Lesson 5 covers size and relative importance.</footer>
-</main>
-<script src="../assets/quiz.js"></script>
-<script>
-  document.getElementById("reveal").addEventListener("click", function () {
-    var m = document.getElementById("model");
-    m.hidden = !m.hidden;
-    this.textContent = m.hidden ? "Show a model answer" : "Hide the model answer";
-  });
-</script>
+    <ol class="map" aria-label="Course map">
+      <li><span class="no">Lesson 1</span><a href="0001-read-the-question-first.html">Read the question first</a></li>
+      <li><span class="no">Lesson 2</span><a href="0002-theories-of-change-that-carry-a-claim.html">Theories of change that can carry a claim</a></li>
+      <li><span class="no">Lesson 3</span><a href="0003-building-the-causal-case.html">Building the causal case</a></li>
+      <li class="here"><span class="no">Lesson 4, you are here</span><a href="0004-other-factors-and-alternative-explanations.html" aria-current="page">Other factors and alternative explanations</a></li>
+      <li><span class="no">Lesson 5</span><a href="0005-size-and-relative-importance.html">Size and relative importance</a></li>
+      <li><span class="no">Lesson 6</span><a href="0006-running-a-ca-in-practice.html">Running a CA in practice</a></li>
+      <li><span class="no">Lesson 7</span><a href="0007-critiques-and-responses.html">Critiques and responses</a></li>
+      <li><span class="no">Lesson 8</span><a href="0008-ca-among-theory-based-approaches.html">CA among theory-based approaches</a></li>
+    </ol>
+
+    <p class="endnote">Run the other factors register on an evaluation of your own. Lesson 5 covers size and relative importance, and opens with recall questions from this page.</p>
+  </main>
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

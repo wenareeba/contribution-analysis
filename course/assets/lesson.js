@@ -10,7 +10,8 @@
    - Pathway explorer: <div data-pathway> with .pw-link[data-panel] buttons and .pw-panel elements.
    - Degree control: <div data-degree> with button[data-out] options and a .degree-out element.
    - Evidence sorter: <div data-sorter> with .sort-item[data-answer][data-why] and buttons [data-k].
-   - Likelihood reasoning: <div data-lr> with two .seg[data-q=t|f] groups of buttons [data-v=hi|lo]. */
+   - Likelihood reasoning: <div data-lr> with two .seg[data-q=t|f] groups of buttons [data-v=hi|lo].
+   - Factor placer: <div data-placer> with a question .seg[data-q] and .place-item[data-answer] items. */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -213,7 +214,7 @@
           bs.forEach(function (x) { x.disabled = true; x.classList.add("faded"); });
           rightBtn.classList.remove("faded"); rightBtn.classList.add("right");
           if (!ok) { b.classList.remove("faded"); b.classList.add("wrong"); }
-          fb.innerHTML = (ok ? "<strong>Right.</strong> " : "<strong>Not quite: " + rightBtn.textContent.toLowerCase() + ".</strong> ") + it.dataset.why;
+          fb.innerHTML = (ok ? "<strong>Right.</strong> " : "<strong>Not quite.</strong> Best fit: " + rightBtn.textContent + ". ") + it.dataset.why;
           done++; if (ok) right++; upd();
         });
       });
@@ -238,5 +239,39 @@
     });
     function draw() { var k = "msg" + state.t.charAt(0).toUpperCase() + state.t.slice(1) + state.f.charAt(0).toUpperCase() + state.f.slice(1); out.innerHTML = lr.dataset[k] || ""; lr.dataset.level = k === "msgLoHi" ? "none" : ""; }
     draw();
+  });
+  /* factor placer: question .seg[data-q] buttons [data-v]; items .place-item[data-answer] with buttons [data-k];
+     the verdict for each placed item comes from data-do-inside, data-do-linked, data-do-unlinked-<question> on the root */
+  $$("[data-placer]").forEach(function (pl) {
+    var q = "contribution", qbs = $$(".seg[data-q] button", pl), items = $$(".place-item", pl);
+    function verdict(k) { var d = pl.dataset; return k === "unlinked" ? d["doUnlinked" + q.charAt(0).toUpperCase() + q.slice(1)] : d["do" + k.charAt(0).toUpperCase() + k.slice(1)]; }
+    function drawItem(it) {
+      var v = $(".place-do", it); if (!it.dataset.placed) { v.innerHTML = ""; return; }
+      v.innerHTML = "<strong>What to do.</strong> " + verdict(it.dataset.answer);
+    }
+    qbs.forEach(function (b) {
+      b.addEventListener("click", function () {
+        q = b.dataset.v; qbs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
+        var lab = $(".place-q", pl); if (lab) lab.textContent = b.dataset.label || "";
+        items.forEach(drawItem);
+      });
+    });
+    items.forEach(function (it) {
+      var bs = $$("button[data-k]", it), fb = $(".sort-fb", it);
+      bs.forEach(function (b) {
+        b.addEventListener("click", function () {
+          var ok = b.dataset.k === it.dataset.answer, rb = bs.filter(function (x) { return x.dataset.k === it.dataset.answer; })[0];
+          bs.forEach(function (x) { x.disabled = true; x.classList.add("faded"); });
+          rb.classList.remove("faded"); rb.classList.add("right");
+          if (!ok) { b.classList.remove("faded"); b.classList.add("wrong"); }
+          fb.innerHTML = (ok ? "<strong>Right.</strong> " : "<strong>Not quite.</strong> Best fit: " + rb.textContent + ". ") + it.dataset.why;
+          it.dataset.placed = "1"; drawItem(it);
+        });
+      });
+    });
+    var reset = $(".sort-reset", pl);
+    if (reset) reset.addEventListener("click", function () {
+      items.forEach(function (it) { $$("button[data-k]", it).forEach(function (x) { x.disabled = false; x.className = ""; }); $(".sort-fb", it).innerHTML = ""; delete it.dataset.placed; drawItem(it); });
+    });
   });
 })();

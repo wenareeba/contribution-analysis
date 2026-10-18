@@ -224,6 +224,14 @@ tr.key td:last-child { color: var(--accent); font-weight: 600; }
 .sort-fb:empty { display: none; }
 .sort-foot { display: flex; justify-content: space-between; align-items: center; gap: 1rem; margin-top: 1rem; font-size: .85rem; color: var(--muted); }
 
+/* factor placer */
+.placer .q-row { display: flex; flex-wrap: wrap; align-items: center; gap: .4rem 1rem; margin: .4rem 0 .2rem; }
+.placer .q-row .seg { margin: 0; background: var(--surface); }
+.place-q { font-family: var(--serif); font-style: italic; font-size: 1rem; color: var(--ink-2); margin: .4rem 0 0; }
+.place-do { margin: .5rem 0 0; font-size: .88rem; line-height: 1.5; color: var(--accent); }
+.place-do:empty { display: none; }
+.place-do strong { color: var(--ink); }
+
 /* likelihood reasoning */
 .lr .q-line { font-family: var(--sans); font-size: .9rem; color: var(--ink-2); margin: .2rem 0 0; }
 .lr .seg { margin-bottom: .6rem; }
