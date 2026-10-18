@@ -1,254 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
 <title>Building the Causal Case</title>
+<meta name="description" content="Contribution analysis, Lesson 3: necessity and sufficiency, Mayne's six evidence tools, the four process tracing tests, and reasoning about confidence.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">
-<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<main class="page">
-  <p class="eyebrow">Contribution analysis · Lesson 3 of 8</p>
-  <h1>Building the causal case</h1>
-  <p class="lede col">By the end of this page you can sort any piece of evidence by what it can and cannot show about a causal link, and assemble the evidence for both parts of a contribution claim.</p>
+<div class="lesson">
+  <aside class="rail" aria-label="On this page">
+    <nav><p class="rail-h">Lesson 3 of 8</p><ol></ol></nav>
+  </aside>
 
-  <h2>First, recall Lesson 2</h2>
-  <p class="col">Answer from memory before reading on.</p>
-  <div class="quiz col" data-quiz="recall"></div>
-  <script type="application/json" id="recall">[
- {
-  "stem": "Mayne (2019, p. 172) says a theory of change adds what to an impact pathway?",
-  "options": [
-   "targets for every indicator in it",
-   "a budget for each planned activity",
-   "the causal assumptions behind each link",
-   "a list of stakeholders and roles"
-  ],
-  "answer": 2,
-  "feedback": [
-   "Targets are useful, but they are not what makes a pathway a theory.",
-   "Budgets belong to plans, not to causal theories.",
-   "Right: what has to happen for each link to work.",
-   "Stakeholder lists help, but they do not explain causation."
-  ]
- },
- {
-  "stem": "COM-B says behaviour changes through capability, motivation and:",
-  "options": [
-   "outcome",
-   "opportunity",
-   "output",
-   "ownership"
-  ],
-  "answer": 1,
-  "feedback": [
-   "Outcomes come after behaviour change.",
-   "Right (Mayne 2019, pp. 178 to 179).",
-   "Outputs are what the programme delivers.",
-   "Ownership matters, but it is not one of the three elements."
-  ]
- },
- {
-  "stem": "A ToC for a complex programme should be unpacked into:",
-  "options": [
-   "a logframe with indicator targets",
-   "a list of planned activities",
-   "one simplified overview diagram only",
-   "nested ToCs with explicit assumptions"
-  ],
-  "answer": 3,
-  "feedback": [
-   "Logframes track delivery; they rarely state causal assumptions.",
-   "Activities are only the start of the pathway.",
-   "Overviews orient readers but usually lack link assumptions.",
-   "Right: nested ToCs are the level CA tests (p. 178)."
-  ]
- }
-]</script>
+  <main class="main">
+    <p class="kicker"><b>Contribution analysis</b>, lesson 3 of 8</p>
+    <h1>Building the causal case</h1>
+    <p class="lede">Each piece of evidence can do one job in a contribution claim, and only one. This lesson teaches you to tell which job, and to know what a pile of evidence can and cannot prove. Five short sections, two exercises to try, five questions and one evidence plan to write.</p>
 
-  <h2>1. Two parts of the claim need two kinds of evidence</h2>
-  <div class="with-note">
-    <div>
-      <p>A contribution claim says the intervention contributed, and how. Mayne (2019, p. 182) ties each part to a different job for the evidence:</p>
-      <ul>
-        <li><strong>Necessity</strong> shows the intervention was an essential member of the causal package. That supports part 1: it contributed.</li>
-        <li><strong>Sufficiency</strong> shows the package as a whole was enough to bring about the change. That supports part 2: here is how.</li>
-      </ul>
-      <p>Mayne adds a warning about sufficiency. Data showing that each result and assumption happened is not enough on its own. You also need a credible causal narrative that explains why the package worked (pp. 182 to 183).</p>
+    <details class="contents-strip"><summary>On this page</summary><ol></ol></details>
+
+    <div class="goal">
+      <span class="label">By the end of this lesson</span>
+      <p>You can sort any piece of evidence by what it can and cannot show about a causal link, and assemble the evidence for both parts of a contribution claim.</p>
     </div>
-    <aside class="note">Mayne draws on Pearl and Mackenzie's point that statistics alone cannot establish causation without good explanatory theory (2019, pp. 182 to 183).</aside>
-  </div>
 
-  <h2>2. Six tools, and the question each one answers</h2>
-  <p class="col">Mayne's Table 1 (2019, p. 184) groups the evidence tools by what they can do. Read the right-hand column as the question to put to your evidence.</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Tool</th><th>Kind</th><th>Ask</th></tr></thead>
-      <tbody>
-        <tr><td>Verify the pathway and assumptions</td><td>Checking that change occurred</td><td>Did each result and each causal link assumption actually happen? Without this, no claim about that link is possible (p. 183).</td></tr>
-        <tr><td>Logical, plausible time sequence</td><td>Hoop</td><td>Did causes come before effects, and assumptions before the results they support? Is the timing plausible? A result that appears earlier than expected may point to something else at work (pp. 183 to 184).</td></tr>
-        <tr><td>Reasonable effort expended</td><td>Hoop</td><td>Was the intervention, with its partners, big enough to produce results of this size (pp. 184 to 185)?</td></tr>
-        <tr><td>Expected-to-see effects realised</td><td>Hoop</td><td>If the link worked, what secondary effects should we see? Are they there (p. 185)?</td></tr>
-        <tr><td>Causal packages are sufficient</td><td>Building the causal narrative</td><td>What barriers to change did the assumptions need to overcome, and what mechanisms were at work (p. 185)?</td></tr>
-        <tr><td>Some unique effects observed</td><td>Confirming a causal factor</td><td>Is there an effect that could only appear if the intervention was part of the package (p. 186)?</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div class="caution col">
-    <p class="eyebrow">What hoops can and cannot do</p>
-    <p>Failing a hoop test makes causality very unlikely. Passing one does not confirm it, because other causal factors may also be at work (Mayne 2019, p. 183). A pile of passed hoops is still a pile of hoops.</p>
-  </div>
+    <h2 id="recall" data-short="Recall Lesson 2"><span class="n">Recall</span>First, three questions from Lesson 2</h2>
+    <p>Answer from memory before reading on.</p>
+    <div class="quiz" data-quiz="recall" data-title="Recall"></div>
+    <script type="application/json" id="recall">[
+      {"stem":"Mayne (2019, p. 172) says a theory of change adds what to an impact pathway?",
+       "options":["targets for every indicator in it","a budget for each planned activity","the causal assumptions behind each link","a list of stakeholders and roles"],
+       "answer":2,
+       "feedback":["Targets are useful, but they are not what makes a pathway a theory.","Budgets belong to plans, not to causal theories.","What has to happen for each link to work.","Stakeholder lists help, but they do not explain causation."]},
+      {"stem":"COM-B says behaviour changes through capability, motivation and:",
+       "options":["outcome","opportunity","output","ownership"],
+       "answer":1,
+       "feedback":["Outcomes come after behaviour change.","Mayne 2019, pp. 178 to 179.","Outputs are what the programme delivers.","Ownership matters, but it is not one of the three elements."]},
+      {"stem":"A theory of change for a complex programme should be unpacked into:",
+       "options":["one simplified overview diagram only","nested ToCs with explicit assumptions","a logframe with indicator targets","a list of planned activities"],
+       "answer":1,
+       "feedback":["Overviews orient readers but usually lack link assumptions.","Nested ToCs are the level CA tests (p. 178).","Logframes track delivery; they rarely state causal assumptions.","Activities are only the start of the pathway."]}
+    ]</script>
 
-  <h2>3. The four process tracing tests</h2>
-  <p class="col">Mayne borrows two test types from process tracing. Collier (2011, Table 1, p. 825) sets out the full set of four, classified by whether passing the test is necessary and whether it is sufficient for affirming a causal inference:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Test</th><th>Necessary?</th><th>Sufficient?</th><th>If passed</th><th>If failed</th></tr></thead>
-      <tbody>
-        <tr><td>Straw-in-the-wind</td><td>No</td><td>No</td><td>Affirms relevance; does not confirm</td><td>Hypothesis weakened slightly, not eliminated</td></tr>
-        <tr><td>Hoop</td><td>Yes</td><td>No</td><td>Affirms relevance; does not confirm</td><td>Hypothesis eliminated</td></tr>
-        <tr><td>Smoking gun</td><td>No</td><td>Yes</td><td>Hypothesis confirmed</td><td>Weakened somewhat, not eliminated</td></tr>
-        <tr><td>Doubly decisive</td><td>Yes</td><td>Yes</td><td>Confirmed, and rivals eliminated</td><td>Hypothesis eliminated</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="col">Collier calls these categories a useful heuristic that should not be applied rigidly (p. 825). In Mayne's table, the time sequence, effort and expected-effects checks work as hoops, and unique effects work as a smoking gun (2019, pp. 183, 186). Doubly decisive evidence is rare in real evaluations.</p>
-
-  <h2>4. From proof to confidence</h2>
-  <div class="with-note">
-    <div>
-      <p>Befani and Mayne (2014) combined CA with process tracing. They argue that process tracing tests and Bayesian principles can judge the strength of qualitative and mixed evidence inside a CA, shifting impact evaluation from "assessing impact" to "assessing confidence" about impact.</p>
-      <p>The practical idea is simple. For each piece of evidence, ask two questions. How likely would I be to find this if the claim were true? And how likely if it were false? Evidence you would expect to see either way tells you little. Evidence that is likely only if the claim is true moves your confidence a long way.</p>
-      <p>Ton and colleagues describe updating confidence in each causal step as evidence arrives (Ton et al. 2019, p. 8).</p>
-    </div>
-    <aside class="note">For a worked introduction, see Punton and Barnett's (2018) Itad brief on CA and Bayesian confidence updating, listed in the bibliography.</aside>
-  </div>
-
-  <h2>5. A worked sort</h2>
-  <p class="col">Case (invented). A district programme in Kasese trains village health teams to counsel mothers on child feeding, using a picture card designed only for this programme. Here is how five pieces of evidence sort:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Evidence</th><th>Tool</th><th>What it can show</th></tr></thead>
-      <tbody>
-        <tr><td>Session registers show 90% of planned sessions held</td><td>Verification</td><td>The first link happened (implementation)</td></tr>
-        <tr><td>Diets improved after sessions began, not before</td><td>Hoop: time sequence</td><td>The claim survives; nothing confirmed yet</td></tr>
-        <tr><td>Mothers can describe the advice weeks later</td><td>Hoop: expected effect</td><td>The learning link is plausible</td></tr>
-        <tr><td>Mothers explain that in-laws agreed after a health worker visited</td><td>Sufficiency narrative</td><td>How a barrier was overcome</td></tr>
-        <tr><td>Households use the programme's own picture card at meals</td><td>Smoking gun</td><td>The programme was part of the causal package</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>Practice: retrieve it</h2>
-  <div class="quiz col" data-quiz="q3"></div>
-  <script type="application/json" id="q3">[
- {
-  "stem": "Mayne (2019, pp. 182 to 183) says that showing every result and assumption happened is:",
-  "options": [
-   "not enough without a credible causal narrative",
-   "irrelevant once a comparison group is available",
-   "only ever needed for very complex interventions",
-   "enough to prove sufficiency on its own"
-  ],
-  "answer": 0,
-  "feedback": [
-   "Right. You also need a narrative explaining why the package worked.",
-   "CA does not rely on comparison groups.",
-   "It is needed for every claim.",
-   "He says the opposite: data alone is not enough."
-  ]
- },
- {
-  "stem": "A result appeared well before the intervention's activities started. This is:",
-  "options": [
-   "a sign the ToC is nested",
-   "a failed hoop on time sequence",
-   "a passed smoking gun test result",
-   "evidence of a strong causal mechanism"
-  ],
-  "answer": 1,
-  "feedback": [
-   "Nesting is about how a ToC is drawn.",
-   "Right. Cause must come before effect; something else may be at work (pp. 183 to 184).",
-   "A smoking gun is an effect only the intervention could produce.",
-   "Timing tells you nothing about mechanism here."
-  ]
- },
- {
-  "stem": "Under Collier's (2011) scheme, failing a hoop test means the hypothesis is:",
-  "options": [
-   "strongly confirmed",
-   "left unaffected",
-   "slightly weakened",
-   "effectively eliminated"
-  ],
-  "answer": 3,
-  "feedback": [
-   "Failing never confirms.",
-   "A failed hoop is decisive against the hypothesis.",
-   "That describes a failed straw-in-the-wind.",
-   "Right: passing is necessary, so failing eliminates it (p. 825)."
-  ]
- },
- {
-  "stem": "Which evidence would most raise confidence that a programme was in the causal package?",
-  "options": [
-   "the programme spent its full planned budget",
-   "participants say the programme was very useful",
-   "an effect only possible through the programme",
-   "outcomes improved during the programme's whole lifetime"
-  ],
-  "answer": 2,
-  "feedback": [
-   "Effort is a plausibility hoop, not confirmation.",
-   "Opinion about the contribution cannot ground the claim (p. 175).",
-   "Right: a unique effect, the smoking gun (p. 186).",
-   "Timing alone is a hoop; other causes are possible."
-  ]
- },
- {
-  "stem": "Befani and Mayne (2014) describe combining CA with process tracing as a shift towards:",
-  "options": [
-   "assessing confidence about impact",
-   "replacing theories of change",
-   "using only quantitative data",
-   "estimating precise effect sizes"
-  ],
-  "answer": 0,
-  "feedback": [
-   "Right.",
-   "The ToC remains the backbone.",
-   "They argue for judging qualitative and mixed evidence.",
-   "Their aim is confidence, not effect size."
-  ]
- }
-]</script>
-
-  <h2>Practice: classify and narrate</h2>
-  <p class="col">Case (invented). A climate adaptation programme in Kotido trains farmers to plant drought-tolerant sorghum. Yields rose in villages where farmers adopted the variety. For the link "farmers trained → farmers plant the new variety", list one piece of evidence for each of: verification, a hoop test, the sufficiency narrative, and a smoking gun. Say what each would show.</p>
-  <label for="ans" class="eyebrow">Your answer</label>
-  <textarea id="ans" class="col" placeholder="Verification: ...
-Hoop: ...
-Sufficiency: ...
-Smoking gun: ..."></textarea>
-  <p><button type="button" class="btn" id="reveal">Show a model answer</button></p>
-  <div id="model" class="col" hidden>
-    <blockquote class="def"><p><strong>Verification.</strong> Seed distribution records and farm visits show trained farmers planted the variety.<br><strong>Hoop (time sequence).</strong> Planting followed the training season, not before it.<br><strong>Sufficiency narrative.</strong> Farmers explain that training showed them spacing and planting dates, and that seed was available locally on credit, which overcame the cost barrier.<br><strong>Smoking gun.</strong> Farmers use a planting technique taught only in the programme's demonstration plots.</p></blockquote>
-    <ul class="checks">
-      <li><label><input type="checkbox" id="k1"> Each item says what it shows, not just what it is</label></li>
-      <li><label><input type="checkbox" id="k2"> Your hoop could fail, and would hurt the claim if it did</label></li>
-      <li><label><input type="checkbox" id="k3"> Your smoking gun could only appear if the programme was involved</label></li>
+    <h2 id="two-jobs" data-short="Two kinds of evidence"><span class="n">1</span>The two parts of the claim need two kinds of evidence</h2>
+    <p>A contribution claim says the intervention contributed, and how. Mayne ties each part to a different job for the evidence <span class="pg">(2019, p. 182)</span>:</p>
+    <ul class="plain">
+      <li><strong>Necessity</strong> shows the intervention was an essential member of the causal package. That supports part 1: it contributed.</li>
+      <li><strong>Sufficiency</strong> shows the package as a whole was enough to bring about the change. That supports part 2: here is how.</li>
     </ul>
-  </div>
+    <p>Mayne adds a warning about sufficiency. Data showing that each result and assumption happened is not enough on its own. You also need a credible causal narrative that explains why the package worked <span class="pg">(pp. 182 to 183)</span>.<label for="sn-1" class="sn-ref" aria-label="Side note 1"></label><input type="checkbox" id="sn-1" class="sn-toggle"><span class="sidenote">Mayne draws on Pearl and Mackenzie's point that statistics alone cannot establish causation without good explanatory theory (2019, pp. 182 to 183).</span></p>
 
-  <h2>Read this next</h2>
-  <p class="col">Mayne (2019), pp. 182 to 186, and Table 1 on p. 184. Then Collier, D. (2011). Understanding process tracing. <em>PS: Political Science and Politics</em>, 44(4), 823 to 830, Table 1 on p. 825.</p>
-  <p class="col">Quick reference: <a href="../reference/0003-evidence-card.html">Evidence card</a>. Previous lesson: <a href="0002-theories-of-change-that-carry-a-claim.html">Theories of change that can carry a claim</a>. Next lesson: <a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a>.</p>
+    <h2 id="tools" data-short="Six tools"><span class="n">2</span>Each of Mayne's six tools answers a different question</h2>
+    <p>Mayne's Table 1 groups the evidence tools by what they can do <span class="pg">(2019, p. 184)</span>. Read the last column as the question to put to your evidence.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Tool</th><th scope="col">Kind</th><th scope="col">Ask of your evidence</th></tr></thead>
+        <tbody>
+          <tr><td>Verify the pathway and assumptions</td><td class="quiet">Checking that change occurred</td><td>Did each result and each causal link assumption actually happen? Without this, no claim about that link is possible <span class="pg">(p. 183)</span>.</td></tr>
+          <tr><td>Logical, plausible time sequence</td><td class="quiet">Hoop</td><td>Did causes come before effects, and assumptions before the results they support? A result appearing earlier than expected may point to something else at work <span class="pg">(pp. 183 to 184)</span>.</td></tr>
+          <tr><td>Reasonable effort expended</td><td class="quiet">Hoop</td><td>Was the intervention, with its partners, big enough to produce results of this size? <span class="pg">(pp. 184 to 185)</span></td></tr>
+          <tr><td>Expected effects realised</td><td class="quiet">Hoop</td><td>If the link worked, what secondary effects should appear? Are they there? <span class="pg">(p. 185)</span></td></tr>
+          <tr><td>Causal packages are sufficient</td><td class="quiet">Building the narrative</td><td>What barriers did the assumptions overcome, and what mechanisms were at work? <span class="pg">(p. 185)</span></td></tr>
+          <tr class="key"><td>Some unique effects observed</td><td>Confirming a causal factor</td><td>Is there an effect that could only appear if the intervention was part of the package? <span class="pg">(p. 186)</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="caution">
+      <span class="label">What hoops can and cannot do</span>
+      <p>Failing a hoop makes causality very unlikely. Passing one does not confirm it, because other causal factors may also be at work <span class="pg">(Mayne 2019, p. 183)</span>. A pile of passed hoops is still a pile of hoops.</p>
+    </div>
 
-  <footer>Sort a piece of your own evidence with the table above. Lesson 4 covers other factors and alternative explanations, and opens with recall questions from this page.</footer>
-</main>
-<script src="../assets/quiz.js"></script>
-<script>
-  document.getElementById("reveal").addEventListener("click", function () {
-    var m = document.getElementById("model");
-    m.hidden = !m.hidden;
-    this.textContent = m.hidden ? "Show a model answer" : "Hide the model answer";
-  });
-</script>
+    <h2 id="sort" data-short="Sort the evidence"><span class="n">3</span>Sort the evidence before you weigh it</h2>
+    <p>Case, invented for practice. A district programme in Kasese trains village health teams to counsel mothers on child feeding, using a picture card designed only for this programme. Sort each piece of evidence by the job it does.</p>
+    <div class="sorter" data-sorter>
+      <span class="label">Choose the tool each finding belongs to</span>
+      <div class="sort-item" data-answer="verify" data-why="It shows the first link happened. It is the base for any claim, but says nothing yet about causation.">
+        <p class="ev">Session registers show 90% of planned sessions were held.</p>
+        <div class="sort-opts"><button type="button" data-k="verify">Verification</button><button type="button" data-k="hoop">Hoop</button><button type="button" data-k="suff">Sufficiency narrative</button><button type="button" data-k="gun">Smoking gun</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+      </div>
+      <div class="sort-item" data-answer="hoop" data-why="Time sequence. Had diets improved before the sessions, the claim would be in trouble. Passing keeps it alive; nothing is confirmed yet.">
+        <p class="ev">Diets improved after the sessions began, not before.</p>
+        <div class="sort-opts"><button type="button" data-k="verify">Verification</button><button type="button" data-k="hoop">Hoop</button><button type="button" data-k="suff">Sufficiency narrative</button><button type="button" data-k="gun">Smoking gun</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+      </div>
+      <div class="sort-item" data-answer="hoop" data-why="An expected effect. If counselling worked, mothers should remember the advice; its absence would hurt the claim, its presence only keeps the learning link plausible.">
+        <p class="ev">Mothers can describe the advice several weeks later.</p>
+        <div class="sort-opts"><button type="button" data-k="verify">Verification</button><button type="button" data-k="hoop">Hoop</button><button type="button" data-k="suff">Sufficiency narrative</button><button type="button" data-k="gun">Smoking gun</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+      </div>
+      <div class="sort-item" data-answer="suff" data-why="It explains how a barrier was overcome: the mechanism that let the package work. That is what part 2 of the claim needs.">
+        <p class="ev">Mothers explain that their in-laws agreed to new meals after a health worker visited the household.</p>
+        <div class="sort-opts"><button type="button" data-k="verify">Verification</button><button type="button" data-k="hoop">Hoop</button><button type="button" data-k="suff">Sufficiency narrative</button><button type="button" data-k="gun">Smoking gun</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+      </div>
+      <div class="sort-item" data-answer="gun" data-why="The card exists only in this programme, so its use at meals could hardly appear unless the programme was part of the package: a unique effect.">
+        <p class="ev">Households use the programme's own picture card at meal times.</p>
+        <div class="sort-opts"><button type="button" data-k="verify">Verification</button><button type="button" data-k="hoop">Hoop</button><button type="button" data-k="suff">Sufficiency narrative</button><button type="button" data-k="gun">Smoking gun</button></div>
+        <p class="sort-fb" aria-live="polite"></p>
+      </div>
+      <div class="sort-foot"><span class="sort-score" aria-live="polite"></span><button type="button" class="btn ghost sort-reset">Sort again</button></div>
+    </div>
+
+    <h2 id="tests" data-short="Four tests"><span class="n">4</span>Process tracing classifies tests by necessity and sufficiency</h2>
+    <p>Mayne borrows two test types from process tracing. Collier sets out all four, classified by whether passing is necessary and whether it is sufficient for affirming a causal inference <span class="pg">(2011, Table 1, p. 825)</span>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Test</th><th scope="col">Necessary</th><th scope="col">Sufficient</th><th scope="col">If passed</th><th scope="col">If failed</th></tr></thead>
+        <tbody>
+          <tr><td>Straw-in-the-wind</td><td class="quiet">No</td><td class="quiet">No</td><td>Affirms relevance; does not confirm</td><td>Weakened slightly, not eliminated</td></tr>
+          <tr><td>Hoop</td><td>Yes</td><td class="quiet">No</td><td>Affirms relevance; does not confirm</td><td>Eliminated</td></tr>
+          <tr class="key"><td>Smoking gun</td><td class="quiet">No</td><td>Yes</td><td>Confirmed</td><td>Weakened somewhat, not eliminated</td></tr>
+          <tr><td>Doubly decisive</td><td>Yes</td><td>Yes</td><td>Confirmed, and rivals eliminated</td><td>Eliminated</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Collier calls these categories a useful heuristic that should not be applied rigidly <span class="pg">(p. 825)</span>. In Mayne's table, the time sequence, effort and expected effects checks work as hoops, and unique effects work as a smoking gun <span class="pg">(2019, pp. 183, 186)</span>. Doubly decisive evidence is rare in real evaluations.</p>
+
+    <h2 id="confidence" data-short="From proof to confidence"><span class="n">5</span>Ask how likely the evidence is if the claim were false</h2>
+    <p>Befani and Mayne combined CA with process tracing. They argue that process tracing tests and Bayesian principles can judge the strength of qualitative and mixed evidence inside a CA, shifting the work from "assessing impact" to "assessing confidence" about impact <span class="pg">(2014)</span>.<label for="sn-2" class="sn-ref" aria-label="Side note 2"></label><input type="checkbox" id="sn-2" class="sn-toggle"><span class="sidenote">Ton and colleagues describe updating confidence in each causal step as evidence arrives (2019, p. 8). Punton and Barnett's (2018) Itad brief is a short worked introduction; it is in the bibliography.</span> The practical idea is two questions per finding. Try them.</p>
+    <div class="degree lr" data-lr
+         data-msg-hi-hi="&lt;b&gt;Little movement&lt;/b&gt;You would expect this finding whether or not the claim is true, so finding it barely moves your confidence. Not finding it would count against the claim. That is how a hoop works."
+         data-msg-hi-lo="&lt;b&gt;A long way&lt;/b&gt;This finding is likely only if the claim is true, so finding it moves your confidence a long way. That is the logic of a unique effect, the smoking gun."
+         data-msg-lo-hi="&lt;b&gt;Against the claim&lt;/b&gt;This finding is more likely if the claim is false. Finding it should lower your confidence."
+         data-msg-lo-lo="&lt;b&gt;Hard to read&lt;/b&gt;The finding is unlikely either way, so its weight depends on how unlikely under each. Gather more before leaning on it.">
+      <p class="q-line">If the claim is true, how likely is this finding?</p>
+      <div class="seg" data-q="t" role="group" aria-label="Likelihood if the claim is true"><button type="button" data-v="hi" aria-pressed="true">Likely</button><button type="button" data-v="lo">Unlikely</button></div>
+      <p class="q-line">If the claim is false, how likely is it?</p>
+      <div class="seg" data-q="f" role="group" aria-label="Likelihood if the claim is false"><button type="button" data-v="hi">Likely</button><button type="button" data-v="lo" aria-pressed="true">Unlikely</button></div>
+      <p class="degree-out" aria-live="polite"></p>
+    </div>
+    <p>Evidence you would expect to see either way tells you little. Evidence that is likely only if the claim is true is what moves confidence.</p>
+
+    <h2 id="practice" data-short="Practice: apply it"><span class="n">Practice</span>Apply it to new cases</h2>
+    <p>Five questions that ask you to weigh evidence you have not seen. Each answer explains itself, and you can retry the ones you miss.</p>
+    <div class="quiz" data-quiz="q3" data-title="Check yourself"></div>
+    <script type="application/json" id="q3">[
+ {
+  "stem": "An evaluation passes six hoop tests along the pathway and finds no unique effects. The strongest statement the evidence supports is that:",
+  "options": [
+   "the intervention is confirmed as a causal factor",
+   "the intervention is eliminated as a causal factor",
+   "the evidence is doubly decisive across every link",
+   "the claim survives, but no causal role confirmed"
+  ],
+  "answer": 3,
+  "feedback": [
+   "Confirmation needs a unique effect, the smoking gun (p. 186). Six hoops are still six hoops.",
+   "Elimination follows from failing a hoop, not from passing them.",
+   "Doubly decisive evidence must also be sufficient; hoops are necessary only (Collier 2011, p. 825).",
+   "Passing hoops keeps a claim alive; it does not confirm causality, because other causal factors may be at work (Mayne 2019, p. 183)."
+  ]
+ },
+ {
+  "stem": "Which finding most raises confidence that a programme's policy brief shaped a new ministry guideline?",
+  "options": [
+   "the brief was sent to every senior ministry official",
+   "the guideline repeats wording found only in the brief",
+   "ministry staff say they valued and used the brief",
+   "the guideline was issued after the brief was sent"
+  ],
+  "answer": 1,
+  "feedback": [
+   "Delivery is verification of an early link, not evidence of influence.",
+   "Wording found only in the brief is likely if the claim is true and unlikely if it is false: a unique effect (Mayne 2019, p. 186; Befani and Mayne 2014).",
+   "Opinion about the contribution cannot ground the claim (Mayne 2019, p. 175).",
+   "Timing is a hoop: necessary, but expected under many explanations."
+  ]
+ },
+ {
+  "stem": "Yields rose in programme villages a full season before any farmer was trained. Under Mayne's evidence tools, this finding:",
+  "options": [
+   "is irrelevant, since yields kept rising later",
+   "confirms that the causal package was sufficient",
+   "fails the time-sequence hoop and points elsewhere",
+   "is a smoking gun for the effect"
+  ],
+  "answer": 2,
+  "feedback": [
+   "A failed hoop makes causality for that link very unlikely; later rises do not repair it (p. 183).",
+   "Sufficiency is about how the package worked, which this finding undermines.",
+   "Causes must come before effects; a result appearing earlier than expected suggests something else at work (pp. 183 to 184).",
+   "A smoking gun is an effect only the intervention could produce, not one that came before it."
+  ]
+ },
+ {
+  "stem": "Every result and assumption in a nested theory of change is verified, but the report never says what barriers the assumptions overcame or what mechanisms were at work. What is missing?",
+  "options": [
+   "the causal narrative that sufficiency requires",
+   "a hoop test on time sequence",
+   "a counterfactual estimate of effect size",
+   "stakeholder agreement about the contribution made"
+  ],
+  "answer": 0,
+  "feedback": [
+   "Data that each result and assumption occurred is not enough; a credible causal narrative must explain why the package worked (pp. 182 to 183, 185).",
+   "Timing helps keep the claim alive, but the gap here is explanation.",
+   "CA does not require one, and it would not explain how the package worked.",
+   "Opinion cannot ground the claim (p. 175)."
+  ]
+ },
+ {
+  "stem": "A team relies only on smoking gun tests for one causal link and finds none. Following Collier (2011), it may conclude that the hypothesis is:",
+  "options": [
+   "eliminated outright for that link",
+   "confirmed, since rivals also failed",
+   "proven redundant within the package",
+   "weakened somewhat, but not eliminated"
+  ],
+  "answer": 3,
+  "feedback": [
+   "Elimination follows from failing a necessary test, a hoop or doubly decisive test.",
+   "Nothing in a failed test confirms the hypothesis.",
+   "Absence of a smoking gun says little about necessity within the package.",
+   "Failing a smoking gun weakens a hypothesis somewhat; it is not a necessary test (Collier 2011, p. 825)."
+  ]
+ }
+]</script>
+
+    <h2 id="write" data-short="Practice: plan it"><span class="n">Practice</span>Plan the evidence for one link</h2>
+    <div class="task">
+      <div class="case">
+        <span class="label">Case, invented for practice</span>
+        A climate adaptation programme in Kotido trains farmers to plant drought-tolerant sorghum. Yields rose in villages where farmers adopted the variety. For the link "farmers trained, so farmers plant the new variety", name one piece of evidence for each of verification, a hoop test, the sufficiency narrative and a smoking gun, and say what each would show.
+      </div>
+      <label for="plan" class="label" style="margin-top:1.25rem">Your evidence plan</label>
+      <textarea id="plan" data-save="l3-plan" placeholder="Verification: ...&#10;Hoop: ...&#10;Sufficiency: ...&#10;Smoking gun: ..."></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" data-reveal="model" data-show="Compare with a model answer" data-hide="Hide the model answer">Compare with a model answer</button>
+        <span class="saved" id="plan-saved"></span>
+      </div>
+      <div class="model" id="model" hidden>
+        <div class="definition">
+          <p><strong>Verification.</strong> Seed distribution records and farm visits show trained farmers planted the variety.<br><strong>Hoop, time sequence.</strong> Planting followed the training season, not before it.<br><strong>Sufficiency narrative.</strong> Farmers explain that training showed them spacing and planting dates, and that seed was available locally on credit, which overcame the cost barrier.<br><strong>Smoking gun.</strong> Farmers use a planting technique taught only on the programme's demonstration plots.</p>
+        </div>
+        <span class="label">Check yours</span>
+        <ul class="checks" data-tally="tally">
+          <li><label><input type="checkbox" id="k1"> Each item says what it shows, not just what it is</label></li>
+          <li><label><input type="checkbox" id="k2"> Your hoop could fail, and would hurt the claim if it did</label></li>
+          <li><label><input type="checkbox" id="k3"> Your smoking gun could only appear if the programme was involved</label></li>
+          <li><label><input type="checkbox" id="k4"> Your narrative names a barrier and how it was overcome</label></li>
+        </ul>
+        <p class="tally" id="tally"></p>
+      </div>
+    </div>
+
+    <h2 id="next" data-short="Read next"><span class="n">Next</span>Read Mayne's evidence section and Collier's tests</h2>
+    <div class="source">
+      <span class="label">Primary sources</span>
+      <p class="ref">Mayne (2019), pp. 182 to 186, with Table 1 on p. 184. Then Collier, D. (2011). <a href="https://doi.org/10.1017/S1049096511001429" target="_blank" rel="noopener">Understanding process tracing</a>. <em>PS: Political Science and Politics</em>, 44(4), 823 to 830, Table 1 on p. 825.</p>
+      <p style="margin:0">Keep the <a href="../reference/0003-evidence-card.html">evidence card</a> open as you read.</p>
+    </div>
+
+    <ol class="map" aria-label="Course map">
+      <li><span class="no">Lesson 1</span><a href="0001-read-the-question-first.html">Read the question first</a></li>
+      <li><span class="no">Lesson 2</span><a href="0002-theories-of-change-that-carry-a-claim.html">Theories of change that can carry a claim</a></li>
+      <li class="here"><span class="no">Lesson 3, you are here</span><a href="0003-building-the-causal-case.html" aria-current="page">Building the causal case</a></li>
+      <li><span class="no">Lesson 4</span><a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a></li>
+      <li><span class="no">Lesson 5</span><a href="0005-size-and-relative-importance.html">Size and relative importance</a></li>
+      <li><span class="no">Lesson 6</span><a href="0006-running-a-ca-in-practice.html">Running a CA in practice</a></li>
+      <li><span class="no">Lesson 7</span><a href="0007-critiques-and-responses.html">Critiques and responses</a></li>
+      <li><span class="no">Lesson 8</span><a href="0008-ca-among-theory-based-approaches.html">CA among theory-based approaches</a></li>
+    </ol>
+
+    <p class="endnote">Sort a few pieces of evidence from your own work the same way. Lesson 4 covers other factors and alternative explanations, and opens with recall questions from this page.</p>
+  </main>
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

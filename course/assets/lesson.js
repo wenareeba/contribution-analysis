@@ -8,7 +8,9 @@
    - Self-check tally: <ul class="checks" data-tally="ID"> counts ticked boxes into #ID.
    - Package explorer: <div class="explorer" data-explorer> with .factor[data-role=member|outside] buttons.
    - Pathway explorer: <div data-pathway> with .pw-link[data-panel] buttons and .pw-panel elements.
-   - Degree control: <div data-degree> with button[data-out] options and a .degree-out element. */
+   - Degree control: <div data-degree> with button[data-out] options and a .degree-out element.
+   - Evidence sorter: <div data-sorter> with .sort-item[data-answer][data-why] and buttons [data-k].
+   - Likelihood reasoning: <div data-lr> with two .seg[data-q=t|f] groups of buttons [data-v=hi|lo]. */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -198,5 +200,43 @@
     function pick(b) { bs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); }); out.innerHTML = b.dataset.out; dg.dataset.level = b.dataset.level || ""; }
     bs.forEach(function (b) { b.addEventListener("click", function () { pick(b); }); });
     pick(bs.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0] || bs[bs.length - 1]);
+  });
+  /* evidence sorter: .sort-item[data-answer][data-why] with buttons [data-k] */
+  $$("[data-sorter]").forEach(function (so) {
+    var items = $$(".sort-item", so), score = $(".sort-score", so), done = 0, right = 0;
+    function upd() { if (score) score.textContent = done < items.length ? done + " of " + items.length + " sorted" : right + " of " + items.length + " sorted correctly"; }
+    items.forEach(function (it) {
+      var bs = $$("button[data-k]", it), fb = $(".sort-fb", it);
+      bs.forEach(function (b) {
+        b.addEventListener("click", function () {
+          var ok = b.dataset.k === it.dataset.answer, rightBtn = bs.filter(function (x) { return x.dataset.k === it.dataset.answer; })[0];
+          bs.forEach(function (x) { x.disabled = true; x.classList.add("faded"); });
+          rightBtn.classList.remove("faded"); rightBtn.classList.add("right");
+          if (!ok) { b.classList.remove("faded"); b.classList.add("wrong"); }
+          fb.innerHTML = (ok ? "<strong>Right.</strong> " : "<strong>Not quite: " + rightBtn.textContent.toLowerCase() + ".</strong> ") + it.dataset.why;
+          done++; if (ok) right++; upd();
+        });
+      });
+    });
+    var reset = $(".sort-reset", so);
+    if (reset) reset.addEventListener("click", function () {
+      items.forEach(function (it) { $$("button[data-k]", it).forEach(function (x) { x.disabled = false; x.className = ""; }); $(".sort-fb", it).innerHTML = ""; });
+      done = 0; right = 0; upd();
+    });
+    upd();
+  });
+
+  /* likelihood reasoning: two .seg groups [data-q=t|f] with buttons [data-v=hi|lo]; messages in data-msg-hihi etc. */
+  $$("[data-lr]").forEach(function (lr) {
+    var state = {}, out = $(".degree-out", lr);
+    $$(".seg[data-q]", lr).forEach(function (seg) {
+      var bs = $$("button[data-v]", seg);
+      function pick(b) { bs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); }); state[seg.dataset.q] = b.dataset.v; draw(); }
+      bs.forEach(function (b) { b.addEventListener("click", function () { pick(b); }); });
+      var start = bs.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0] || bs[0];
+      bs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === start)); }); state[seg.dataset.q] = start.dataset.v;
+    });
+    function draw() { var k = "msg" + state.t.charAt(0).toUpperCase() + state.t.slice(1) + state.f.charAt(0).toUpperCase() + state.f.slice(1); out.innerHTML = lr.dataset[k] || ""; lr.dataset.level = k === "msgLoHi" ? "none" : ""; }
+    draw();
   });
 })();
