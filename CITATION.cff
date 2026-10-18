@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this material, please cite it as below."
+type: dataset
+title: "Contribution analysis: course, bibliography, templates and red team protocol"
+authors:
+  - family-names: Wenareeba
+    given-names: Morris
+repository-code: "https://github.com/wenareeba/contribution-analysis"
+url: "https://github.com/wenareeba/contribution-analysis"
+abstract: >-
+  A working library for contribution analysis, a theory-based approach to impact
+  evaluation: a verified annotated bibliography with BibTeX, design templates, a
+  red team protocol for checking that a contribution analysis was done properly,
+  and a short course with retrieval quizzes.
+keywords:
+  - contribution analysis
+  - theory-based evaluation
+  - impact evaluation
+  - theory of change
+  - monitoring and evaluation
+license: CC-BY-4.0
+date-released: "2026-10-18"
+version: "0.1.0"

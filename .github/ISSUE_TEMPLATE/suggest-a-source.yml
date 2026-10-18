@@ -1,0 +1,39 @@
+name: Suggest a source
+description: Propose a publication for the bibliography
+labels: ["source suggestion"]
+body:
+  - type: textarea
+    id: citation
+    attributes:
+      label: Full citation
+      description: Authors, year, title, journal or publisher, volume, issue, pages, DOI or stable link
+    validations:
+      required: true
+  - type: input
+    id: checked
+    attributes:
+      label: Where you checked it
+      description: Publisher page, repository record or Crossref link
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Bibliography section
+      options:
+        - "1. Foundations: Mayne's own work"
+        - "2. Method development and debate"
+        - "3. Reviews of CA practice"
+        - "4. Applications"
+        - "5. Practitioner guides and briefs"
+        - "6. CJPE 37(3), 2023: the John Mayne memorial issue"
+        - "7. Background on causality"
+    validations:
+      required: true
+  - type: textarea
+    id: use
+    attributes:
+      label: What it is for
+      description: One or two sentences on why a reader would turn to it
+    validations:
+      required: true

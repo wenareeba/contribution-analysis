@@ -1,0 +1,97 @@
+/* Contribution analysis course: shared stylesheet.
+   Layout: one reading column (~66ch) with margin notes that float right on wide screens and drop inline on phones. */
+:root {
+  --paper: #f5f6f3;
+  --panel: #eceee8;
+  --ink: #1c2421;
+  --muted: #56615c;
+  --rule: #c9cec6;
+  --accent: #2f5d50;      /* pine: CA's "package" green */
+  --accent-soft: #dfe8e3;
+  --flag: #8a5a12;        /* ochre: cautions and corrections */
+  --flag-soft: #f1e7d6;
+  --good: #2f6b3a;
+  --bad: #9a3324;
+  --display: "Spectral", "Iowan Old Style", Georgia, serif;
+  --body: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --ui: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #151b19; --panel: #1d2522; --ink: #e3e8e4; --muted: #9daaa3; --rule: #34403b;
+    --accent: #8cc5b2; --accent-soft: #223631; --flag: #e0b46a; --flag-soft: #352b1b;
+    --good: #8fce98; --bad: #f09a88; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #151b19; --panel: #1d2522; --ink: #e3e8e4; --muted: #9daaa3; --rule: #34403b;
+  --accent: #8cc5b2; --accent-soft: #223631; --flag: #e0b46a; --flag-soft: #352b1b;
+  --good: #8fce98; --bad: #f09a88; color-scheme: dark;
+}
+
+body { background: var(--paper); color: var(--ink); font-family: var(--body); font-size: 1.0625rem; line-height: 1.6; }
+.page { max-width: 62rem; margin: 0 auto; padding-block: 2.5rem 4rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.col { max-width: 40rem; }
+a { color: var(--accent); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.eyebrow { font-family: var(--ui); font-size: .8rem; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 .5rem; }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(2rem, 5vw, 2.9rem); line-height: 1.1; margin: 0 0 .75rem; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 1.5rem; line-height: 1.25; margin: 2.75rem 0 .6rem; text-wrap: balance; }
+h3 { font-family: var(--ui); font-weight: 600; font-size: 1rem; letter-spacing: .02em; margin: 1.5rem 0 .4rem; }
+.lede { font-size: 1.2rem; color: var(--muted); margin: 0 0 1.5rem; }
+p { margin: 0 0 1rem; }
+ul, ol { padding-left: 1.3rem; margin: 0 0 1rem; }
+li { margin-bottom: .35rem; }
+
+/* Margin notes (Tufte style) */
+.with-note { display: grid; grid-template-columns: minmax(0, 40rem) minmax(0, 16rem); gap: 2.5rem; align-items: start; }
+.note { font-family: var(--ui); font-size: .88rem; line-height: 1.45; color: var(--muted); border-top: 1px solid var(--rule); padding-top: .5rem; }
+@media (max-width: 52rem) { .with-note { grid-template-columns: minmax(0, 1fr); gap: .5rem; } .note { margin-bottom: 1rem; } }
+
+blockquote.def { margin: 1rem 0 1.25rem; padding: .9rem 1.1rem; background: var(--accent-soft); border-radius: 4px; }
+blockquote.def p:last-child { margin: 0; }
+.cite { font-family: var(--ui); font-size: .85rem; color: var(--muted); white-space: nowrap; }
+
+.caution { background: var(--flag-soft); padding: .9rem 1.1rem; border-radius: 4px; margin: 1.25rem 0; }
+.caution .eyebrow { color: var(--flag); }
+.mission { border: 1px solid var(--rule); padding: .9rem 1.1rem; border-radius: 4px; margin: 1.5rem 0; }
+
+.table-wrap { overflow-x: auto; margin: 1rem 0 1.5rem; }
+table { border-collapse: collapse; width: 100%; font-size: .95rem; min-width: 34rem; }
+th { font-family: var(--ui); font-weight: 600; text-align: left; font-size: .82rem; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--ink); padding: .4rem .6rem .4rem 0; }
+td { border-bottom: 1px solid var(--rule); padding: .55rem .6rem .55rem 0; vertical-align: top; }
+
+figure { margin: 1.5rem 0; }
+figure svg { width: 100%; max-width: 40rem; height: auto; display: block; }
+figcaption { font-family: var(--ui); font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+
+/* Quiz component */
+.quiz { margin: 1rem 0 2rem; display: grid; gap: 1.5rem; }
+.q { border-top: 1px solid var(--rule); padding-top: 1rem; }
+.q-stem { margin: 0 0 .7rem; }
+.q-num { font-family: var(--ui); font-weight: 600; color: var(--accent); margin-right: .35rem; }
+.q-opts { display: grid; gap: .45rem; }
+.q-opt { font: inherit; font-size: 1rem; text-align: left; background: var(--panel); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: .6rem .8rem; cursor: pointer; }
+.q-opt:hover:not([disabled]) { border-color: var(--accent); }
+.q-opt[disabled] { cursor: default; }
+.q-opt.right { border-color: var(--good); box-shadow: inset 4px 0 0 var(--good); }
+.q-opt.wrong { border-color: var(--bad); box-shadow: inset 4px 0 0 var(--bad); }
+.q-fb { font-family: var(--ui); font-size: .92rem; line-height: 1.5; margin-top: .6rem; }
+.q-fb strong { font-weight: 600; }
+.q-score { font-family: var(--ui); font-size: .95rem; color: var(--muted); }
+.btn { font-family: var(--ui); font-size: .95rem; background: var(--accent); color: var(--paper); border: 0; border-radius: 4px; padding: .55rem 1rem; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); border: 1px solid var(--accent); }
+
+textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 1rem; background: var(--panel); color: var(--ink); border: 1px solid var(--rule); border-radius: 4px; padding: .7rem; min-height: 8rem; }
+.checks { list-style: none; padding: 0; }
+.checks label { display: flex; gap: .5rem; align-items: baseline; cursor: pointer; }
+
+.next { display: grid; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); gap: 1rem; margin: 1rem 0; }
+.next div { border-top: 2px solid var(--accent); padding-top: .5rem; font-size: .95rem; }
+.next .n { font-family: var(--ui); font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .06em; }
+footer { margin-top: 3rem; border-top: 1px solid var(--rule); padding-top: 1rem; font-family: var(--ui); font-size: .88rem; color: var(--muted); }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
