@@ -1,185 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
 <title>Size and Relative Importance</title>
+<meta name="description" content="Contribution analysis, Lesson 5: what CA can and cannot say about the size of a contribution, Mayne's four perspectives on relative importance, and Ton et al.'s ways of stretching CA towards size.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">
-<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<main class="page">
-  <p class="eyebrow">Contribution analysis · Lesson 5 of 8</p>
-  <h1>Size and relative importance</h1>
-  <p class="lede col">By the end of this page you can explain to a commissioner what CA can and cannot say about how big a contribution was, and offer defensible ways to judge relative importance.</p>
+<div class="lesson">
+  <aside class="rail" aria-label="On this page">
+    <nav><p class="rail-h">Lesson 5 of 8</p><ol></ol></nav>
+  </aside>
 
-  <h2>First, recall Lesson 4</h2>
-  <p class="col">Answer from memory before reading on.</p>
-  <div class="quiz col" data-quiz="recall"></div>
-  <script type="application/json" id="recall">[
+  <main class="main">
+    <p class="kicker"><b>Contribution analysis</b>, lesson 5 of 8</p>
+    <h1>Size and relative importance</h1>
+    <p class="lede">Funders want to know how much of a change their money bought. This lesson is about answering them honestly: what CA cannot say, and the defensible things it can. Four short sections, one exercise to try, five questions and one reply to draft.</p>
+
+    <details class="contents-strip"><summary>On this page</summary><ol></ol></details>
+
+    <div class="goal">
+      <span class="label">By the end of this lesson</span>
+      <p>You can explain to a commissioner what CA can and cannot say about how big a contribution was, and offer a defensible way to judge relative importance.</p>
+    </div>
+
+    <h2 id="recall" data-short="Recall Lesson 4"><span class="n">Recall</span>First, two questions from Lesson 4</h2>
+    <p>Answer from memory before reading on.</p>
+    <div class="quiz" data-quiz="recall" data-title="Recall"></div>
+    <script type="application/json" id="recall">[
+      {"stem":"In 2019 Mayne said external factors are usually:",
+       "options":["other causal factors at work","rivals that must be eliminated","irrelevant to every single evaluation","signs that the programme failed"],
+       "answer":0,
+       "feedback":["Mayne 2019, p. 175.","That was nearer his 2012 view.","They matter when linked, or for causes-of-outcome questions.","Other factors at work say nothing about failure."]},
+      {"stem":"A support factor that had to hold for the intervention to work sits:",
+       "options":["outside the package, not linked","inside the intervention's causal package","in a separate rival theory","only in the evaluation report"],
+       "answer":1,
+       "feedback":["Unlinked outside factors are different.","It is captured by a causal link assumption.","It is part of the intervention's own theory.","It is part of the causal story, not just the report."]}
+    ]</script>
+
+    <h2 id="limit" data-short="What CA cannot say"><span class="n">1</span>CA cannot put a percentage on a contribution</h2>
+    <p>Ton and colleagues take the funder's question seriously and set out the tension between what commissioners ask for and what the method can deliver <span class="pg">(Ton et al. 2019, p. 7)</span>.</p>
+    <p>Mayne's position is clear. Packages of necessary factors bring about change, not any single factor, so CA does not on its own estimate the size or relative importance of the causal factors at work <span class="pg">(2019, p. 181)</span>. Among CA's limits he lists that it cannot determine how much of an outcome can be attributed to an intervention <span class="pg">(p. 187)</span>.<label for="sn-1" class="sn-ref" aria-label="Side note 1"></label><input type="checkbox" id="sn-1" class="sn-toggle"><span class="sidenote">Every factor in a causal package is necessary, so in that sense all are equal (Mayne 2015, pp. 128 to 129). That is why "40% due to the programme" has no meaning inside a single causal package.</span></p>
+
+    <h2 id="lenses" data-short="Four perspectives"><span class="n">2</span>Relative importance depends on how you define importance</h2>
+    <p>Mayne says relative importance can still be explored, once you decide what "importance" means. He lists four perspectives <span class="pg">(2019, p. 181)</span>, which Palenberg also discusses <span class="pg">(2023, pp. 394 to 395)</span>. Each gives a different answer, so the evaluation must say which it used.</p>
+    <p>Case, invented for practice. Stunting fell in a district. Three things contributed: a donor-funded counselling programme for mothers, government health workers who delivered it, and micronutrient powders from a second donor. Switch the lens and watch the ranking move.</p>
+
+    <div class="sorter lenses" data-tabs>
+      <span class="label">Lens on importance</span>
+      <div class="seg" role="group" aria-label="Lens on importance">
+        <button type="button" data-panel="l-perceived" aria-pressed="true">Perceived importance</button>
+        <button type="button" data-panel="l-role">Role played</button>
+        <button type="button" data-panel="l-funds">Funds expended</button>
+        <button type="button" data-panel="l-constraints">Constraints to change</button>
+      </div>
+      <div class="tab-panel" id="l-perceived">
+        <p class="ask">How important do informed actors judge each factor to have been?</p>
+        <ol class="rank">
+          <li><div><b>Counselling for mothers</b><span>Rated highest by mothers and district nutrition staff.</span></div></li>
+          <li><div><b>Health workers</b><span>Rated highest by health facility staff; second overall.</span></div></li>
+          <li><div><b>Micronutrient powders</b><span>Valued, but seen as secondary to changed feeding.</span></div></li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="l-role" hidden>
+        <p class="ask">What did each factor do in the causal story?</p>
+        <ol class="rank">
+          <li><div><b>Health workers</b><span>Every other factor reached households through them.</span></div></li>
+          <li><div><b>Counselling for mothers</b><span>Changed what mothers knew and did at meals.</span></div></li>
+          <li><div><b>Micronutrient powders</b><span>Added nutrients once feeding had changed.</span></div></li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="l-funds" hidden>
+        <p class="ask">How much was invested in each factor?</p>
+        <ol class="rank">
+          <li><div><b>Health workers</b><span>Salaries over the whole period are the largest cost.</span></div></li>
+          <li><div><b>Micronutrient powders</b><span>Commodities and distribution.</span></div></li>
+          <li><div><b>Counselling for mothers</b><span>Training and materials, the smallest budget.</span></div></li>
+        </ol>
+      </div>
+      <div class="tab-panel" id="l-constraints" hidden>
+        <p class="ask">How hard was the change each factor helped bring about?</p>
+        <ol class="rank">
+          <li><div><b>Counselling for mothers</b><span>Overcame feeding beliefs and resistance from in-laws, the hardest barrier.</span></div></li>
+          <li><div><b>Health workers</b><span>Overcame distance to remote villages.</span></div></li>
+          <li><div><b>Micronutrient powders</b><span>Little to overcome once households were reached.</span></div></li>
+        </ol>
+      </div>
+      <p class="fig-caption">The four lenses are Mayne's (2019, p. 181). The case and its rankings are invented for this course. The counselling programme comes first under two lenses and last under one, which is why the lens must be stated.</p>
+    </div>
+
+    <h2 id="stretch" data-short="Stretching towards size"><span class="n">3</span>CA can be stretched towards size, carefully</h2>
+    <p>Ton and colleagues ask whether CA can say anything about size, and answer that it can say more than nothing. Their options:</p>
+    <ul class="plain">
+      <li><strong>A hierarchy.</strong> Comparing contributions needs some sort of hierarchy among them <span class="pg">(p. 5)</span>. Even where a share cannot be computed, a ranking is still possible <span class="pg">(p. 9)</span>.</li>
+      <li><strong>Confidence.</strong> Bayesian updating of confidence in each causal step <span class="pg">(p. 8)</span>.</li>
+      <li><strong>Interlinked designs.</strong> Combining statistical, survey and case evidence, as in their Ethiopian enterprise programme example <span class="pg">(p. 9)</span>.</li>
+      <li><strong>Detailed theories of change and system maps.</strong> Showing where the intervention sits among other contributors <span class="pg">(p. 10)</span>.</li>
+    </ul>
+    <p>Their advice is to report plausible ranges rather than point estimates <span class="pg">(p. 10)</span>.</p>
+
+    <h2 id="limits" data-short="Two limits"><span class="n">4</span>Combined action and joint funding set hard limits</h2>
+    <div class="caution">
+      <span class="label">Cautions from the same authors</span>
+      <p>Where factors only work in combination, a size estimate for each is impossible <span class="pg">(Ton et al. 2019, p. 9)</span>.</p>
+      <p>Where interventions are interlinked, look at them together: both, or neither, can claim the full effect <span class="pg">(p. 7)</span>.</p>
+    </div>
+
+    <h2 id="practice" data-short="Practice: apply it"><span class="n">Practice</span>Apply it to new cases</h2>
+    <p>Five questions on cases you have not seen. Each answer explains itself, and you can retry the ones you miss.</p>
+    <div class="quiz" data-quiz="q5" data-title="Check yourself"></div>
+    <script type="application/json" id="q5">[
  {
-  "stem": "In 2019 Mayne said external factors are usually:",
+  "stem": "A funder asks what share of a fall in stunting its grant produced. The evidence shows the contributing factors only worked together. The most defensible reply offers:",
   "options": [
-   "irrelevant to every single evaluation",
-   "signs that the programme failed",
-   "other causal factors at work",
-   "rivals that must be eliminated"
+   "nothing, since CA can never address relative importance",
+   "a ranking on a stated lens, with confidence",
+   "a percentage based on each funder's budget share",
+   "a percentage based on the ratings of stakeholders"
+  ],
+  "answer": 1,
+  "feedback": [
+   "Relative importance can be explored; it just has to be defined first (p. 181).",
+   "CA cannot size factors that only work in combination (Ton et al. 2019, p. 9), but relative importance can be explored once importance is defined (Mayne 2019, p. 181).",
+   "Funds expended is one lens on importance, not a measure of causal share.",
+   "Ratings are one lens; turning them into a causal share claims more than they show."
+  ]
+ },
+ {
+  "stem": "Two sound evaluations of the same programme rank it first and third among the contributors. Both can be right if they:",
+  "options": [
+   "both left the funds expended out entirely",
+   "both lacked any counterfactual comparison group design",
+   "used different lenses on importance, each stated",
+   "interviewed different numbers of local stakeholder groups"
   ],
   "answer": 2,
   "feedback": [
-   "They matter when linked or for causes-of-outcome questions.",
-   "Other factors working says nothing about failure.",
-   "Right (p. 175).",
-   "That was nearer his 2012 view."
+   "Leaving out one lens does not reconcile two rankings.",
+   "CA does not need one, and its absence does not explain the difference.",
+   "Perceived importance, role played, funds expended and constraints to change give different answers; each evaluation must say which it used (Mayne 2019, p. 181).",
+   "Sample size does not explain opposite rankings."
   ]
  },
  {
-  "stem": "A support factor that had to hold for the intervention to work sits:",
+  "stem": "Three donors co-fund one integrated programme, and each reports the whole outcome as its own result. Ton et al. (2019) suggest:",
   "options": [
-   "outside the package, not linked",
-   "inside the intervention's causal package",
-   "in a separate rival theory",
-   "only in the evaluation report"
-  ],
-  "answer": 1,
-  "feedback": [
-   "Unlinked outside factors are different.",
-   "Right: it is captured by a causal link assumption.",
-   "It is part of the intervention's own theory.",
-   "It is part of the causal story, not just the report."
-  ]
- }
-]</script>
-
-  <h2>1. The question commissioners keep asking</h2>
-  <div class="with-note">
-    <div>
-      <p>Funders often want to know how much of a change their money bought. Ton and colleagues take that demand seriously and set out the tension between what commissioners ask for and what the method can deliver (Ton et al. 2019, p. 7).</p>
-      <p>Mayne's position is clear. Because packages of necessary factors bring about change, not any single factor, CA does not on its own estimate the size or relative importance of the causal factors at work (2019, p. 181). Among CA's limits he lists that it cannot determine how much of an outcome can be attributed to an intervention (p. 187).</p>
-    </div>
-    <aside class="note">Every factor in a causal package is necessary, so in that sense all are equal (Mayne 2015, pp. 128 to 129). That is why "40% due to the programme" has no meaning inside a single causal package.</aside>
-  </div>
-
-  <h2>2. Relative importance is possible, if you define it first</h2>
-  <p class="col">Mayne says relative importance can still be explored, once you decide what "importance" means (2019, p. 181). He lists four perspectives, which Palenberg (2023, pp. 394 to 395) also discusses:</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Lens</th><th>The question it answers</th><th>Example evidence</th></tr></thead>
-      <tbody>
-        <tr><td>Perceived importance</td><td>How important do informed actors judge each factor to have been?</td><td>Structured ratings by people with different vantage points</td></tr>
-        <tr><td>Role played</td><td>What did each factor do in the causal story?</td><td>The causal narrative: which barrier each factor removed</td></tr>
-        <tr><td>Funds expended</td><td>How much was invested in each factor?</td><td>Budget and expenditure records</td></tr>
-        <tr><td>Extent of the constraints to change</td><td>How hard was the change each factor helped bring about?</td><td>Evidence on the constraints each factor overcame</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <p class="col">Each lens gives a different answer, so say which one you used and why.</p>
-
-  <h2>3. Stretching CA towards size</h2>
-  <p class="col">Ton et al. (2019) ask whether CA can say anything about size, and answer that it can say more than nothing. Their options:</p>
-  <ul class="col">
-    <li><strong>A hierarchy.</strong> Comparing contributions needs some sort of hierarchy among them (p. 5). Even where a share cannot be computed, a ranking is still possible (p. 9).</li>
-    <li><strong>Confidence.</strong> Bayesian updating of confidence in each causal step (p. 8).</li>
-    <li><strong>Interlinked designs.</strong> Combining statistical, survey and case evidence, as in their Ethiopian enterprise programme example (p. 9).</li>
-    <li><strong>Detailed ToCs and system maps.</strong> Showing where the intervention sits among other contributors (p. 10).</li>
-  </ul>
-  <p class="col">Their advice is to report plausible ranges rather than point estimates (p. 10).</p>
-
-  <div class="caution col">
-    <p class="eyebrow">Cautions from the same authors</p>
-    <p>Where factors only work in combination, a size estimate for each is impossible (p. 9). And where interventions are interlinked, look at them together: both, or neither, can claim the full effect (p. 7).</p>
-  </div>
-
-  <h2>Practice: retrieve it</h2>
-  <div class="quiz col" data-quiz="q5"></div>
-  <script type="application/json" id="q5">[
- {
-  "stem": "Mayne (2019, p. 181) says CA on its own:",
-  "options": [
-   "cannot say anything about importance at all",
-   "always ranks the intervention as most important",
-   "gives each factor's percentage share of change",
-   "does not estimate size or relative importance"
-  ],
-  "answer": 3,
-  "feedback": [
-   "Relative importance can be explored once defined.",
-   "No such rule exists.",
-   "That is exactly what it cannot do alone.",
-   "Right."
-  ]
- },
- {
-  "stem": "Which is one of the four lenses on relative importance?",
-  "options": [
-   "funds expended",
-   "sample size",
-   "response rate",
-   "indicator count"
+   "treat the interlinked funding as a single intervention",
+   "split the outcome in proportion to the funding",
+   "credit the donor whose funding started the earliest",
+   "credit the donor with the most public visibility"
   ],
   "answer": 0,
   "feedback": [
-   "Right (Mayne 2019, p. 181; Palenberg 2023, pp. 394 to 395).",
-   "Not a lens on importance.",
-   "Not a lens on importance.",
-   "Not a lens on importance."
+   "Interlinked interventions should be considered together; both, or neither, can claim the full effect (p. 7).",
+   "Proportional splits assume additive effects, which combined action rules out (p. 9).",
+   "Timing does not decide a share of causation.",
+   "Visibility is not evidence of causal role."
   ]
  },
  {
-  "stem": "Ton et al. (2019, p. 9) say that where factors only work in combination:",
+  "stem": "An evaluation ranks the contributing factors only by asking programme staff which mattered most. The main weakness is:",
   "options": [
-   "only randomised trials can say anything",
-   "a ranking of them remains possible",
-   "a precise share for each remains",
-   "contribution analysis should be dropped altogether"
-  ],
-  "answer": 1,
-  "feedback": [
-   "They propose several non-experimental options.",
-   "Right: a hierarchy is still possible.",
-   "That is exactly what becomes impossible.",
-   "They argue CA can say more, not that it should be dropped."
-  ]
- },
- {
-  "stem": "Four funders each claim all of a sector's improvement. The problem is:",
-  "options": [
-   "the funders all used different indicators",
-   "the theory of change was nested",
-   "the evaluation used only qualitative data",
-   "the claims double count the outcome"
+   "staff cannot be interviewed in a contribution analysis",
+   "perceived importance is not one of Mayne's perspectives",
+   "rankings are never possible in a contribution analysis",
+   "one interested vantage point carries the whole ranking"
   ],
   "answer": 3,
   "feedback": [
-   "Indicators are not the issue here.",
-   "Nesting does not cause double counting.",
-   "Data type is not the issue.",
-   "Right: interlinked interventions should be looked at together (Ton et al. 2019, p. 7)."
+   "Staff are often essential informants.",
+   "It is the first perspective Mayne lists (p. 181).",
+   "Ranking is often possible even when a share is not (Ton et al. 2019, p. 9).",
+   "Perceived importance is a legitimate lens (Mayne 2019, p. 181), but ratings from one group with a stake in the answer cannot carry it. This course recommends ratings from people with different vantage points, with the lens stated."
+  ]
+ },
+ {
+  "stem": "A team holds statistical, survey and case evidence on a programme's contribution. Following Ton et al. (2019, p. 10), it should report:",
+  "options": [
+   "no statement about size of any kind",
+   "plausible ranges rather than a point estimate",
+   "the single most precise point estimate available",
+   "the survey result alone as the answer"
+  ],
+  "answer": 1,
+  "feedback": [
+   "Ton and colleagues argue CA can say more than nothing about size (pp. 7 to 10).",
+   "Combine methods and present plausible ranges, not points (p. 10).",
+   "Precision is not the same as credibility when factors interact.",
+   "One source cannot settle what several sources only bound together."
   ]
  }
 ]</script>
 
-  <h2>Practice: answer the commissioner</h2>
-  <p class="col">A donor writes: "We funded the district nutrition programme alongside two other donors and the government. Tell us what percentage of the fall in stunting is due to our money." Draft a short, honest reply that explains what CA can offer instead, and proposes one way to judge relative importance.</p>
-  <label for="ans" class="eyebrow">Your answer</label>
-  <textarea id="ans" class="col" placeholder="Dear ..."></textarea>
-  <p><button type="button" class="btn" id="reveal">Show a model answer</button></p>
-  <div id="model" class="col" hidden>
-    <blockquote class="def"><p>A contribution analysis can show whether your funding was a necessary part of the package that reduced stunting, and how it worked. It cannot give a defensible percentage, because the fall came from several factors that only worked together (Mayne 2019, pp. 181, 187; Ton et al. 2019, p. 9). What we can offer is a judgement of relative importance on a lens you choose. For example, we can set out the role your funding played: which barriers it removed that others did not, and how hard those barriers would have been to overcome without it. We will present this as a ranking with a stated level of confidence, not a single figure.</p></blockquote>
-    <ul class="checks">
-      <li><label><input type="checkbox" id="k1"> You said what CA can do, not just what it cannot</label></li>
-      <li><label><input type="checkbox" id="k2"> You named a lens and explained it</label></li>
-      <li><label><input type="checkbox" id="k3"> You avoided any percentage</label></li>
-    </ul>
-  </div>
+    <h2 id="write" data-short="Practice: reply"><span class="n">Practice</span>Answer the funder</h2>
+    <div class="task">
+      <div class="case">
+        <span class="label">The request</span>
+        "We funded the district nutrition programme alongside two other donors and the government. Tell us what percentage of the fall in stunting is due to our money." Draft a short, honest reply that explains what CA can offer instead, and proposes one way to judge relative importance.
+      </div>
+      <label for="reply" class="label" style="margin-top:1.25rem">Your reply</label>
+      <textarea id="reply" data-save="l5-reply" placeholder="Dear ..."></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" data-reveal="model" data-show="Compare with a model reply" data-hide="Hide the model reply">Compare with a model reply</button>
+        <span class="saved" id="reply-saved"></span>
+      </div>
+      <div class="model" id="model" hidden>
+        <div class="definition">
+          <p>A contribution analysis can show whether your funding was a necessary part of the package that reduced stunting, and how it worked. It cannot give a defensible percentage, because the fall came from several factors that only worked together (Mayne 2019, pp. 181, 187; Ton et al. 2019, p. 9). What we can offer is a judgement of relative importance on a lens you choose. For example, we can set out the role your funding played: which barriers it removed that others did not, and how hard those barriers were to overcome. We will present this as a ranking with a stated level of confidence, not a single figure.</p>
+        </div>
+        <span class="label">Check yours</span>
+        <ul class="checks" data-tally="tally">
+          <li><label><input type="checkbox" id="k1"> You said what CA can do, not just what it cannot</label></li>
+          <li><label><input type="checkbox" id="k2"> You named a lens on importance and explained it</label></li>
+          <li><label><input type="checkbox" id="k3"> You avoided any percentage</label></li>
+          <li><label><input type="checkbox" id="k4"> You promised a level of confidence, not certainty</label></li>
+        </ul>
+        <p class="tally" id="tally"></p>
+      </div>
+    </div>
 
-  <h2>Read this next</h2>
-  <p class="col">Mayne (2019), p. 181. Then Ton et al. (2019), CDI Practice Paper 20, pp. 5 to 10 (open access).</p>
-  <p class="col">Quick reference: <a href="../reference/0005-importance-card.html">Importance card</a>. Previous lesson: <a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a>. Next lesson: <a href="0006-running-a-ca-in-practice.html">Running a CA in practice</a>.</p>
+    <h2 id="next" data-short="Read next"><span class="n">Next</span>Read Mayne on importance and Ton on size</h2>
+    <div class="source">
+      <span class="label">Primary sources, open access</span>
+      <p class="ref">Mayne (2019), p. 181. Then Ton, G., Mayne, J., Delahais, T., Morell, J., Befani, B., Apgar, M. and O'Flynn, P. (2019). <em>Contribution analysis and estimating the size of effects: Can we reconcile the possible with the impossible?</em> CDI Practice Paper 20, Institute of Development Studies, pp. 5 to 10.</p>
+      <p style="margin:0">Keep the <a href="../reference/0005-importance-card.html">importance card</a> open as you read.</p>
+    </div>
 
-  <footer>Draft the reply you would send to your own funder. Lesson 6 turns to running a CA in practice.</footer>
-</main>
-<script src="../assets/quiz.js"></script>
-<script>
-  document.getElementById("reveal").addEventListener("click", function () {
-    var m = document.getElementById("model");
-    m.hidden = !m.hidden;
-    this.textContent = m.hidden ? "Show a model answer" : "Hide the model answer";
-  });
-</script>
+    <ol class="map" aria-label="Course map">
+      <li><span class="no">Lesson 1</span><a href="0001-read-the-question-first.html">Read the question first</a></li>
+      <li><span class="no">Lesson 2</span><a href="0002-theories-of-change-that-carry-a-claim.html">Theories of change that can carry a claim</a></li>
+      <li><span class="no">Lesson 3</span><a href="0003-building-the-causal-case.html">Building the causal case</a></li>
+      <li><span class="no">Lesson 4</span><a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a></li>
+      <li class="here"><span class="no">Lesson 5, you are here</span><a href="0005-size-and-relative-importance.html" aria-current="page">Size and relative importance</a></li>
+      <li><span class="no">Lesson 6</span><a href="0006-running-a-ca-in-practice.html">Running a CA in practice</a></li>
+      <li><span class="no">Lesson 7</span><a href="0007-critiques-and-responses.html">Critiques and responses</a></li>
+      <li><span class="no">Lesson 8</span><a href="0008-ca-among-theory-based-approaches.html">CA among theory-based approaches</a></li>
+    </ol>
+
+    <p class="endnote">Draft the reply you would send to your own funder. Lesson 6 turns to running a CA in practice, and opens with recall questions from this page.</p>
+  </main>
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>

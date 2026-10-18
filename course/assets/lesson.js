@@ -11,7 +11,8 @@
    - Degree control: <div data-degree> with button[data-out] options and a .degree-out element.
    - Evidence sorter: <div data-sorter> with .sort-item[data-answer][data-why] and buttons [data-k].
    - Likelihood reasoning: <div data-lr> with two .seg[data-q=t|f] groups of buttons [data-v=hi|lo].
-   - Factor placer: <div data-placer> with a question .seg[data-q] and .place-item[data-answer] items. */
+   - Factor placer: <div data-placer> with a question .seg[data-q] and .place-item[data-answer] items.
+   - Tabs: <div data-tabs> with buttons [data-panel] and .tab-panel elements. */
 (function () {
   "use strict";
   var $ = function (s, r) { return (r || document).querySelector(s); };
@@ -273,5 +274,12 @@
     if (reset) reset.addEventListener("click", function () {
       items.forEach(function (it) { $$("button[data-k]", it).forEach(function (x) { x.disabled = false; x.className = ""; }); $(".sort-fb", it).innerHTML = ""; delete it.dataset.placed; drawItem(it); });
     });
+  });
+  /* tabs: <div data-tabs> with buttons [data-panel] and .tab-panel elements */
+  $$("[data-tabs]").forEach(function (tb) {
+    var bs = $$("button[data-panel]", tb), ps = $$(".tab-panel", tb);
+    function pick(b) { bs.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); }); ps.forEach(function (p) { p.hidden = p.id !== b.dataset.panel; }); }
+    bs.forEach(function (b) { b.addEventListener("click", function () { pick(b); }); });
+    pick(bs.filter(function (b) { return b.getAttribute("aria-pressed") === "true"; })[0] || bs[0]);
   });
 })();
