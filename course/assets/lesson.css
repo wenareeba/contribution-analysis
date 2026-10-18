@@ -351,3 +351,31 @@ textarea:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3
   body { background: #fff; color: #000; }
   [hidden] { display: block !important; }
 }
+
+/* reference cards: a one-page summary of a lesson, built to scan and to print */
+.card-page { max-width: 68rem; margin: 0 auto; padding-block: 4.5rem 6rem; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+@media (max-width: 760px) { .card-page { padding-block: 2.75rem 4rem; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); } }
+.card-page h1 { max-width: 20ch; }
+.card-page .lede { max-width: 42rem; margin-bottom: 2.5rem; }
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); gap: 1rem; align-items: start; }
+.card-grid section { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 1.3rem 1.4rem 1.1rem; min-width: 0; font-family: var(--sans); font-size: .92rem; line-height: 1.55; }
+.card-grid section:first-child { border-color: var(--accent); }
+.card-grid h2 { font-family: var(--serif); font-size: 1.2rem; line-height: 1.25; margin: 1.3rem 0 .5rem; letter-spacing: 0; }
+.card-grid h2:first-child { margin-top: 0; }
+.card-grid p { margin: 0 0 .6rem; }
+.card-grid ol, .card-grid ul { margin: 0 0 .6rem; padding-left: 1.2rem; display: grid; gap: .3rem; }
+.card-grid .cite { font-size: .8rem; color: var(--muted); }
+.card-sources { margin: 2.5rem 0 0; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: .82rem; line-height: 1.55; color: var(--muted); max-width: 52rem; }
+.card-sources .label { margin-bottom: .3rem; }
+.card-nav { margin: 2.5rem 0 0; display: flex; flex-wrap: wrap; gap: .4rem; font-family: var(--sans); font-size: .82rem; list-style: none; padding: 0; }
+.card-nav a { display: block; padding: .4rem .75rem; border: 1px solid var(--rule-strong); border-radius: 6px; color: var(--ink-2); text-decoration: none; }
+.card-nav a:hover { border-color: var(--accent); color: var(--ink); }
+.card-nav a[aria-current] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.card-back { font-family: var(--sans); font-size: .9rem; margin: 0 0 1.4rem; }
+@media print {
+  .card-page { padding: 0; max-width: none; }
+  .card-grid { grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .card-grid section { border: 1px solid #999; break-inside: avoid; padding: .7rem .8rem; font-size: 9.5pt; }
+  .card-nav, .card-back { display: none; }
+  h1 { font-size: 22pt; }
+}

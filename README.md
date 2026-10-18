@@ -85,7 +85,7 @@ Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub's "Cite this repo
 ## Licence
 
 - **Written material** (lessons, reference cards, protocol, templates, bibliography notes): [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). You may share and adapt it, including commercially, if you give credit.
-- **Code** (`bibliography/build_bibliography.py`, `course/assets/quiz.js`): [MIT](LICENSE-CODE).
+- **Code** (`bibliography/build_bibliography.py`, `course/assets/lesson.js`): [MIT](LICENSE-CODE).
 - **Third-party material** quoted or cited here, such as passages from Mayne (2019), stays under its own licence and copyright.
 
 

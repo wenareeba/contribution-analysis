@@ -1,7 +1,8 @@
 # Changelog
 
 ## 2026-10-18
-- Lesson 1 redesigned: reading layout with side notes, an interactive causal package figure, one-question-at-a-time quiz with five applied questions, saved drafts and a self-check.
+- All eight lessons redesigned: reading layout with side notes, one interactive exercise per lesson, recall questions, five applied questions each, saved drafts and self-checks.
+- All eight reference cards restyled to match, with print layout and links between cards.
 - New shared lesson stylesheet and script (`course/assets/lesson.css`, `course/assets/lesson.js`).
 - Repository map as the site's start page (`index.html`), with six routes through the material.
 - README section on reading the lessons as web pages.
