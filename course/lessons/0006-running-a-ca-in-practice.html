@@ -1,186 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
 <title>Running a CA in Practice</title>
+<meta name="description" content="Contribution analysis, Lesson 6: the steps as an iterative cycle, scoping to a real budget, what practitioners report, and a worked example of checking credibility.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Sans+Condensed:wght@400;600&display=swap">
-<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../assets/lesson.css">
+</head>
+<body>
+<div class="progress" aria-hidden="true"><span></span></div>
 
-<main class="page">
-  <p class="eyebrow">Contribution analysis · Lesson 6 of 8</p>
-  <h1>Running a CA in practice</h1>
-  <p class="lede col">By the end of this page you can plan a CA that fits a real budget and timeline, and avoid the problems practitioners most often report.</p>
+<div class="lesson">
+  <aside class="rail" aria-label="On this page">
+    <nav><p class="rail-h">Lesson 6 of 8</p><ol></ol></nav>
+  </aside>
 
-  <h2>First, recall Lesson 5</h2>
-  <p class="col">Answer from memory before reading on.</p>
-  <div class="quiz col" data-quiz="recall"></div>
-  <script type="application/json" id="recall">[
- {
-  "stem": "Ton et al. (2019, p. 10) recommend presenting contribution size as:",
-  "options": [
-   "a yes or no verdict only",
-   "the programme's own internal monitoring figures",
-   "plausible ranges rather than point estimates",
-   "a single percentage for each funder"
-  ],
-  "answer": 2,
-  "feedback": [
-   "They argue CA can say more than yes or no.",
-   "Monitoring figures are evidence, not a size estimate.",
-   "Right.",
-   "That is what they caution against."
-  ]
- },
- {
-  "stem": "Before comparing factors' relative importance, you must first:",
-  "options": [
-   "rank the funders by budget",
-   "define what importance will mean",
-   "collect a larger survey sample",
-   "drop the theory of change"
-  ],
-  "answer": 1,
-  "feedback": [
-   "Funds are one lens, not the default.",
-   "Right (Mayne 2019, p. 181).",
-   "Sample size does not define importance.",
-   "The ToC stays central."
-  ]
- }
-]</script>
+  <main class="main">
+    <p class="kicker"><b>Contribution analysis</b>, lesson 6 of 8</p>
+    <h1>Running a CA in practice</h1>
+    <p class="lede">The method is clear on paper. Running it on a real budget, with real deadlines and missing data, is where it succeeds or fails. Four short sections, one figure to explore, five questions and one scoping note to write.</p>
 
-  <h2>1. The steps, as an iterative cycle</h2>
-  <div class="with-note">
-    <div>
-      <p>BetterEvaluation presents Mayne's six steps as an iterative cycle, with a diagram from Apgar, Hernandez and Ton (2020): set out the attribution problem; develop the theory of change and risks to it; gather existing evidence; assemble and assess the contribution story and challenges to it; seek out additional evidence; revise and strengthen the story. Step 6 feeds back into steps 4 and 2 (Apgar and Levine 2024).</p>
-      <p>Mayne's 2019 version adds the return to step 4 as an explicit seventh step (Box 1, p. 173). Wimbush, Montague and Mulherin (2012) added a different seventh step: using CA to support organisations or networks to review and improve their strategies (Apgar and Levine 2024).</p>
+    <details class="contents-strip"><summary>On this page</summary><ol></ol></details>
+
+    <div class="goal">
+      <span class="label">By the end of this lesson</span>
+      <p>You can plan a CA that fits a real budget and timeline, and avoid the problems practitioners most often report.</p>
     </div>
-    <aside class="note">The iteration is the point. Existing evidence comes first; new data collection is aimed at the weak links it reveals.</aside>
-  </div>
 
-  <h2>2. Scope it tightly</h2>
-  <p class="col">Hopkins (2021) wrote a learning brief on running CA in advocacy evaluations under tight time and budget. Her four lessons are in the left column; the right column is this course's suggestion for acting on each.</p>
-  <div class="table-wrap">
-    <table>
-      <thead><tr><th>Lesson (Hopkins 2021)</th><th>One way to act on it</th></tr></thead>
-      <tbody>
-        <tr><td>Start at the end</td><td>Name the result of interest and work backwards along the ToC to the links that matter most</td></tr>
-        <tr><td>Accommodate uncertainty</td><td>Expect steps to repeat and some evidence to be missing; say so in the report</td></tr>
-        <tr><td>Understand what is "enough"</td><td>Write an evidence threshold for each key link before collecting new data</td></tr>
-        <tr><td>Bring people along</td><td>Share emerging findings with the commissioner before the draft report</td></tr>
-      </tbody>
-    </table>
-  </div>
+    <h2 id="recall" data-short="Recall Lesson 5"><span class="n">Recall</span>First, two questions from Lesson 5</h2>
+    <p>Answer from memory before reading on.</p>
+    <div class="quiz" data-quiz="recall" data-title="Recall"></div>
+    <script type="application/json" id="recall">[
+      {"stem":"Ton et al. (2019, p. 10) recommend presenting contribution size as:",
+       "options":["plausible ranges rather than point estimates","a single percentage for each funder","a yes or no verdict only","the programme's own internal monitoring figures"],
+       "answer":0,
+       "feedback":["Ranges, not points (p. 10).","That is what they caution against.","They argue CA can say more than yes or no.","Monitoring figures are evidence, not a size estimate."]},
+      {"stem":"Before comparing factors' relative importance, you must first:",
+       "options":["define what importance will mean","collect a larger survey sample","drop the theory of change","rank the funders by budget"],
+       "answer":0,
+       "feedback":["Mayne 2019, p. 181.","Sample size does not define importance.","The theory of change stays central.","Funds expended is one lens, not the default."]}
+    ]</script>
 
-  <h2>3. What practitioners report</h2>
-  <p class="col">A scoping review of CA in health found seven studies (Buetti et al. 2025). The patterns are useful for any sector:</p>
-  <ul class="col">
-    <li>All seven studies said CA is time-consuming and resource-intensive. One took seven months and would have gone better with eight to ten.</li>
-    <li>Judgement calls were hard: what level of evidence is suitable, and which external factors to include.</li>
-    <li>Practical problems included stakeholders replaced after elections and slow access to government data. Six of the seven built their ToC retrospectively.</li>
-    <li>Benefits: a flexible approach, actionable information for stakeholders, and a common framework and vocabulary.</li>
-  </ul>
-  <p class="col">The authors suggest that standardised reporting guidelines or protocols could improve rigour, transparency and credibility.</p>
+    <h2 id="cycle" data-short="The cycle"><span class="n">1</span>The steps are a cycle, not a line</h2>
+    <p>BetterEvaluation presents Mayne's six steps as an iterative cycle, with a diagram from Apgar, Hernandez and Ton (2020). Step 6 feeds back into steps 4 and 2 <span class="pg">(Apgar and Levine 2024)</span>. Mayne's 2019 version makes the return to step 4 an explicit seventh step <span class="pg">(Box 1, p. 173)</span>.<label for="sn-1" class="sn-ref" aria-label="Side note 1"></label><input type="checkbox" id="sn-1" class="sn-toggle"><span class="sidenote">Wimbush, Montague and Mulherin (2012) added a different seventh step: using CA to support organisations or networks to review and improve their strategies (Apgar and Levine 2024).</span> Select a step to see what it produces, and which template in this repository supports it.</p>
 
-  <h2>4. A worked example to study</h2>
-  <p class="col">BetterEvaluation's example is Delahais and Toulemonde's (2017) evaluation of two forestry research centres' contribution to sustainable forest management in the Congo Basin. The ToC had five contribution pathways. The team tested it with 65 stakeholder interviews, a review of 130 documents and three case studies. They checked the credibility of the revised story three ways: the steering group reviewed all working documents, several researchers reviewed the first case study, and a reviewer examined the credibility of the key findings (Apgar and Levine 2024).</p>
+    <div class="pathway cycle" data-pathway>
+      <span class="label">Contribution analysis as a cycle</span>
+      <div class="pw-grid">
+        <ol class="cyc-list" aria-label="Steps">
+          <li><button type="button" class="pw-link cyc-step" data-n="1" data-panel="c1" aria-pressed="true">Set out the attribution problem</button></li>
+          <li><button type="button" class="pw-link cyc-step" data-n="2" data-panel="c2">Develop the theory of change and its risks</button></li>
+          <li><button type="button" class="pw-link cyc-step" data-n="3" data-panel="c3">Gather the existing evidence</button></li>
+          <li><button type="button" class="pw-link cyc-step" data-n="4" data-panel="c4">Assemble and assess the contribution story</button></li>
+          <li><button type="button" class="pw-link cyc-step" data-n="5" data-panel="c5">Seek out additional evidence</button></li>
+          <li><button type="button" class="pw-link cyc-step" data-n="6" data-panel="c6">Revise and strengthen the story</button></li>
+          <li class="loop">Step 6 feeds back to step 4, and to step 2 when the theory itself needs revising.</li>
+        </ol>
+        <div>
+          <div class="pw-panel" id="c1" hidden><h3>Set out the attribution problem</h3><ul><li>The cause-effect question, word for word, and its type: contribution, causes of outcome, or relative importance.</li><li>A specific, time-bound result of interest.</li></ul><p class="tool">Supported by the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/ca-evaluation-design-template.md" target="_blank" rel="noopener">CA design template</a>, section 1.</p></div>
+          <div class="pw-panel" id="c2" hidden><h3>Develop the theory of change and its risks</h3><ul><li>Nested theories of change with explicit causal link assumptions.</li><li>The external factors that could act on each link.</li></ul><p class="tool">Supported by the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/toc-assumptions-worksheet.csv" target="_blank" rel="noopener">ToC and assumptions worksheet</a> and the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/other-factors-register.csv" target="_blank" rel="noopener">other factors register</a>.</p></div>
+          <div class="pw-panel" id="c3" hidden><h3>Gather the existing evidence</h3><ul><li>Monitoring data, documents and earlier studies, before any new fieldwork.</li><li>A first view of which links are well supported and which are not.</li></ul><p class="tool">Record it link by link in the ToC and assumptions worksheet.</p></div>
+          <div class="pw-panel" id="c4" hidden><h3>Assemble and assess the contribution story</h3><ul><li>A first contribution story, and the challenges to it.</li><li>The weakest links, which decide where new evidence goes.</li></ul><p class="tool">Check the draft claim against the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/contribution-claim-checklist.md" target="_blank" rel="noopener">contribution claim checklist</a>.</p></div>
+          <div class="pw-panel" id="c5" hidden><h3>Seek out additional evidence</h3><ul><li>New data aimed at the weak links, not at everything.</li><li>For each link, what would count as passing and as failing, set before collection.</li></ul><p class="tool">Plan it in the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/templates/evidence-plan-matrix.md" target="_blank" rel="noopener">evidence plan matrix</a>.</p></div>
+          <div class="pw-panel" id="c6" hidden><h3>Revise and strengthen the story</h3><ul><li>A revised, two-part claim, with its limits stated.</li><li>A return to step 4, or to step 2 if the theory failed somewhere.</li></ul><p class="tool">Test the design and the draft against the <a href="https://github.com/wenareeba/contribution-analysis/blob/main/red-team/ca-red-team-protocol.md" target="_blank" rel="noopener">red team protocol</a>.</p></div>
+          <p class="fig-caption">Step names follow BetterEvaluation's presentation of Mayne's steps (Apgar and Levine 2024). What each step produces, and the template links, are this course's guidance.</p>
+        </div>
+      </div>
+    </div>
 
-  <h2>Practice: retrieve it</h2>
-  <div class="quiz col" data-quiz="q6"></div>
-  <script type="application/json" id="q6">[
+    <h2 id="scope" data-short="Scope it tightly"><span class="n">2</span>Scope it to the outcome that matters most</h2>
+    <p>Hopkins wrote a learning brief on running CA in advocacy evaluations under tight time and budget. Her four lessons are on the left; the right column is this course's suggestion for acting on each <span class="pg">(Hopkins 2021)</span>.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Lesson</th><th scope="col">One way to act on it</th></tr></thead>
+        <tbody>
+          <tr class="key"><td>Start at the end</td><td>Name the result of interest and work backwards along the theory of change to the links that matter most</td></tr>
+          <tr><td>Accommodate uncertainty</td><td>Expect steps to repeat and some evidence to be missing; say so in the report</td></tr>
+          <tr><td>Understand what is "enough"</td><td>Write an evidence threshold for each key link before collecting new data</td></tr>
+          <tr><td>Bring people along</td><td>Share emerging findings with the commissioner before the draft report</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="review" data-short="What practitioners report"><span class="n">3</span>Plan for more time than you think</h2>
+    <p>A scoping review of CA in health found seven studies <span class="pg">(Buetti et al. 2025)</span>. The patterns are useful in any sector.</p>
+    <ul class="plain">
+      <li>All seven said CA is time-consuming and resource-intensive. One took seven months and would have gone better with eight to ten.</li>
+      <li>Judgement calls were hard: what level of evidence is suitable, and which external factors to include.</li>
+      <li>Practical problems included stakeholders replaced after elections and slow access to government data. Six of the seven built their theory of change retrospectively.</li>
+      <li>Benefits: a flexible approach, actionable information for stakeholders, and a common framework and vocabulary.</li>
+    </ul>
+    <p>The authors suggest that standardised reporting guidelines or protocols could improve rigour, transparency and credibility.</p>
+
+    <h2 id="example" data-short="A worked example"><span class="n">4</span>Test the story's credibility before you publish it</h2>
+    <p>BetterEvaluation's worked example is Delahais and Toulemonde's (2017) evaluation of two forestry research centres' contribution to sustainable forest management in the Congo Basin. The theory of change had five contribution pathways. The team tested it with 65 stakeholder interviews, a review of 130 documents and three case studies.</p>
+    <p>They then checked the credibility of the revised story three ways: the steering group reviewed all working documents, several researchers reviewed the first case study, and a reviewer examined the credibility of the key findings <span class="pg">(Apgar and Levine 2024)</span>.</p>
+
+    <h2 id="practice" data-short="Practice: apply it"><span class="n">Practice</span>Apply it to new cases</h2>
+    <p>Five questions on decisions you will face when running a CA. Each answer explains itself, and you can retry the ones you miss.</p>
+    <div class="quiz" data-quiz="q6" data-title="Check yourself"></div>
+    <script type="application/json" id="q6">[
  {
-  "stem": "In the iterative cycle, step 6 (revise and strengthen) often loops back to:",
+  "stem": "Halfway through fieldwork, evidence shows a key causal link assumption did not hold in one district. Following the iterative cycle, the team should:",
   "options": [
-   "back to step 1 only",
-   "straight to the final report",
-   "a new and separate evaluation",
-   "step 4 or step 2"
+   "finish data collection, then note it as a limitation",
+   "drop that district from the sample and carry on",
+   "treat the assumption as a rival to rule out",
+   "revise the theory of change and reassess the story"
   ],
   "answer": 3,
   "feedback": [
-   "Not usually; the question stays set.",
-   "The loop happens before reporting.",
-   "It is the same evaluation, iterated.",
-   "Right (Apgar and Levine 2024)."
+   "The cycle exists so that what you learn changes the analysis, not just the limitations section.",
+   "Dropping cases that do not fit is how a story gets polished rather than tested.",
+   "An unmet assumption is part of the intervention's own theory, not a rival.",
+   "Step 6 feeds back into steps 4 and 2: revise the theory of change where it failed, then reassess the contribution story (Apgar and Levine 2024)."
   ]
  },
  {
-  "stem": "The first of Hopkins's (2021) four lessons is to:",
+  "stem": "With eight weeks and two evaluators, where should new data collection go?",
   "options": [
-   "start at the end",
-   "list every possible factor",
-   "survey all programme participants",
-   "begin with the activities"
+   "the weakest links that matter most to it",
+   "every link equally, so the coverage stays balanced",
+   "the links that already have the most data",
+   "the activities, because they are easiest to verify"
   ],
   "answer": 0,
   "feedback": [
-   "Right.",
-   "That risks an unmanageable scope.",
-   "Surveys may come later, aimed at weak links.",
-   "Activities matter, but the result sets the scope."
+   "Start from the result of interest and work back (Hopkins 2021); aim new evidence at the weakest links (Budhwani and McDavid 2017, p. 12).",
+   "Equal effort spreads a small budget too thin to settle anything.",
+   "Existing evidence comes first, but new data should fill the gaps, not the full parts.",
+   "Activities are rarely where a contribution claim is weak."
   ]
  },
  {
-  "stem": "The health scoping review (Buetti et al. 2025) found that all seven studies described CA as:",
+  "stem": "A ministry asks you to plan a contribution analysis of a health programme. Based on the scoping review of seven health studies, the safest planning assumption is that:",
   "options": [
-   "identical in how they reported",
-   "demanding of time and resources",
-   "quick and inexpensive to run",
-   "unsuitable for use in health"
+   "it needs very little engagement with the programme's stakeholders",
+   "it will cost less than a household survey would",
+   "it will need more time and resources than hoped",
+   "it can be finished within a few short weeks"
+  ],
+  "answer": 2,
+  "feedback": [
+   "Stakeholder turnover and data access were among the practical problems reported.",
+   "The review gives no basis for that comparison.",
+   "All seven studies described CA as time-consuming and resource-intensive; one took seven months and would have gone better with eight to ten (Buetti et al. 2025).",
+   "None of the reviewed studies suggests that."
+  ]
+ },
+ {
+  "stem": "Six of the seven studies in the health review built their theory of change after the programme had run. The main risk this creates is:",
+  "options": [
+   "a theory that cannot draw on any monitoring data",
+   "a theory fitted to results, not tested by them",
+   "a theory with far too many causal link assumptions",
+   "a theory that funders will be unlikely to accept"
   ],
   "answer": 1,
   "feedback": [
-   "Reporting varied widely.",
-   "Right.",
-   "The opposite.",
-   "They used it in health and reported benefits."
+   "Monitoring data remain usable whenever the theory is drawn.",
+   "A theory drawn after the fact can end up describing what happened rather than being tested by it; Leeuw warns CA can improve the narrative instead of testing the theory (2023, p. 415).",
+   "Retrospective theories more often have too few assumptions, not too many.",
+   "Acceptance is not the methodological risk."
   ]
  },
  {
-  "stem": "In the Congo Basin example, the credibility of the story was checked by:",
+  "stem": "Before finalising, how can a team best test the credibility of its contribution story?",
   "options": [
-   "a randomised trial in each country",
-   "asking the centres to rate themselves",
-   "one final workshop with all stakeholders",
-   "steering group, researchers and independent reviewer"
+   "ask programme staff to confirm the main conclusions",
+   "add more interviews with the satisfied programme participants",
+   "lengthen the report so every finding is covered",
+   "have an independent reviewer examine the key findings"
   ],
   "answer": 3,
   "feedback": [
-   "No trial was used.",
-   "Self-rating would not test credibility.",
-   "They used three separate checks.",
-   "Right (Apgar and Levine 2024)."
+   "Staff have a stake in the answer; their confirmation is not an independent check.",
+   "More of the same evidence does not test the story.",
+   "Length is not credibility.",
+   "In the Congo Basin example, a reviewer examined the credibility of key findings, alongside steering group and researcher reviews (Apgar and Levine 2024)."
   ]
  }
 ]</script>
 
-  <h2>Practice: scope a real CA</h2>
-  <p class="col">You have eight weeks and two people to assess whether a district water programme contributed to fewer school days lost to diarrhoea. Write a five-line scoping note: the result of interest, the question type, which links you will focus new data collection on, your evidence threshold for one key link, and how you will share emerging findings.</p>
-  <label for="ans" class="eyebrow">Your answer</label>
-  <textarea id="ans" class="col" placeholder="Result: ...
-Question type: ...
-Focus links: ...
-Threshold: ...
-Sharing: ..."></textarea>
-  <p><button type="button" class="btn" id="reveal">Show a model answer</button></p>
-  <div id="model" class="col" hidden>
-    <blockquote class="def"><p><strong>Result.</strong> School days lost to diarrhoea among pupils in the 12 programme schools, 2024 to 2026.<br><strong>Question type.</strong> Contribution: did the programme contribute, and how?<br><strong>Focus links.</strong> Existing records cover construction; new data targets the weakest links, from stations built to pupils washing hands, and from handwashing to fewer absences.<br><strong>Threshold.</strong> For the handwashing link: spot checks in at least six schools on two unannounced days, plus pupil and teacher accounts that agree.<br><strong>Sharing.</strong> A short findings note to the district team at week five, before the draft report.</p></blockquote>
-    <ul class="checks">
-      <li><label><input type="checkbox" id="k1"> The result is specific and time-bound</label></li>
-      <li><label><input type="checkbox" id="k2"> New data is aimed at the weak links, not everything</label></li>
-      <li><label><input type="checkbox" id="k3"> The threshold could be checked</label></li>
-    </ul>
-  </div>
+    <h2 id="write" data-short="Practice: scope it"><span class="n">Practice</span>Write a scoping note</h2>
+    <div class="task">
+      <div class="case">
+        <span class="label">Case, invented for practice</span>
+        You have eight weeks and two people to assess whether a district water programme contributed to fewer school days lost to diarrhoea. Write a five-line scoping note: the result of interest, the question type, which links new data collection will focus on, your evidence threshold for one key link, and how you will share emerging findings.
+      </div>
+      <label for="scope-note" class="label" style="margin-top:1.25rem">Your scoping note</label>
+      <textarea id="scope-note" data-save="l6-scope" placeholder="Result: ...&#10;Question type: ...&#10;Focus links: ...&#10;Threshold: ...&#10;Sharing: ..."></textarea>
+      <div class="btn-row">
+        <button type="button" class="btn" data-reveal="model" data-show="Compare with a model note" data-hide="Hide the model note">Compare with a model note</button>
+        <span class="saved" id="scope-note-saved"></span>
+      </div>
+      <div class="model" id="model" hidden>
+        <div class="definition">
+          <p><strong>Result.</strong> School days lost to diarrhoea among pupils in the 12 programme schools, 2024 to 2026.<br><strong>Question type.</strong> Contribution: did the programme contribute, and how?<br><strong>Focus links.</strong> Existing records cover construction; new data targets the weakest links, from stations built to pupils washing hands, and from handwashing to fewer absences.<br><strong>Threshold.</strong> For the handwashing link: spot checks in at least six schools on two unannounced days, plus pupil and teacher accounts that agree.<br><strong>Sharing.</strong> A short findings note to the district team at week five, before the draft report.</p>
+        </div>
+        <span class="label">Check yours</span>
+        <ul class="checks" data-tally="tally">
+          <li><label><input type="checkbox" id="k1"> The result is specific and time-bound</label></li>
+          <li><label><input type="checkbox" id="k2"> New data is aimed at the weak links, not everything</label></li>
+          <li><label><input type="checkbox" id="k3"> The threshold could be checked by someone else</label></li>
+          <li><label><input type="checkbox" id="k4"> Findings reach the commissioner before the draft</label></li>
+        </ul>
+        <p class="tally" id="tally"></p>
+      </div>
+    </div>
 
-  <h2>Read this next</h2>
-  <p class="col">BetterEvaluation, Contribution analysis (Apgar and Levine, updated 2024), including the forestry example. Then Hopkins, L. (2021). <em>Tools and tips for implementing contribution analysis</em>. Itad and Center for Evaluation Innovation.</p>
-  <p class="col">Quick reference: <a href="../reference/0006-practice-card.html">Practice card</a>. Previous lesson: <a href="0005-size-and-relative-importance.html">Size and relative importance</a>. Next lesson: <a href="0007-critiques-and-responses.html">Critiques and responses</a>.</p>
+    <h2 id="next" data-short="Read next"><span class="n">Next</span>Read the practitioner guides</h2>
+    <div class="source">
+      <span class="label">Practitioner sources, free to read</span>
+      <p class="ref">Apgar, M. and Levine, C. (2024). <a href="https://www.betterevaluation.org/methods-approaches/approaches/contribution-analysis" target="_blank" rel="noopener">Contribution analysis</a>. BetterEvaluation, including the forestry example. Then Hopkins, L. (2021). <a href="https://www.itad.com/knowledge-product/tools-tips-implementing-contribution-analysis/" target="_blank" rel="noopener">Tools and tips for implementing contribution analysis</a>. Itad and Center for Evaluation Innovation.</p>
+      <p style="margin:0">Keep the <a href="../reference/0006-practice-card.html">practice card</a> open as you plan.</p>
+    </div>
 
-  <footer>Write the scoping note for your next CA. Lesson 7 covers the main critiques of CA and the responses to them.</footer>
-</main>
-<script src="../assets/quiz.js"></script>
-<script>
-  document.getElementById("reveal").addEventListener("click", function () {
-    var m = document.getElementById("model");
-    m.hidden = !m.hidden;
-    this.textContent = m.hidden ? "Show a model answer" : "Hide the model answer";
-  });
-</script>
+    <ol class="map" aria-label="Course map">
+      <li><span class="no">Lesson 1</span><a href="0001-read-the-question-first.html">Read the question first</a></li>
+      <li><span class="no">Lesson 2</span><a href="0002-theories-of-change-that-carry-a-claim.html">Theories of change that can carry a claim</a></li>
+      <li><span class="no">Lesson 3</span><a href="0003-building-the-causal-case.html">Building the causal case</a></li>
+      <li><span class="no">Lesson 4</span><a href="0004-other-factors-and-alternative-explanations.html">Other factors and alternative explanations</a></li>
+      <li><span class="no">Lesson 5</span><a href="0005-size-and-relative-importance.html">Size and relative importance</a></li>
+      <li class="here"><span class="no">Lesson 6, you are here</span><a href="0006-running-a-ca-in-practice.html" aria-current="page">Running a CA in practice</a></li>
+      <li><span class="no">Lesson 7</span><a href="0007-critiques-and-responses.html">Critiques and responses</a></li>
+      <li><span class="no">Lesson 8</span><a href="0008-ca-among-theory-based-approaches.html">CA among theory-based approaches</a></li>
+    </ol>
+
+    <p class="endnote">Write the scoping note for your next CA. Lesson 7 covers the main critiques of CA and the responses to them, and opens with recall questions from this page.</p>
+  </main>
+</div>
+<script src="../assets/lesson.js"></script>
+</body>
+</html>
