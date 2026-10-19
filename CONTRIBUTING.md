@@ -24,6 +24,10 @@ Open an issue first for anything larger than a typo, so we can agree the change 
 2. For the bibliography, edit `bibliography/build_bibliography.py` and run `python3 bibliography/build_bibliography.py`. Do not edit the generated files (`annotated-bibliography.md`, `references.bib`, `sources.csv`, `verification-queue.md`) by hand.
 3. Open a pull request using the template.
 
+## Response times
+
+Issues and pull requests get a first reply within seven days. A confirmed citation error is corrected within fourteen days of confirmation and logged in the [changelog](CHANGELOG.md). If a week passes without a reply, add a comment to the issue to bring it back to the top.
+
 ## Standards every change must meet
 
 - **Verified at source.** No source enters the bibliography on the strength of someone else's reference list.

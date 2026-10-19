@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-19 (version 1.0.0)
+
+- Response times added to the contributing guide: a first reply within seven days, confirmed citation errors corrected within fourteen.
+- Zenodo metadata file added so each GitHub release receives a DOI.
+- Citation file updated to version 1.0.0 and now describes the eight-lesson course.
+
 ## 2026-10-18
 - All eight lessons redesigned: reading layout with side notes, one interactive exercise per lesson, recall questions, five applied questions each, saved drafts and self-checks.
 - All eight reference cards restyled to match, with print layout and links between cards.
