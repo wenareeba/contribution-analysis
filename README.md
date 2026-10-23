@@ -78,7 +78,7 @@ Suggestions are welcome, especially published CAs from Africa, Asia and Latin Am
 
 ## How to cite
 
-Suggested credit: Wenareeba, Morris. (2026). *Contribution Analysis: course, bibliography, templates and red team protocol*. GitHub repository. https://github.com/wenareeba/contribution-analysis
+Suggested credit: Wenareeba, Morris. (2026). *Contribution Analysis: Course, Bibliography, Templates and Red Team Protocol*. GitHub repository. https://github.com/wenareeba/contribution-analysis
 
 Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub's "Cite this repository" button uses it.
 
