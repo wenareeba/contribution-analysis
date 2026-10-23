@@ -5,56 +5,137 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Contribution Analysis Repo Map</title>
 <meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Map of the Contribution Analysis course and library: who it is for, its four parts, six routes through it, and how to cite or contribute.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: the course's reading page widened for a map. Header and route picker on top, the tree in a soft panel
-   with a sticky route panel beside it, then every route as a short list. Grey for the structure, one accent for the
-   chosen route (Storytelling with Data). */
+/* Layout: light paper throughout. A split two-line headline beside a drawn figure of the method (after Stoa's
+   "clarte construite"), a quiet index row of counts, then numbered sections on one 72rem grid. Course system kept
+   (Newsreader, Plex Sans, teal accent). Also borrowed: Sharplink's section order and big footer type, Apple's frosted
+   bar, segmented control and tiles, IBM's toolkit cards and next-steps band. */
 :root {
-  --paper: #f7f8f7; --surface: #ffffff; --ink: #1a1f1e; --ink-2: #3c4442; --muted: #6a7371;
-  --rule: #dde1df; --rule-strong: #b9c0bd; --accent: #0e5a72; --accent-ink: #ffffff; --accent-wash: #e6f0f3;
+  --paper: #faf9f6; --surface: #ffffff; --ink: #1b1d1c; --ink-2: #3d403e; --muted: #6c6d68;
+  --rule: #e5e3dd; --rule-strong: #c6c3ba;
+  --accent: #0e5a72; --accent-ink: #ffffff; --accent-wash: #e9f0f1;
+  --bar: rgba(250, 249, 246, .82);
+  --shadow: 0 1px 2px rgba(16, 32, 38, .05), 0 8px 24px rgba(16, 32, 38, .06);
   --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
   --sans: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --wrap: 72rem;
   color-scheme: light;
 }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
   --paper: #121615; --surface: #191e1d; --ink: #e6eae8; --ink-2: #c3cbc8; --muted: #8f9a97;
-  --rule: #2a3230; --rule-strong: #46514e; --accent: #74c3d8; --accent-ink: #0b1a1f; --accent-wash: #16292f; color-scheme: dark } }
+  --rule: #2a3230; --rule-strong: #46514e; --accent: #74c3d8; --accent-ink: #0b1a1f; --accent-wash: #16292f;
+  --bar: rgba(18, 22, 21, .78); --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25); color-scheme: dark } }
 :root[data-theme="dark"] {
   --paper: #121615; --surface: #191e1d; --ink: #e6eae8; --ink-2: #c3cbc8; --muted: #8f9a97;
-  --rule: #2a3230; --rule-strong: #46514e; --accent: #74c3d8; --accent-ink: #0b1a1f; --accent-wash: #16292f; color-scheme: dark }
+  --rule: #2a3230; --rule-strong: #46514e; --accent: #74c3d8; --accent-ink: #0b1a1f; --accent-wash: #16292f;
+  --bar: rgba(18, 22, 21, .78); --shadow: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px rgba(0, 0, 0, .25); color-scheme: dark }
+
 *, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
 body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); font-size: 1.125rem; line-height: 1.6; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--bar); }
 a { color: var(--accent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
-:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
-.page { max-width: 76rem; margin: 0 auto; padding-block: 5rem 6rem; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
-@media (max-width: 760px) { .page { padding-block: 2.75rem 4rem; padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); } body { font-size: 1.0625rem; } }
-.kicker { font-family: var(--sans); font-size: .9rem; font-weight: 500; color: var(--muted); margin: 0 0 1.4rem; }
-.kicker b { color: var(--accent); font-weight: 600; }
-h1 { font-weight: 600; font-size: clamp(2.5rem, 5.6vw, 3.9rem); line-height: 1.02; letter-spacing: -.02em; margin: 0 0 1.5rem; max-width: 22ch; text-wrap: balance; }
-.lede { font-size: 1.32rem; line-height: 1.5; color: var(--ink-2); margin: 0 0 1.5rem; max-width: 40rem; text-wrap: pretty; }
-.counts { font-family: var(--sans); font-size: .92rem; color: var(--muted); margin: 0 0 3.5rem; max-width: 46rem; }
-.counts b { color: var(--ink); font-weight: 600; font-variant-numeric: tabular-nums; }
-h2 { font-weight: 600; font-size: 1.8rem; line-height: 1.18; letter-spacing: -.01em; margin: 0 0 .5rem; text-wrap: balance; }
-.sub { font-family: var(--sans); font-size: .95rem; color: var(--muted); margin: 0 0 1.25rem; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding-left: max(24px, env(safe-area-inset-left, 0px)); padding-right: max(24px, env(safe-area-inset-right, 0px)); }
+@media (max-width: 760px) { .wrap { padding-left: max(20px, env(safe-area-inset-left, 0px)); padding-right: max(20px, env(safe-area-inset-right, 0px)); } body { font-size: 1.0625rem; } }
+h1, h2, h3 { text-wrap: balance; }
+.eyebrow { font-family: var(--sans); font-size: .85rem; font-weight: 500; color: var(--muted); margin: 0 0 .9rem; }
+.path { font-family: var(--mono); font-size: .78rem; color: var(--muted); }
 
-.picker { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.5rem; }
-.picker button { font-family: var(--sans); font-size: .9rem; font-weight: 500; padding: .6rem 1rem; border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--surface); color: var(--ink-2); cursor: pointer; transition: border-color .15s, background .15s, color .15s; }
-.picker button:hover { border-color: var(--accent); color: var(--ink); }
-.picker button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+/* frosted bar (Apple) */
+.bar { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: var(--bar); -webkit-backdrop-filter: saturate(180%) blur(18px); backdrop-filter: saturate(180%) blur(18px); border-bottom: 1px solid var(--rule); }
+.bar .wrap { display: flex; align-items: center; gap: 1.5rem; height: 3.4rem; }
+.mark { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; color: var(--ink); text-decoration: none; margin-right: auto; white-space: nowrap; }
+.bar nav { display: flex; gap: 1.4rem; font-family: var(--sans); font-size: .85rem; }
+.bar nav a { color: var(--ink-2); text-decoration: none; }
+.bar nav a:hover { color: var(--accent); }
+.pill { font-family: var(--sans); font-size: .82rem; font-weight: 500; padding: .38rem .9rem; border-radius: 999px; background: var(--ink); color: var(--paper); text-decoration: none; white-space: nowrap; }
+@media (max-width: 760px) { .bar nav { display: none; } }
 
-.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: 1.5rem; align-items: start; }
+/* hero: split headline and a drawn figure (Stoa) */
+.hero .wrap:first-child { padding-block: 5.5rem 0; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr); gap: 4rem; align-items: end; }
+.hero h1 { font-weight: 600; font-size: clamp(2.7rem, 6.2vw, 5rem); line-height: 1.0; letter-spacing: -.028em; margin: 0 0 1.75rem; }
+.hero h1 span { display: block; }
+.hero h1 span + span { color: var(--muted); font-weight: 400; font-style: italic; }
+.hero .lede { font-size: 1.28rem; line-height: 1.5; color: var(--ink-2); max-width: 32rem; margin: 0 0 2.25rem; text-wrap: pretty; }
+.cta { display: flex; flex-wrap: wrap; gap: 1.25rem; align-items: center; }
+.btn { font-family: var(--sans); font-size: .95rem; font-weight: 500; padding: .78rem 1.35rem; border-radius: 999px; text-decoration: none; border: 1px solid transparent; display: inline-flex; align-items: center; gap: .45rem; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.btn-ink { background: var(--ink); color: var(--paper); }
+.btn-ink:hover { background: var(--accent); }
+.textlink { font-family: var(--sans); font-size: .95rem; font-weight: 500; color: var(--ink-2); text-decoration: none; border-bottom: 1px solid var(--rule-strong); padding-bottom: 2px; }
+.textlink:hover { color: var(--accent); border-color: var(--accent); }
+.figure { margin: 0; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 1.5rem 1.5rem 1.1rem; }
+.figure svg { min-width: 0; }
+.figure .f-line { stroke: var(--rule-strong); stroke-width: 1; fill: none; }
+.figure .f-box { fill: var(--paper); stroke: var(--ink); stroke-width: 1.2; }
+.figure .f-key { fill: var(--accent); }
+.figure .f-txt { font-family: var(--sans); font-size: 12.5px; fill: var(--ink); }
+.figure .f-num { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); }
+.figure .f-key-txt { font-family: var(--sans); font-size: 12.5px; font-weight: 600; fill: var(--accent-ink); }
+.figure figcaption { display: flex; justify-content: space-between; gap: 1rem; margin-top: .9rem; padding-top: .8rem; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: .82rem; color: var(--muted); }
+.figure figcaption b { font-family: var(--serif); font-style: italic; font-weight: 400; font-size: 1rem; color: var(--ink); }
+.index { list-style: none; margin: 4.5rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 1px solid var(--rule-strong); }
+.index li { padding: 1.3rem 1.25rem 1.4rem; border-left: 1px solid var(--rule); }
+.index li:first-child { border-left: 0; padding-left: 0; }
+.index b { display: block; font-family: var(--serif); font-weight: 400; font-size: clamp(2.1rem, 3.8vw, 2.9rem); line-height: 1; font-variant-numeric: tabular-nums; margin-bottom: .45rem; }
+.index span { font-family: var(--sans); font-size: .85rem; color: var(--muted); line-height: 1.4; display: block; }
+@media (max-width: 900px) { .hero .wrap:first-child { grid-template-columns: minmax(0, 1fr); gap: 2.75rem; padding-block: 3.5rem 0; } }
+@media (max-width: 640px) { .index { grid-template-columns: repeat(2, minmax(0, 1fr)); } .index li:nth-child(3) { border-left: 0; padding-left: 0; } .index li:nth-child(n+3) { border-top: 1px solid var(--rule); } }
+
+/* sections */
+.section { padding-block: 6rem 0; }
+@media (max-width: 760px) { .section { padding-block: 4rem 0; } }
+.head { max-width: 40rem; margin-bottom: 2.5rem; }
+.head .no { font-family: var(--mono); font-size: .8rem; color: var(--muted); display: block; margin-bottom: .8rem; }
+.head h2 { font-weight: 600; font-size: clamp(1.9rem, 3.4vw, 2.6rem); line-height: 1.1; letter-spacing: -.015em; margin: 0 0 .7rem; }
+.head p { font-family: var(--sans); font-size: 1rem; color: var(--muted); margin: 0; line-height: 1.55; }
+
+/* who it is for */
+.reader-cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 3rem; }
+@media (max-width: 900px) { .reader-cols { grid-template-columns: minmax(0, 1fr); gap: 2rem; } }
+.reader-cols h3 { font-family: var(--sans); font-size: .9rem; font-weight: 600; color: var(--ink); margin: 0 0 .9rem; padding-bottom: .7rem; border-bottom: 1px solid var(--rule-strong); }
+.reader-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .7rem; font-size: 1.02rem; line-height: 1.5; color: var(--ink-2); }
+.reader-cols li { padding-left: 1.1rem; position: relative; text-wrap: pretty; }
+.reader-cols li::before { content: ""; position: absolute; left: 0; top: .7em; width: .4rem; height: 1px; background: var(--accent); }
+.why { margin-top: 2.75rem; display: grid; grid-template-columns: 10rem minmax(0, 1fr); gap: 1.5rem; padding: 1.4rem 1.6rem; background: var(--accent-wash); border-radius: 14px; }
+.why b { font-family: var(--sans); font-size: .9rem; font-weight: 600; color: var(--accent); }
+.why p { margin: 0; line-height: 1.55; max-width: 48rem; }
+@media (max-width: 760px) { .why { grid-template-columns: minmax(0, 1fr); gap: .3rem; } }
+
+/* four parts (Apple tiles) */
+.tiles { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 760px) { .tiles { grid-template-columns: minmax(0, 1fr); } }
+.tile { background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 2rem 2rem 1.75rem; display: flex; flex-direction: column; min-width: 0; }
+.tile .top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; margin-bottom: 1.6rem; }
+.tile .role { font-family: var(--sans); font-size: .85rem; font-weight: 600; color: var(--accent); }
+.tile h3 { font-weight: 600; font-size: 2rem; letter-spacing: -.015em; line-height: 1.15; margin: 0 0 .7rem; }
+.tile p { margin: 0 0 1.5rem; color: var(--ink-2); line-height: 1.55; }
+.tile .num { font-variant-numeric: tabular-nums; }
+.more { margin-top: auto; font-family: var(--sans); font-size: .92rem; font-weight: 500; text-decoration: none; }
+.more::after { content: " \203A"; }
+.more:hover { text-decoration: underline; }
+
+/* routes and map */
+.seg-scroll { overflow-x: auto; margin: 0 0 1.25rem; padding-bottom: .25rem; }
+.seg { display: inline-flex; gap: 2px; padding: 3px; border-radius: 12px; background: var(--rule); }
+.seg button { font-family: var(--sans); font-size: .88rem; font-weight: 500; white-space: nowrap; padding: .5rem 1rem; border: 0; border-radius: 9px; background: transparent; color: var(--ink-2); cursor: pointer; transition: background .15s, color .15s, box-shadow .15s; }
+.seg button:hover { color: var(--ink); }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 3px rgba(16, 32, 38, .14); }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: 1.25rem; align-items: start; }
 @media (max-width: 1000px) { .workspace { grid-template-columns: minmax(0, 1fr); } }
-.mapbox { background: var(--accent-wash); border-radius: 12px; padding: 1.25rem; overflow-x: auto; min-width: 0; }
+.mapbox { background: var(--surface); border: 1px solid var(--rule); border-radius: 20px; padding: 1.5rem; overflow-x: auto; min-width: 0; }
 svg { display: block; width: 100%; height: auto; min-width: 640px; }
 .edge { fill: none; stroke: var(--rule-strong); stroke-width: 1.3; transition: opacity .2s, stroke .2s; }
 .edge.on { stroke: var(--accent); stroke-width: 2.2; }
 .node { cursor: pointer; transition: opacity .2s; }
 .node rect.box { fill: var(--surface); stroke: var(--rule-strong); stroke-width: 1.2; transition: stroke .2s, fill .2s; }
 .node text { font-family: var(--sans); font-size: 13px; fill: var(--ink); }
-.node .meta { font-size: 11px; fill: var(--muted); }
+.node .meta { font-family: var(--mono); font-size: 10.5px; fill: var(--muted); }
 .node.branch text.lbl { font-weight: 600; font-size: 14px; }
 .node.root text.lbl { font-family: var(--serif); font-weight: 600; font-size: 18px; }
 .node.root rect.box { stroke: var(--ink); stroke-width: 1.6; }
@@ -64,11 +145,10 @@ svg { display: block; width: 100%; height: auto; min-width: 640px; }
 .node.picked text { fill: var(--accent-ink); }
 .badge circle { fill: var(--accent); }
 .badge text { fill: var(--accent-ink); font-size: 11px; font-weight: 600; text-anchor: middle; font-family: var(--sans); }
-.dimmed .node:not(.on), .dimmed .edge:not(.on) { opacity: .3; }
-
-.side { position: sticky; top: 1.5rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 1.3rem 1.4rem; font-family: var(--sans); font-size: .92rem; min-width: 0; }
+.dimmed .node:not(.on), .dimmed .edge:not(.on) { opacity: .28; }
+.side { position: sticky; top: 4.5rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 20px; padding: 1.5rem; font-family: var(--sans); font-size: .92rem; min-width: 0; }
 @media (max-width: 1000px) { .side { position: static; } }
-.side h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 600; line-height: 1.2; margin: 0 0 .3rem; }
+.side h3 { font-family: var(--serif); font-size: 1.4rem; font-weight: 600; line-height: 1.2; margin: 0 0 .3rem; }
 .side .who { color: var(--muted); margin: 0 0 1rem; }
 .side ol { margin: 0 0 1rem; padding-left: 1.3rem; display: grid; gap: .4rem; }
 .side p { margin: 0 0 .75rem; color: var(--ink-2); line-height: 1.5; }
@@ -76,48 +156,246 @@ svg { display: block; width: 100%; height: auto; min-width: 640px; }
 .detail .where { font-size: .8rem; color: var(--muted); margin: 0 0 .2rem; }
 .detail .name { font-family: var(--serif); font-size: 1.12rem; font-weight: 600; margin: 0 0 .35rem; }
 
-.routes { margin-top: 5rem; }
-.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(15.5rem, 1fr)); gap: 1rem; }
-.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 1.2rem 1.3rem; font-family: var(--sans); font-size: .9rem; min-width: 0; }
-.card h3 { font-family: var(--serif); font-weight: 600; font-size: 1.2rem; margin: 0 0 .15rem; }
-.card .who { color: var(--muted); margin: 0 0 .8rem; }
-.card ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
-.foot { margin-top: 4rem; padding-top: 1rem; border-top: 1px solid var(--rule); font-family: var(--sans); font-size: .85rem; color: var(--muted); max-width: 46rem; }
-@media (prefers-reduced-motion: reduce) { .edge, .node, .picker button { transition: none; } }
+/* route cards (IBM toolkit) */
+.cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+@media (max-width: 1000px) { .cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 640px) { .cards { grid-template-columns: minmax(0, 1fr); } }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; padding: 1.5rem; font-family: var(--sans); font-size: .92rem; display: flex; flex-direction: column; min-width: 0; }
+.card h3 { font-family: var(--serif); font-weight: 600; font-size: 1.3rem; line-height: 1.2; margin: 0 0 .35rem; }
+.card .who { color: var(--muted); margin: 0 0 1.1rem; line-height: 1.45; }
+.meta-line { display: flex; flex-wrap: wrap; gap: .4rem; margin: 0 0 1.1rem; padding: 0; list-style: none; }
+.meta-line li { font-size: .78rem; font-weight: 500; color: var(--ink-2); background: var(--paper); border: 1px solid var(--rule); border-radius: 999px; padding: .2rem .6rem; font-variant-numeric: tabular-nums; }
+.card details { border-top: 1px solid var(--rule); padding-top: .8rem; margin-bottom: 1.1rem; }
+.card summary { cursor: pointer; color: var(--ink-2); font-weight: 500; }
+.card ol { margin: .7rem 0 0; padding-left: 1.2rem; display: grid; gap: .3rem; }
+.card .actions { margin-top: auto; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+.linkbtn { font: inherit; font-weight: 500; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; }
+.linkbtn:hover { text-decoration: underline; }
+
+/* FAQ */
+.faq { border-top: 1px solid var(--rule-strong); max-width: 52rem; }
+.faq details { border-bottom: 1px solid var(--rule); }
+.faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; gap: 1rem; padding: 1.2rem 0; font-size: 1.15rem; font-weight: 600; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--sans); font-weight: 400; font-size: 1.4rem; line-height: 1; color: var(--accent); transition: transform .2s; }
+.faq details[open] summary::after { transform: rotate(45deg); }
+.faq details p { margin: 0 0 1.3rem; color: var(--ink-2); max-width: 44rem; }
+
+/* next steps (IBM) */
+.next { margin-top: 6rem; background: var(--accent-wash); }
+.next .wrap { padding-block: 3.5rem; display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 2rem; align-items: center; }
+.next h2 { font-weight: 600; font-size: clamp(1.6rem, 2.8vw, 2.1rem); line-height: 1.15; margin: 0 0 .5rem; }
+.next p { margin: 0; color: var(--ink-2); max-width: 40rem; }
+.btn-accent { background: var(--accent); color: var(--accent-ink); }
+.btn-ghost { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 760px) { .next .wrap { grid-template-columns: minmax(0, 1fr); } }
+
+/* footer (Sharplink big type) */
+footer { padding-block: 4.5rem 3rem; }
+.foot-cols { display: grid; grid-template-columns: 2fr repeat(3, minmax(0, 1fr)); gap: 2rem; font-family: var(--sans); font-size: .88rem; }
+.foot-cols h4 { font-size: .85rem; font-weight: 600; margin: 0 0 .8rem; color: var(--ink); }
+.foot-cols ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .45rem; }
+.foot-cols a { color: var(--ink-2); text-decoration: none; }
+.foot-cols a:hover { color: var(--accent); }
+.foot-cols p { margin: 0; color: var(--muted); line-height: 1.55; max-width: 24rem; }
+@media (max-width: 900px) { .foot-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } .foot-cols > :first-child { grid-column: 1 / -1; } }
+.bigtype { font-family: var(--serif); font-weight: 600; font-size: clamp(3rem, 11.5vw, 10rem); line-height: .92; letter-spacing: -.035em; color: var(--ink); margin: 4rem 0 1.5rem; }
+.bigtype span { color: var(--rule-strong); }
+.legal { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem 2rem; font-family: var(--sans); font-size: .8rem; color: var(--muted); border-top: 1px solid var(--rule); padding-top: 1.25rem; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
 </style>
 
 </head>
 <body>
-<main class="page">
-  <p class="kicker"><b>Contribution analysis</b>, repository map</p>
-  <h1>Find your way through the repository</h1>
-  <p class="lede">The repository has four working parts. The course teaches the method, the templates apply it, the red team protocol checks it, and the bibliography backs every claim. Pick a route and the map lights up the order to use them in.</p>
-  <p class="counts"><b>8</b> lessons with <b>8</b> reference cards. <b>83</b> sources, each verified at source, in <b>7</b> sections. <b>5</b> design templates. A protocol of <b>38</b> checks, <b>8</b> of them critical.</p>
-
-  <h2 id="routes-h">Choose a route</h2>
-  <p class="sub">Each route is an order of work for one kind of reader. Select a box in the map to see what it holds.</p>
-  <div class="picker" id="picker" role="group" aria-labelledby="routes-h"></div>
-
-  <div class="workspace">
-    <div class="mapbox"><svg id="map" role="img" aria-label="Tree of the repository: course, bibliography, templates, red team protocol and repository files"></svg></div>
-    <aside class="side" id="side" aria-live="polite"></aside>
+<header class="bar">
+  <div class="wrap">
+    <a class="mark" href="#top">Contribution Analysis</a>
+    <nav aria-label="Sections"><a href="#who">Who it is for</a><a href="#parts">What is inside</a><a href="#routes">Routes</a><a href="#faq">Questions</a></nav>
+    <a class="pill" data-href="course/lessons/0001-read-the-question-first.html" target="_blank" rel="noopener">Start lesson 1</a>
   </div>
+</header>
 
-  <section class="routes" aria-labelledby="all-h">
-    <h2 id="all-h">Every route at a glance</h2>
-    <p class="sub">The same six routes as lists, for reading on a phone or printing.</p>
-    <div class="grid" id="cards"></div>
+<main id="top">
+  <section class="hero" aria-labelledby="hero-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">Contribution Analysis, a free course and library</p>
+        <h1 id="hero-h"><span>Learn the method.</span><span>Check the claim.</span></h1>
+        <p class="lede">From the evaluation question to a contribution claim you can defend, with every statement about the method traced to its page.</p>
+        <div class="cta">
+          <a class="btn btn-ink" data-href="course/lessons/0001-read-the-question-first.html" target="_blank" rel="noopener">Start lesson 1</a>
+          <a class="textlink" href="#routes">or choose a route</a>
+        </div>
+      </div>
+      <figure class="figure" aria-label="The four parts of the repository as steps: learn, design, check, read further">
+        <svg viewBox="0 0 360 236" role="img" aria-labelledby="fig-t"><title id="fig-t">Learn with the course, design with the templates, check with the red team protocol, and back every claim with the bibliography</title>
+          <path class="f-line" d="M30 34 V202"/>
+          <g><rect class="f-box" x="52" y="14" width="250" height="40" rx="3"/><text class="f-num" x="66" y="38">01</text><text class="f-txt" x="96" y="38">Learn the method</text></g>
+          <g><rect class="f-box" x="72" y="68" width="250" height="40" rx="3"/><text class="f-num" x="86" y="92">02</text><text class="f-txt" x="116" y="92">Design the study</text></g>
+          <g><rect class="f-box" x="92" y="122" width="250" height="40" rx="3"/><text class="f-num" x="106" y="146">03</text><text class="f-txt" x="136" y="146">Check the claim</text></g>
+          <g><rect class="f-key" x="52" y="176" width="290" height="44" rx="3"/><text class="f-key-txt" x="68" y="203">A claim that matches its evidence</text></g>
+          <circle cx="30" cy="34" r="3.5" fill="var(--ink)"/><circle cx="30" cy="88" r="3.5" fill="var(--ink)"/><circle cx="30" cy="142" r="3.5" fill="var(--ink)"/><circle cx="30" cy="198" r="3.5" fill="var(--accent)"/>
+          <path class="f-line" d="M30 34 H52 M30 88 H72 M30 142 H92"/>
+        </svg>
+        <figcaption><b>Clarity, built step by step.</b><span>Steps 01 to 03</span></figcaption>
+      </figure>
+    </div>
+    <div class="wrap">
+      <ul class="index" aria-label="What the repository holds">
+        <li><b>8</b><span>lessons, each with a reference card</span></li>
+        <li><b>83</b><span>sources, each verified at source</span></li>
+        <li><b>5</b><span>design templates and worksheets</span></li>
+        <li><b>38</b><span>red team checks, 8 of them critical</span></li>
+      </ul>
+    </div>
   </section>
 
-  <p class="foot">Links open the files on GitHub. While the repository is private they work only for people with access. Once it is published as a website, lessons open as interactive pages.</p>
+  <section class="section" id="who" aria-labelledby="who-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="no">01</span><h2 id="who-h">Who this is for</h2>
+        <p>Read this first, so you know whether the course fits you and what it expects. New to CA? Take the <a href="#routes" data-route="learn">Learn CA from scratch</a> route.</p>
+      </div>
+      <div class="reader-cols">
+        <div>
+          <h3>Who it is for</h3>
+          <ul>
+            <li>M&amp;E officers and evaluators who want to run a Contribution Analysis</li>
+            <li>Commissioners and reviewers who need to judge one</li>
+            <li>Students and researchers learning theory-based evaluation</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What you need before you start</h3>
+          <ul>
+            <li>Some experience with a theory of change, from building one or working under one</li>
+            <li>Familiarity with basic evaluation terms such as outcome, indicator and assumption</li>
+            <li>No background in Contribution Analysis</li>
+            <li>A web browser. Nothing to install or buy</li>
+          </ul>
+        </div>
+        <div>
+          <h3>What the course asks of you</h3>
+          <ul>
+            <li>Eight lessons of about 1,000 to 1,300 words, each meant for one sitting</li>
+            <li>In each lesson, a figure to try, five scenario questions at master&rsquo;s level and a writing task with a model answer</li>
+            <li>From lesson 2 on, a short recall of the lesson before</li>
+            <li>Statements about the method cite a page, so you can check them at the source</li>
+          </ul>
+        </div>
+      </div>
+      <div class="why"><b>Why it is free</b><p>Much of the Contribution Analysis literature sits behind journal paywalls, and what is free is scattered across many sites. This course puts the method in one structured place, free to use and adapt under CC BY 4.0.</p></div>
+    </div>
+  </section>
+
+  <section class="section" id="parts" aria-labelledby="parts-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="no">02</span><h2 id="parts-h">Understand. Apply. Judge for yourself.</h2>
+        <p>The course teaches Contribution Analysis, the templates apply it, the red team protocol checks it, and the bibliography backs every claim.</p>
+      </div>
+      <div class="tiles">
+        <article class="tile">
+          <div class="top"><span class="role">The course</span><span class="path">course/</span></div>
+          <h3>Learn.</h3>
+          <p>Eight lessons with a figure to try, scenario questions and a writing task, plus a one-page reference card for each and a glossary.</p>
+          <a class="more" data-href="course/lessons/0001-read-the-question-first.html" target="_blank" rel="noopener">Start lesson 1</a>
+        </article>
+        <article class="tile">
+          <div class="top"><span class="role">The templates</span><span class="path">templates/</span></div>
+          <h3>Design.</h3>
+          <p>A design template and four worksheets that take a CA from the cause-effect question to the claim, filled in before fieldwork.</p>
+          <a class="more" data-href="templates/ca-evaluation-design-template.md" target="_blank" rel="noopener">Open the design template</a>
+        </article>
+        <article class="tile">
+          <div class="top"><span class="role">The red team protocol</span><span class="path">red-team/</span></div>
+          <h3>Check.</h3>
+          <p><span class="num">38</span> checks, <span class="num">8</span> of them critical, for a CA design or a draft report, ending with five verification questions and a verdict.</p>
+          <a class="more" data-href="red-team/ca-red-team-protocol.md" target="_blank" rel="noopener">Open the protocol</a>
+        </article>
+        <article class="tile">
+          <div class="top"><span class="role">The bibliography</span><span class="path">bibliography/</span></div>
+          <h3>Read further.</h3>
+          <p><span class="num">83</span> sources in seven sections, each checked at the publisher, repository or Crossref, with BibTeX, a CSV and an errata page.</p>
+          <a class="more" data-href="bibliography/annotated-bibliography.md" target="_blank" rel="noopener">Open the bibliography</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="routes" aria-labelledby="routes-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="no">03</span><h2 id="routes-h">Choose a route</h2>
+        <p>Each route is an order of work for one kind of reader. The map lights up the steps in order. Select any box to see what it holds.</p>
+      </div>
+      <div class="seg-scroll"><div class="seg" id="picker" role="group" aria-labelledby="routes-h"></div></div>
+      <div class="workspace">
+        <div class="mapbox"><svg id="map" role="img" aria-label="Tree of the repository: course, bibliography, templates, red team protocol and repository files"></svg></div>
+        <aside class="side" id="side" aria-live="polite"></aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="all" aria-labelledby="all-h">
+    <div class="wrap">
+      <div class="head">
+        <span class="no">04</span><h2 id="all-h">Every route at a glance</h2>
+        <p>The same six routes as cards, for reading on a phone or printing.</p>
+      </div>
+      <div class="cards" id="cards"></div>
+    </div>
+  </section>
+
+  <section class="section" id="faq" aria-labelledby="faq-h">
+    <div class="wrap">
+      <div class="head"><span class="no">05</span><h2 id="faq-h">Questions</h2></div>
+      <div class="faq">
+        <details><summary>Do I need to know Contribution Analysis already?</summary><p>No. Some experience with a theory of change helps. Lesson 1 starts from what a contribution claim says, and each later lesson builds on the one before.</p></details>
+        <details><summary>How were the sources checked?</summary><p>Each source enters the bibliography only after its title, year and pages are confirmed at the publisher, a repository or Crossref. Sources that cannot yet be confirmed wait in a verification queue. Citation details that differ between published reference lists are recorded on the errata page, with the version used here and why.</p></details>
+        <details><summary>Can I use it offline?</summary><p>Yes. On GitHub, choose Code, then Download ZIP. Unzip the folder and open any lesson in your browser. Keep the folder structure as it is, so each page finds its stylesheet and scripts.</p></details>
+        <details><summary>Can I reuse it in my own training?</summary><p>Yes. Written material is under CC BY 4.0, so you may share and adapt it, including commercially, if you give credit. Code is under MIT. Material quoted from other authors stays under its own licence.</p></details>
+        <details><summary>How do I cite it?</summary><p>Wenareeba, Morris. (2026). <em>Contribution Analysis: course, bibliography, templates and red team protocol</em>. GitHub repository. GitHub&rsquo;s &ldquo;Cite this repository&rdquo; button gives the same entry from the citation file.</p></details>
+        <details><summary>How do I report an error or suggest a source?</summary><p>Open an issue with one of the forms. Every issue gets a first reply within seven days, and confirmed citation errors are corrected within fourteen days.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="next" aria-labelledby="next-h">
+    <div class="wrap">
+      <div>
+        <h2 id="next-h">Help keep it accurate</h2>
+        <p>Found a citation error, or know a published Contribution Analysis from Africa, Asia or Latin America? Those are the most useful additions.</p>
+      </div>
+      <div class="cta">
+        <a class="btn btn-accent" href="https://github.com/wenareeba/contribution-analysis/issues/new/choose" target="_blank" rel="noopener">Open an issue</a>
+        <a class="btn btn-ghost" data-href="CONTRIBUTING.md" target="_blank" rel="noopener">Contributing guide</a>
+      </div>
+    </div>
+  </section>
 </main>
 
+<footer>
+  <div class="wrap">
+    <div class="foot-cols">
+      <div><p>A course and library for Contribution Analysis, a theory-based approach to impact evaluation. Links open the files on GitHub. While the repository is private, they work only for people with access.</p></div>
+      <div><h4>Course</h4><ul><li><a data-href="course/lessons/0001-read-the-question-first.html" target="_blank" rel="noopener">Lesson 1</a></li><li><a data-href="course/reference/0001-ca-core.html" target="_blank" rel="noopener">Reference cards</a></li><li><a data-href="course/GLOSSARY.md" target="_blank" rel="noopener">Glossary</a></li><li><a data-href="course/RESOURCES.md" target="_blank" rel="noopener">Resources</a></li></ul></div>
+      <div><h4>Library</h4><ul><li><a data-href="bibliography/annotated-bibliography.md" target="_blank" rel="noopener">Bibliography</a></li><li><a data-href="bibliography/errata.md" target="_blank" rel="noopener">Errata</a></li><li><a data-href="bibliography/references.bib" target="_blank" rel="noopener">BibTeX</a></li><li><a data-href="templates/ca-evaluation-design-template.md" target="_blank" rel="noopener">Templates</a></li></ul></div>
+      <div><h4>Repository</h4><ul><li><a data-href="README.md" target="_blank" rel="noopener">README</a></li><li><a data-href="CONTRIBUTING.md" target="_blank" rel="noopener">Contributing</a></li><li><a data-href="CITATION.cff" target="_blank" rel="noopener">Citation file</a></li><li><a data-href="LICENSE" target="_blank" rel="noopener">Licences</a></li></ul></div>
+    </div>
+    <p class="bigtype" aria-hidden="true">Contribution <span>Analysis</span></p>
+    <div class="legal"><span>Written material CC BY 4.0. Code MIT.</span><span>Version 1.0, 2026</span></div>
+  </div>
+</footer>
+
 <script>
+
 const REPO = "https://github.com/wenareeba/contribution-analysis/blob/main/";
 const ON_SITE = /github\.io$/.test(location.hostname);
 const href = p => (ON_SITE && /\.html$/.test(p)) ? p : REPO + p;
 const N = [
-  {id:"root", label:"Contribution analysis", g:"root", href:"README.md", note:"Start at the README: what CA is, who the repo is for, and a start-here table."},
+  {id:"root", label:"Contribution Analysis", g:"root", href:"README.md", note:"Start at the README: what CA is, who the repo is for, and a start-here table."},
   {id:"course", label:"Course", sub:"course/", g:"course", p:"root", note:"Eight lessons. Each opens with recall questions from the last one, ends with a quiz and a practice task with a model answer, and links to a one-page reference card."},
   {id:"l1", label:"1 · Read the question first", g:"course", p:"course", href:"course/lessons/0001-read-the-question-first.html", note:"Contributory cause, INUS conditions, the two-part claim, and how the evaluation question sets the scope."},
   {id:"l2", label:"2 · ToCs that carry a claim", g:"course", p:"course", href:"course/lessons/0002-theories-of-change-that-carry-a-claim.html", note:"Causal link assumptions, nested theories of change, and what makes a ToC strong enough for a claim."},
@@ -158,7 +436,7 @@ const N = [
   {id:"verdict", label:"Verdict", g:"red", p:"red", href:"red-team/ca-red-team-protocol.md", note:"How to grade the result, including when a report should not be called a CA."},
 
   {id:"repo", label:"Repo files", g:"repo", p:"root", note:"What a public repository needs: how to cite, contribute and reuse."},
-  {id:"readme", label:"README", g:"repo", p:"repo", href:"README.md", note:"Overview, start-here table and course status."},
+  {id:"readme", label:"README", g:"repo", p:"repo", href:"README.md", note:"Overview, start-here table, links to every lesson as a web page, and how to cite."},
   {id:"contrib", label:"Contributing and issue forms", g:"repo", p:"repo", href:"CONTRIBUTING.md", note:"How to suggest a source, report a citation error or propose a change."},
   {id:"cite", label:"CITATION.cff", g:"repo", p:"repo", href:"CITATION.cff", note:"GitHub's Cite this repository button reads this file."},
   {id:"lic", label:"Licences", sub:"CC BY 4.0 · MIT", g:"repo", p:"repo", href:"LICENSE", note:"Written material under CC BY 4.0; the bibliography script and quiz code under MIT."},
@@ -214,8 +492,10 @@ N.forEach(n => {
   g.addEventListener("click", pick);
   g.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); pick(); } });
 });
+
 const label = n => n.label.replace(/^(\d) · /, "Lesson $1: ");
 const link = n => n.href ? `<a href="${href(n.href)}" target="_blank" rel="noopener">${label(n)}</a>` : label(n);
+document.querySelectorAll("[data-href]").forEach(a => { a.href = href(a.dataset.href); });
 const side = document.getElementById("side");
 const current = {route: "learn", node: null};
 function draw() {
@@ -242,14 +522,25 @@ function draw() {
   side.innerHTML = html;
   document.querySelectorAll("#picker button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.r === current.route)));
 }
+function choose(id) { current.route = id; current.node = null; draw(); }
 const picker = document.getElementById("picker");
 PATHS.forEach(p => {
   const b = document.createElement("button"); b.type = "button"; b.dataset.r = p.id; b.textContent = p.name;
   b.addEventListener("click", () => { current.route = current.route === p.id ? null : p.id; current.node = null; draw(); });
   picker.appendChild(b);
 });
-document.getElementById("cards").innerHTML = PATHS.map(p => `<article class="card"><h3>${p.name}</h3><p class="who">For ${p.who}</p><ol>${p.steps.map(s => `<li>${link(byId[s])}</li>`).join("")}</ol></article>`).join("");
+const first = id => label(byId[PATHS.find(p => p.id === id).steps[0]]);
+document.getElementById("cards").innerHTML = PATHS.map(p => {
+  const n0 = byId[p.steps[0]];
+  return `<article class="card"><h3>${p.name}</h3><p class="who">For ${p.who}</p>
+  <ul class="meta-line"><li>${p.steps.length} steps</li><li>Starts with ${first(p.id)}</li></ul>
+  <details><summary>See the steps</summary><ol>${p.steps.map(s => `<li>${link(byId[s])}</li>`).join("")}</ol></details>
+  <div class="actions">${n0.href ? `<a class="more" href="${href(n0.href)}" target="_blank" rel="noopener">Start the route</a>` : ""}<button type="button" class="linkbtn" data-show="${p.id}">Show on the map</button></div></article>`;
+}).join("");
+document.querySelectorAll("[data-show]").forEach(b => b.addEventListener("click", () => { choose(b.dataset.show); document.getElementById("routes").scrollIntoView(); }));
+document.querySelectorAll("[data-route]").forEach(a => a.addEventListener("click", () => choose(a.dataset.route)));
 draw();
 </script>
+
 </body>
 </html>

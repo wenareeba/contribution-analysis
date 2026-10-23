@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-23
+
+- Repository map redesigned on a light page: a split headline with a drawn figure of the method, an index of counts, a "Who this is for" panel, numbered sections, route cards with a step count and a "Show on the map" action, a questions section and a fuller footer.
+- The method's name is now written Contribution Analysis throughout the map, the citation file and the Zenodo metadata.
+
 ## 2026-10-19 (version 1.0.0)
 
 - Response times added to the contributing guide: a first reply within seven days, confirmed citation errors corrected within fourteen.
