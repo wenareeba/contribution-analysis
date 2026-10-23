@@ -1,4 +1,4 @@
-# Contribution analysis glossary
+# Contribution Analysis glossary
 
 Canonical terms for this course. A term enters only once the learner uses it correctly in practice.
 

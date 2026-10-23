@@ -8,13 +8,13 @@ authors:
 repository-code: "https://github.com/wenareeba/contribution-analysis"
 url: "https://github.com/wenareeba/contribution-analysis"
 abstract: >-
-  A working library for contribution analysis, a theory-based approach to impact
+  A working library for Contribution Analysis, a theory-based approach to impact
   evaluation: an eight-lesson interactive course with reference cards, a verified
   annotated bibliography with BibTeX and an errata page, five design templates,
-  and a red team protocol for checking that a contribution analysis was done
+  and a red team protocol for checking that a Contribution Analysis was done
   properly.
 keywords:
-  - contribution analysis
+  - Contribution Analysis
   - theory-based evaluation
   - impact evaluation
   - theory of change

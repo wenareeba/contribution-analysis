@@ -1,13 +1,13 @@
-# Contribution analysis
+# Contribution Analysis
 
 [![Content licence: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-CODE)
 
-A working library for contribution analysis (CA): a verified bibliography, design templates, a red team protocol for checking that a CA was done properly, and a short course.
+A working library for Contribution Analysis (CA): a verified bibliography, design templates, a red team protocol for checking that a CA was done properly, and a short course.
 
 Every source listed here was checked at the publisher, repository or Crossref. Statements about what CA authors say carry page numbers. Sources that cannot yet be verified are held back until they can be.
 
-## What contribution analysis is
+## What Contribution Analysis is
 
 CA is a theory-based approach to impact evaluation. It tests whether an intervention was a *contributory cause* of an observed change: a necessary part of a package of factors that, together, brought the change about (Mayne 2019, p. 174).
 

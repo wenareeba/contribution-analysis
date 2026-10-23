@@ -1,6 +1,6 @@
 # Annotated bibliography
 
-83 sources on contribution analysis, grouped by use. Every one was verified at source in October 2026: the title, year and pages (or report series) were confirmed on the journal, publisher or repository page, or by Crossref. A few DOIs come from a published reference list. Sources not yet verified are held back until they are.
+83 sources on Contribution Analysis, grouped by use. Every one was verified at source in October 2026: the title, year and pages (or report series) were confirmed on the journal, publisher or repository page, or by Crossref. A few DOIs come from a published reference list. Sources not yet verified are held back until they are.
 
 Generated from `build_bibliography.py`, which also writes `references.bib` (BibTeX) and `sources.csv`. Known errors in other people's reference lists are in [`errata.md`](errata.md).
 
@@ -114,7 +114,7 @@ What published CAs actually do.
 Worked examples across sectors. Good for seeing the steps in use.
 
 - Kotvojs, F., and Shrimpton, B. (2007). Contribution analysis: A new approach to evaluation in international development. *Evaluation Journal of Australasia*, 7(1), 27 to 35. https://doi.org/10.1177/1035719X0700700105  
-  Early application in international development: AusAID's move to CA and outcome-based M&E, with the Fiji Education Sector Program as the case (publisher abstract). The publisher page shows the title as 'Contribution analysis'; the subtitle follows Bohni Nielsen and Lemire (2026).
+  Early application in international development: AusAID's move to CA and outcome-based M&E, with the Fiji Education Sector Program as the case (publisher abstract). The publisher page shows the title as 'Contribution Analysis'; the subtitle follows Bohni Nielsen and Lemire (2026).
 - Delahais, T., and Toulemonde, J. (2012). Applying contribution analysis: Lessons from five years of practice. *Evaluation*, 18(3), 281 to 293. https://doi.org/10.1177/1356389012450810  
   Five EU evaluations. Practical lessons on bias, triangulation and causal packages.
 - Wimbush, E., Montague, S., and Mulherin, T. (2012). Applications of contribution analysis to outcome planning and impact evaluation. *Evaluation*, 18(3), 310 to 329. https://doi.org/10.1177/1356389012452052  

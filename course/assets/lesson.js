@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-/* Contribution analysis course: lesson behaviour (v2).
+/* Contribution Analysis course: lesson behaviour (v2).
    - Quiz: <div class="quiz" data-quiz="ID" data-title="..."></div> + <script type="application/json" id="ID">
      holding [{stem, options:[4], answer, feedback:[4]}]. One question at a time, keys 1 to 4 or A to D.
    - Contents rail and strip are built from h2[id] inside .main; the current section is marked as you read.

@@ -1,6 +1,6 @@
 # CA red team protocol
 
-A checklist for testing whether a contribution analysis followed the steps properly and whether its claims match its evidence. Use it on your own CA before you sign it off, on a report you are reviewing, or on a CA design before fieldwork.
+A checklist for testing whether a Contribution Analysis followed the steps properly and whether its claims match its evidence. Use it on your own CA before you sign it off, on a report you are reviewing, or on a CA design before fieldwork.
 
 It follows Mayne's seven steps (2019, Box 1, p. 173) and the conditions BetterEvaluation gives for a sufficiently developed contribution story (Apgar and Levine 2024). Page numbers refer to Mayne (2019) unless stated.
 

@@ -2,6 +2,8 @@
 
 ## 2026-10-23
 
+- Lessons and reference cards restyled to match the map: light paper, a frosted top bar with lesson position and next-lesson button, numbered sections, hairline panels, ink buttons, segmented controls and a large-type footer.
+- Contribution Analysis capitalised across the course, README, red team protocol, glossary, errata and bibliography notes. Published titles keep their original spelling.
 - Repository map redesigned on a light page: a split headline with a drawn figure of the method, an index of counts, a "Who this is for" panel, numbered sections, route cards with a step count and a "Show on the map" action, a questions section and a fuller footer.
 - The method's name is now written Contribution Analysis throughout the map, the citation file and the Zenodo metadata.
 
