@@ -2,6 +2,7 @@
 
 ## 2026-10-23
 
+- Version 1.0.0 released and archived on Zenodo with DOI 10.5281/zenodo.23591896. DOI badge added to the README, and the DOI added to the citation file and the suggested credit.
 - Lessons and reference cards restyled to match the map: light paper, a frosted top bar with lesson position and next-lesson button, numbered sections, hairline panels, ink buttons, segmented controls and a large-type footer.
 - Contribution Analysis capitalised across the course, README, red team protocol, glossary, errata and bibliography notes. Published titles keep their original spelling.
 - Repository map redesigned on a light page: a split headline with a drawn figure of the method, an index of counts, a "Who this is for" panel, numbered sections, route cards with a step count and a "Show on the map" action, a questions section and a fuller footer.

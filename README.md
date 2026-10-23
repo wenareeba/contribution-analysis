@@ -2,6 +2,7 @@
 
 [![Content licence: CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE)
 [![Code licence: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE-CODE)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23591896.svg)](https://doi.org/10.5281/zenodo.23591896)
 
 A working library for Contribution Analysis (CA): a verified bibliography, design templates, a red team protocol for checking that a CA was done properly, and a short course.
 
@@ -78,7 +79,7 @@ Suggestions are welcome, especially published CAs from Africa, Asia and Latin Am
 
 ## How to cite
 
-Suggested credit: Wenareeba, Morris. (2026). *Contribution Analysis: Course, Bibliography, Templates and Red Team Protocol*. GitHub repository. https://github.com/wenareeba/contribution-analysis
+Suggested credit: Wenareeba, Morris. (2026). *Contribution Analysis: Course, Bibliography, Templates and Red Team Protocol* (Version 1.0.0). Zenodo. https://doi.org/10.5281/zenodo.23591896
 
 Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub's "Cite this repository" button uses it.
 

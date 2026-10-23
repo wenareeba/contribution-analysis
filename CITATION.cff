@@ -5,6 +5,11 @@ title: "Contribution Analysis: Course, Bibliography, Templates and Red Team Prot
 authors:
   - family-names: Wenareeba
     given-names: Morris
+doi: "10.5281/zenodo.23591896"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23591896"
+    description: "Version 1.0.0 archived on Zenodo"
 repository-code: "https://github.com/wenareeba/contribution-analysis"
 url: "https://github.com/wenareeba/contribution-analysis"
 abstract: >-
