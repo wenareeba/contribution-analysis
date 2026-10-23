@@ -85,11 +85,18 @@ This DOI covers all versions and always points to the latest one. To cite a spec
 
 Citation metadata is in [`CITATION.cff`](CITATION.cff); GitHub's "Cite this repository" button uses it.
 
+## Rights and permissions
+
+- **No copies of anyone else's work.** The repository holds no PDFs, scans or copies of any book, article or report, and never has. Every source is linked at its publisher, its DOI, or a copy the author or publisher has posted.
+- **Short quotations, for teaching and comment.** A quotation appears only where the exact wording matters. It is word for word, in quotation marks, attributed and cited to the page. Everything else is in this course's own words. Measured as runs of eight or more words shared with the source text, quotations come to under 2% of any one source: the most quoted, Mayne (2019), about 1.8%, and every other source under 1%.
+- **Independent work.** The course teaches a published method. It is not affiliated with, or endorsed by, the method's authors or their publishers.
+- **Rights holders.** If you hold rights in any quoted material and want it changed, open an issue or write privately to the address in the [code of conduct](CODE_OF_CONDUCT.md). The passage will be shortened, paraphrased or removed within seven days, and the change logged in the [changelog](CHANGELOG.md).
+
 ## Licence
 
 - **Written material** (lessons, reference cards, protocol, templates, bibliography notes): [Creative Commons Attribution 4.0 International](LICENSE) (CC BY 4.0). You may share and adapt it, including commercially, if you give credit.
 - **Code** (`bibliography/build_bibliography.py`, `course/assets/lesson.js`): [MIT](LICENSE-CODE).
-- **Third-party material** quoted or cited here, such as passages from Mayne (2019), stays under its own licence and copyright.
+- **Third-party material** quoted or cited here, such as passages from Mayne (2019), stays under its own licence and copyright. The CC BY 4.0 licence above does not cover it, so reuse of a quotation needs its own attribution and, beyond short quotation, the rights holder's permission.
 
 
 ## Key reference

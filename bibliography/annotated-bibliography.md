@@ -61,7 +61,7 @@ Critiques, refinements and combinations with other methods.
   A CA-informed framework applied to prizes.
 - Collier, D. (2011). Understanding process tracing. *PS: Political Science & Politics*, 44(4), 823 to 830. https://doi.org/10.1017/S1049096511001429  
   Table 1 (p. 825) sets out the four process tracing tests by necessity and sufficiency: straw-in-the-wind, hoop, smoking gun and doubly decisive.
-- Pawson, R., and Tilley, N. (2004). *Realist evaluation*. Paper funded by the British Cabinet Office. https://cnxus.org/wp-content/uploads/2022/04/RE_chapter.pdf  
+- Pawson, R., and Tilley, N. (2004). *Realist evaluation*. Paper funded by the British Cabinet Office.  
   A short account of realist evaluation, including the weeding out of alternative theories of how a programme works (p. 17).
 - Befani, B., and Mayne, J. (2014). Process tracing and contribution analysis: A combined approach to generative causal inference for impact evaluation. *IDS Bulletin*, 45(6), 17 to 36. https://doi.org/10.1111/1759-5436.12110  
   How process tracing tests strengthen step 5 and judge confidence in a claim.
