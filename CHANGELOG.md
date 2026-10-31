@@ -1,5 +1,22 @@
 # Changelog
 
+## Version 1.1.0 (2026-10-31)
+
+Course content extended. Each lesson keeps its structure and gains new sections, two new scenario questions (seven in all) and new sources; each reference card gains one section.
+
+- Lesson 1: where CA came from; why "the programme caused it" is the wrong claim; sharpening the evaluation question in the terms of reference; when CA fits an evaluation and when it does not.
+- Lesson 2: Mayne's generic theory of change model; analysing each link before testing it; the public theory of change and its rationale assumption; building the ToC with stakeholders and expecting it to change.
+- Lesson 3: what interviews can and cannot show; triangulating each step; an evidence record per link; judging strength, convergence and triangulation together; guarding against confirmation.
+- Lesson 4: most other factors already sit in the theory of change; external influences; what happens when support factors are weak; looking actively for unintended effects.
+- Lesson 5: how Mayne's view of "how much" changed; why the funder's question is legitimate; the actor and the type of support; reporting a plausible range; a defensible answer.
+- Lesson 6: Mayne's three levels of CA; scoping to one well-run CA; choosing which claims to take forward; budgeting for a theory of change that changes late; knowing when the story is strong enough; writing the contribution story for its readers.
+- Lesson 7: the equity critique; saying what the cause did; the "reasonable person" test; whether a claim can travel beyond one case; the field's own agenda.
+- Lesson 8: the DFID design review and its four causal logics; realist evaluation; three common combinations of designs; from this introduction to mastery.
+- New source: Ton, Delahais, Koleros and Apgar (2026), the World Bank IEG quality guidance for CA, added to the bibliography (section 5, now 84 sources) and drawn on in every lesson: the six steps in two phases and where CA fits (Lesson 1), the two parts of a ToC (Lesson 2), causal hotspots and strength-of-evidence rubrics (Lesson 3), other factors as part of the theory (Lesson 4), significance and stability of claims (Lesson 5), a new section on choosing claims and keeping the trail (Lesson 6), the field's agenda (Lesson 7), and the next read after this course (Lesson 8).
+- Practice sections now say seven questions, not five; one Lesson 2 distractor and its feedback rewritten.
+- Ton et al. (2019) page references corrected in Lessons 3, 5 and 6 and reference cards 3 and 5.
+- Map and README: "Who this is for" now gives the new lesson length and seven questions, and says the course is an introduction, with mastery requiring in-depth study and application; lesson notes updated.
+
 ## Version 1.0.1 (2026-10-23)
 
 Rights review: every quotation checked word for word against the source PDFs.

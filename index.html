@@ -244,7 +244,7 @@ footer { padding-block: 4.5rem 3rem; }
     <div class="wrap">
       <ul class="index" aria-label="What the repository holds">
         <li><b>8</b><span>lessons, each with a reference card</span></li>
-        <li><b>83</b><span>sources, each verified at source</span></li>
+        <li><b>84</b><span>sources, each verified at source</span></li>
         <li><b>5</b><span>design templates and worksheets</span></li>
         <li><b>38</b><span>red team checks, 8 of them critical</span></li>
       </ul>
@@ -278,13 +278,14 @@ footer { padding-block: 4.5rem 3rem; }
         <div>
           <h3>What the course asks of you</h3>
           <ul>
-            <li>Eight lessons of about 1,000 to 1,300 words, each meant for one sitting</li>
-            <li>In each lesson, a figure to try, five scenario questions at master&rsquo;s level and a writing task with a model answer</li>
+            <li>Eight lessons of about 2,000 to 2,500 words, each meant for one or two sittings</li>
+            <li>In each lesson, a figure to try, seven scenario questions at master&rsquo;s level and a writing task with a model answer</li>
             <li>From lesson 2 on, a short recall of the lesson before</li>
             <li>Statements about the method cite a page, so you can check them at the source</li>
           </ul>
         </div>
       </div>
+      <div class="why"><b>Where it takes you</b><p>The course is an introduction to Contribution Analysis for people new to the method, and a good starting point. Mastery takes more: study of the sources in depth, and application on real evaluations at project, regional, portfolio and, in time, international scale.</p></div>
       <div class="why"><b>Why it is free</b><p>Much of the Contribution Analysis literature sits behind journal paywalls, and what is free is scattered across many sites. This course puts the method in one structured place, free to use and adapt under CC BY 4.0.</p></div>
     </div>
   </section>
@@ -317,7 +318,7 @@ footer { padding-block: 4.5rem 3rem; }
         <article class="tile">
           <div class="top"><span class="role">The bibliography</span><span class="path">bibliography/</span></div>
           <h3>Read further.</h3>
-          <p><span class="num">83</span> sources in seven sections, each checked at the publisher, repository or Crossref, with BibTeX, a CSV and an errata page.</p>
+          <p><span class="num">84</span> sources in seven sections, each checked at the publisher, repository or Crossref, with BibTeX, a CSV and an errata page.</p>
           <a class="more" data-href="bibliography/annotated-bibliography.md" target="_blank" rel="noopener">Open the bibliography</a>
         </article>
       </div>
@@ -397,25 +398,25 @@ const href = p => (ON_SITE && /\.html$/.test(p)) ? p : REPO + p;
 const N = [
   {id:"root", label:"Contribution Analysis", g:"root", href:"README.md", note:"Start at the README: what CA is, who the repo is for, and a start-here table."},
   {id:"course", label:"Course", sub:"course/", g:"course", p:"root", note:"Eight lessons. Each opens with recall questions from the last one, ends with a quiz and a practice task with a model answer, and links to a one-page reference card."},
-  {id:"l1", label:"1 · Read the question first", g:"course", p:"course", href:"course/lessons/0001-read-the-question-first.html", note:"Contributory cause, INUS conditions, the two-part claim, and how the evaluation question sets the scope."},
-  {id:"l2", label:"2 · ToCs that carry a claim", g:"course", p:"course", href:"course/lessons/0002-theories-of-change-that-carry-a-claim.html", note:"Causal link assumptions, nested theories of change, and what makes a ToC strong enough for a claim."},
-  {id:"l3", label:"3 · Building the causal case", g:"course", p:"course", href:"course/lessons/0003-building-the-causal-case.html", note:"Mayne's evidence tools and the four process tracing tests."},
-  {id:"l4", label:"4 · Other factors", g:"course", p:"course", href:"course/lessons/0004-other-factors-and-alternative-explanations.html", note:"Support factors inside the package, external factors outside it, and when rival explanations matter."},
-  {id:"l5", label:"5 · Size and importance", g:"course", p:"course", href:"course/lessons/0005-size-and-relative-importance.html", note:"What CA can and cannot say about how big a contribution was; four perspectives on relative importance."},
-  {id:"l6", label:"6 · Running a CA in practice", g:"course", p:"course", href:"course/lessons/0006-running-a-ca-in-practice.html", note:"The iterative steps, practitioner lessons, what reviews of practice report, and a worked example."},
-  {id:"l7", label:"7 · Critiques and responses", g:"course", p:"course", href:"course/lessons/0007-critiques-and-responses.html", note:"Published criticisms of CA, Mayne's replies, and what each means for your report."},
-  {id:"l8", label:"8 · Among theory-based approaches", g:"course", p:"course", href:"course/lessons/0008-ca-among-theory-based-approaches.html", note:"CA beside process tracing, realist evaluation and the policy-scientific approach."},
+  {id:"l1", label:"1 · Read the question first", g:"course", p:"course", href:"course/lessons/0001-read-the-question-first.html", note:"Contributory cause, INUS conditions, the two-part claim, where CA came from, sharpening the evaluation question, and when CA fits."},
+  {id:"l2", label:"2 · ToCs that carry a claim", g:"course", p:"course", href:"course/lessons/0002-theories-of-change-that-carry-a-claim.html", note:"Causal link assumptions, COM-B and nested theories of change, Mayne's generic model, the public theory behind a programme, and building a ToC with the people in it."},
+  {id:"l3", label:"3 · Building the causal case", g:"course", p:"course", href:"course/lessons/0003-building-the-causal-case.html", note:"Mayne's evidence tools, the four process tracing tests, triangulating each step, weighing strength and convergence, and guarding against confirmation."},
+  {id:"l4", label:"4 · Other factors", g:"course", p:"course", href:"course/lessons/0004-other-factors-and-alternative-explanations.html", note:"Support factors inside the package, external influences outside it, weak support factors, unintended effects, and when rival explanations matter."},
+  {id:"l5", label:"5 · Size and importance", g:"course", p:"course", href:"course/lessons/0005-size-and-relative-importance.html", note:"What CA can and cannot say about how big a contribution was, four perspectives on relative importance, how Mayne's view changed, and reporting a plausible range."},
+  {id:"l6", label:"6 · Running a CA in practice", g:"course", p:"course", href:"course/lessons/0006-running-a-ca-in-practice.html", note:"The iterative steps, scoping to one well-run CA, choosing which claims to test, a theory of change that changes late, when to stop, writing for the reader, and a worked example."},
+  {id:"l7", label:"7 · Critiques and responses", g:"course", p:"course", href:"course/lessons/0007-critiques-and-responses.html", note:"Published criticisms of CA, Mayne's replies, the equity critique, the reasonable person test, whether a claim can travel, and the field's own agenda."},
+  {id:"l8", label:"8 · Among theory-based approaches", g:"course", p:"course", href:"course/lessons/0008-ca-among-theory-based-approaches.html", note:"CA beside process tracing, realist evaluation and the policy-scientific approach, choosing a design, common combinations, and the road from here to mastery."},
   {id:"cards", label:"Reference cards (8)", sub:"course/reference/", g:"course", p:"course", href:"course/reference/0001-ca-core.html", note:"One page per lesson for quick recall. The CA core card is the one to keep open."},
   {id:"gloss", label:"Glossary", g:"course", p:"course", href:"course/GLOSSARY.md", note:"Terms as the course uses them: contribution question, support factor, external factor, rival explanation and more."},
   {id:"res", label:"Resources", g:"course", p:"course", href:"course/RESOURCES.md", note:"Where to go next, communities of practice, and known gaps."},
 
-  {id:"bib", label:"Bibliography", sub:"bibliography/", g:"bib", p:"root", note:"83 sources, each checked at the publisher, repository or Crossref. Notes say what each is for."},
+  {id:"bib", label:"Bibliography", sub:"bibliography/", g:"bib", p:"root", note:"84 sources, each checked at the publisher, repository or Crossref. Notes say what each is for."},
   {id:"start", label:"Where to start (5 reads)", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Mayne 2019, Mayne 2008, Apgar and Levine 2024, Delahais and Toulemonde 2017, Bohni Nielsen and Lemire 2026."},
   {id:"s1", label:"§1 Mayne's own work", sub:"13 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Read in date order to see how the method, and Mayne's view of alternative explanations, changed."},
   {id:"s2", label:"§2 Method and debate", sub:"26 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Critiques, refinements and combinations with other methods."},
   {id:"s3", label:"§3 Reviews of practice", sub:"2 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"What published CAs actually do."},
   {id:"s4", label:"§4 Applications", sub:"23 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Worked examples across sectors."},
-  {id:"s5", label:"§5 Practitioner guides", sub:"9 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Free, short and practical. Start here if you are running a CA next month."},
+  {id:"s5", label:"§5 Practitioner guides", sub:"10 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"Free, short and practical. Start here if you are running a CA next month."},
   {id:"s6", label:"§6 CJPE 37(3) Mayne issue", sub:"8 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"The 2023 memorial issue: context on Mayne's work and current debates."},
   {id:"s7", label:"§7 Background on causality", sub:"2 sources", g:"bib", p:"bib", href:"bibliography/annotated-bibliography.md", note:"The philosophy behind contributory causes."},
   {id:"bibtex", label:"BibTeX and CSV", g:"bib", p:"bib", href:"bibliography/references.bib", note:"references.bib for reference managers; sources.csv for filtering. Both are built from one script, so they always match."},

@@ -487,3 +487,8 @@ textarea:focus { border-color: var(--ink); box-shadow: 0 0 0 3px var(--rule); }
 
 @media print { .bar, .site-foot { display: none !important; } }
 @media (max-width: 760px) { .seg { display: grid; width: 100%; } }
+
+/* scope note: where the course sits */
+.scope { margin: 0 0 1rem; padding: 1rem 1.2rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; font-family: var(--sans); font-size: .9rem; line-height: 1.55; color: var(--ink-2); }
+.scope .label { display: block; margin-bottom: .3rem; }
+.scope p { margin: 0; }

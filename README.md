@@ -20,6 +20,8 @@ A good contribution claim says two things. The intervention contributed, and her
 - **Commissioners and reviewers** judging whether a CA report stands up
 - **Students and researchers** learning the method or studying how it is used
 
+The course is an introduction for people new to Contribution Analysis, and a good starting point. Mastery takes more: study of the sources in depth, and application on real evaluations at project, regional, portfolio and, in time, international scale.
+
 ## Start here
 
 | If you want to... | Go to |
@@ -35,7 +37,7 @@ A good contribution claim says two things. The intervention contributed, and her
 
 | Folder | Contents |
 |---|---|
-| [`bibliography/`](bibliography/) | 83 sources in seven sections, all verified at source, with BibTeX (`references.bib`) and CSV. An errata page records 13 errors and discrepancies found in published CA reference lists. Unverified sources wait in a separate queue. |
+| [`bibliography/`](bibliography/) | 84 sources in seven sections, all verified at source, with BibTeX (`references.bib`) and CSV. An errata page records 13 errors and discrepancies found in published CA reference lists. Unverified sources wait in a separate queue. |
 | [`templates/`](templates/) | Five tools: a CA design template, a theory of change and assumptions worksheet, an other factors register, an evidence plan matrix, and a contribution claim checklist |
 | [`red-team/`](red-team/) | A 38-check audit protocol (8 critical) following Mayne's seven steps and five verification questions |
 | [`course/`](course/) | Eight lessons with retrieval quizzes, practice tasks and model answers, eight reference cards, a glossary and a resources page |

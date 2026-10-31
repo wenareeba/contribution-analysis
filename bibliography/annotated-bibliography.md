@@ -1,6 +1,6 @@
 # Annotated bibliography
 
-83 sources on Contribution Analysis, grouped by use. Every one was verified at source in October 2026: the title, year and pages (or report series) were confirmed on the journal, publisher or repository page, or by Crossref. A few DOIs come from a published reference list. Sources not yet verified are held back until they are.
+84 sources on Contribution Analysis, grouped by use. Every one was verified at source in October 2026: the title, year and pages (or report series) were confirmed on the journal, publisher or repository page, or by Crossref. A few DOIs come from a published reference list. Sources not yet verified are held back until they are.
 
 Generated from `build_bibliography.py`, which also writes `references.bib` (BibTeX) and `sources.csv`. Known errors in other people's reference lists are in [`errata.md`](errata.md).
 
@@ -170,6 +170,8 @@ Free, short and practical. Start here if you are running a CA next month.
   CA for advocacy and policy change.
 - Punton, M., and Barnett, C. (2018). *Contribution analysis and Bayesian confidence updating: A brief introduction*. Itad briefing paper. https://itad.com/wp-content/uploads/2019/06/CDC-Brief-contribution-analysis-and-Bayesian-Updating.pdf  
   Combining CA with Bayesian confidence updating, with a worked investment example.
+- Ton, G., Delahais, T., Koleros, A., and Apgar, M. (2026). *Quality guidance for contribution analysis in practice*. IEG Methods and Evaluation Capacity Development Working Paper Series, Independent Evaluation Group, World Bank. https://ieg.worldbankgroup.org/evaluations/quality-guidance-contribution-analysis-practice  
+  Short quality guidance on each of six steps, for experienced evaluators and commissioners rather than beginners (p. 1). Read after a first CA.
 - Apgar, M., Hernandez, K., and Ton, G. (2020). *Contribution analysis for adaptive management*. Briefing note, Global Learning for Adaptive Management (GLAM), Overseas Development Institute. https://odi.org/en/publications/contribution-analysis-for-adaptive-management/  
   CA as a learning tool during implementation; source of BetterEvaluation's iterative-steps diagram.
 - Hopkins, L. (2021). *Tools and tips for implementing contribution analysis*. Itad and Center for Evaluation Innovation. https://www.itad.com/knowledge-product/tools-tips-implementing-contribution-analysis/  
