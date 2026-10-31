@@ -13,6 +13,12 @@ identifiers:
   - type: doi
     value: "10.5281/zenodo.23591896"
     description: "Version 1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.23597562"
+    description: "Version 1.0.1"
+  - type: doi
+    value: "10.5281/zenodo.23843879"
+    description: "Version 1.1.0"
 repository-code: "https://github.com/wenareeba/contribution-analysis"
 url: "https://github.com/wenareeba/contribution-analysis"
 abstract: >-

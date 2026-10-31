@@ -2,6 +2,8 @@
 
 ## Version 1.1.0 (2026-10-31)
 
+Archived on Zenodo with DOI 10.5281/zenodo.23843879 (version 1.0.1: 10.5281/zenodo.23597562). The all-versions DOI 10.5281/zenodo.23591895 is unchanged.
+
 Course content extended. Each lesson keeps its structure and gains new sections, two new scenario questions (seven in all) and new sources; each reference card gains one section.
 
 - Lesson 1: where CA came from; why "the programme caused it" is the wrong claim; sharpening the evaluation question in the terms of reference; when CA fits an evaluation and when it does not.
